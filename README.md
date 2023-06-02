@@ -1,6 +1,6 @@
 # Data snippets
 
-![](_site-gh-pages/notebook-sketch-ai.png)
+![](_site-gh-pages/computer-ai.png)
 
 ## License
 
