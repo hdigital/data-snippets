@@ -1,8 +1,9 @@
 chatgpt-ess/ESS9e03*
 
+.DS_Store
 
 ## ----------------------------------------------------------------------------
-## R
+## https://github.com/github/gitignore/blob/main/R.gitignore
 
 # History files
 .Rhistory
@@ -53,3 +54,5 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+## ----------------------------------------------------------------------------
