@@ -1,0 +1,216 @@
+---
+title: "ChatGPT ESS"
+output:
+  html_notebook:
+    # code_folding: hide
+    toc: yes
+    toc_float: yes
+---
+
+```{r}
+library(tidyverse)
+library(ggeffects)
+library(rcompanion)
+library(broom)
+library(lme4)
+library(rsq)
+library(brms)
+```
+
+
+## Read data
+
+```{r}
+ess_data_raw <- haven::read_dta("ESS9e03_1.dta")
+ess_data <- ess_data_raw
+```
+
+```{r, eval=FALSE}
+ess_data_raw <- haven::read_sav("ESS9e03_1.sav")
+ess_data <- ess_data_raw
+```
+
+```{r}
+names(ess_data)
+```
+
+
+```{r}
+glimpse(ess_data)
+```
+
+
+## Descriptive statistics
+
+```{r}
+ggplot(ess_data, aes(x = agea)) +
+  geom_histogram(binwidth = 5, fill = "steelblue", color = "white") +
+  labs(title = "Distribution of Age in ESS 2018", x = "Age", y = "Count")
+```
+```{r}
+table(ess_data$vote)
+```
+
+```{r}
+# Convert "vote" variable to a factor
+ess_data$vote <- factor(ess_data$vote)
+
+# Create a cross-table for "vote" by country using dplyr
+ess_data %>%
+  group_by(cntry) %>%
+  summarise(voted = sum(vote == "Yes", na.rm = TRUE),
+            did_not_vote = sum(vote == "No, did not vote", na.rm = TRUE),
+            refused = sum(vote == "Refused", na.rm = TRUE),
+            dk = sum(vote == "Don't know", na.rm = TRUE),
+            na = sum(is.na(vote)))
+```
+
+ChatGPT assumed that the factor conversion kept the label
+
+```{r, eval=FALSE}
+ess_data <- ess_data_raw
+
+# Create a cross-table for "vote" by country using dplyr
+ess_data %>%
+  group_by(cntry) %>%
+  summarise(voted = sum(vote == 1, na.rm = TRUE),
+            did_not_vote = sum(vote == 2, na.rm = TRUE),
+            refused = sum(vote == 3, na.rm = TRUE),
+            dk = sum(vote == 4, na.rm = TRUE),
+            na = sum(is.na(vote)),
+            share = round(100 *voted / (voted + did_not_vote))
+            ) %>%
+  arrange(desc(share))
+```
+
+
+## Turnout model
+
+```{r}
+# Recode "vote" variable as 1, 0, or NA
+ess_data <- 
+  ess_data %>%
+  mutate(voted = case_when(
+    vote == 1 ~ 1,
+    vote == 2 ~ 0,
+    TRUE ~ NA_real_,),
+    sex = ifelse(gndr == 1, 1, 0)
+  )
+
+# Run logistic regression model with "vote" as the outcome variable and "agea" and "gndr" as predictors
+model <- glm(voted ~ agea , data = ess_data, family = binomial)
+
+# Print summary of model results
+summary(model)
+```
+
+```{r}
+# Calculate predicted probabilities and confidence intervals using ggpredict
+prob_ci <- ggpredict(model, terms = "agea", type = "re")
+
+# Plot predicted probabilities and confidence intervals using ggplot
+ggplot(prob_ci, aes(x = x, y = predicted)) +
+  geom_line(color = "blue") +
+  geom_ribbon(aes(ymin = conf.low, ymax = conf.high), alpha = 0.3) +
+  labs(title = "Predicted Probability of Voting by Age",
+       x = "Age", y = "Predicted Probability")
+```
+```{r}
+# Run logistic regression model with "vote" as the outcome variable and predictors
+model <- glm(voted ~ agea + sex , data = ess_data, family = binomial)
+
+# Create effects plot for age, controlling for gender
+plot <- ggpredict(model, terms = c("agea", "sex"))
+
+# Plot the effects of age on voter turnout
+plot(plot)
+```
+
+```{r}
+summary(model)
+```
+
+```{r}
+# Fit logistic regression model
+model <- glm(voted ~ agea + sex + cntry, data = ess_data, family = binomial)
+
+# Create effects plot for age, gender, and country
+plot <- ggpredict(model, terms = c("cntry", "sex"))
+
+# Plot the effects of age on voter turnout
+plot(plot)
+```
+
+### Interaction effect
+
+```{r}
+# Fit logistic regression model
+model <- glm(voted ~ agea * sex + cntry, data = ess_data, family = binomial)
+
+# Create effects plot for age, gender, and their interaction
+plot <- ggpredict(model, terms = c("agea", "sex"))
+
+# Plot the effects of age on voter turnout
+plot(plot)
+```
+
+```{r}
+summary(model)
+```
+```{r}
+nagelkerke(model)
+```
+```{r}
+# Extract model coefficients and standard errors into a tidy data frame
+model_summary <- tidy(model, exponentiate = TRUE)
+
+# View the tidy data frame
+model_summary
+```
+
+
+```{r}
+# Extract model summary statistics using broom::glance
+glance(model)
+```
+
+
+## Multi-level model
+
+```{r}
+# Model with interaction effect
+model <- glmer(voted ~ agea * sex + (1|cntry), data = ess_data, family = binomial)
+
+# Summary of the model
+summary(model)
+```
+
+
+```{r}
+# Create effects plot for age, gender, and their interaction
+plot <- ggpredict(model, terms = c("agea", "sex"))
+
+# Plot the effects of age on voter turnout
+plot(plot)
+```
+```{r}
+fivenum(ess_data$agea, na.rm = TRUE)
+table(ess_data$sex)
+cor(ess_data$agea, ess_data$sex, use = "complete.obs")
+```
+```{r}
+# Create a new column centered_age that is the age variable minus its mean
+ess_data <- 
+  ess_data %>%
+  group_by(cntry) %>%
+  mutate(age_c = agea - mean(agea, na.rm = TRUE))
+
+# Model with interaction effect
+model <- glmer(voted ~ age_c * sex + (1|cntry), data = ess_data, family = binomial)
+
+# Summary of the model
+summary(model)
+```
+
+
+
