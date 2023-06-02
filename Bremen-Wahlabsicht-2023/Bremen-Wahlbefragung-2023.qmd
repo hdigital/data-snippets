@@ -1,0 +1,234 @@
+---
+title: "Bremen Wahlbefragung Mai 2023"
+date: 2023-05-06
+execute:
+  messages: false
+  warning: false
+format:
+  html:
+    code-fold: true
+    embed-resources: true
+    toc: true
+  pdf:
+    colorlinks: true
+    echo: false
+    number-sections: false
+    toc: false
+lang: de
+---
+
+```{r}
+library(tidyverse)
+library(knitr)
+
+set.seed(123)
+```
+
+## Buten und Binnen
+
+Beitrag 4. Mai 2023 -- [Das sind die Bremer Gewinner und Verlierer der neuen Wahlumfrage](https://www.butenunbinnen.de/videos/wahlen-infratest-sonntagsfrage-100.html)
+
+::: {#fig-buten-binnen layout-ncol=2}
+
+![Vorwahlbefragung 4. Mai](a-Vorwahlbefragung.png){#fig-befragung}
+
+![Gewinne und Verluste seit 20. April ](b-Gewinne-Verluste.png){#fig-aenderung}
+
+Buten un Binnen — 4. Mai 2023 (Zugriff [Beitrag](https://www.butenunbinnen.de/videos/wahlen-infratest-sonntagsfrage-100.html): 5. Mai 2023)
+:::
+
+Moderator im Beitrag bei 0:50 beim Vergleich der Umfragen 4. Mai und [20. April](https://www.butenunbinnen.de/videos/wahl-umfrage-ergebnisse-sonntagsfrage-100.html)
+
+> "Verglichen mit der Umfrage die Infratest dimap vor zwei Wochen im Auftrag von Radio Bremen und der Nordsee Zeitung durchgeführt hat, kommt es zu diesen Veränderungen:
+
+> + die CDU __verliert__ leicht einen Prozentpunkt // - 1%
+> + die SPD ebenfalls leichter __Verlust__ minus ein Punkt // - 1%
+> + die Grünen mit deutlichen __Verlusten__ minus vier Prozentpunkte // - 4%
+> + die Linke __gewinnt__ drei Prozentpunkte // + 3%
+> + die FDP __unverändert__  // 0%
+> + und die Bürger in Wut nochmal mit deutlichen __Gewinnen__ plus drei Prozentpunkte // + 3%
+
+> die sonstigen Parteien unverändert. Also einige haben Rückenwind im Endspurt des Wahlkampfes und anderen __bläst der Wind mittlerweile ganz schön ins Gesicht__ Felix"
+
+
+## Umfragen-Genauigkeit
+
+### Parteien Ergebnisse
+
+Berechnung der Genauigkeit für eine Umfrage mit 1000 Befragten
+
+```{r}
+sample_size <- 1000
+
+# create data with poll results for Bremen
+bremen <-
+  tribble(
+    ~party, ~share, ~change,
+    "CDU",      27, -1,
+    "SPD",      30, -1,
+    "Gruene",   13, -4,
+    "Linke",    10,  3,
+    "FDP",       6,  0,
+    "BiW",       9,  3,
+)
+
+# create function to calculate standard error Central Limit Theorem
+calculate_se <- \(share) sqrt( (share*(1-share)) / sample_size)
+
+# calculate the critical value for an 80% confidence interval
+cv <- qt(0.9, df = sample_size - 1)
+
+# add standard error, confidence interval (CI), lower and upper bounds of 80% CI
+bremen <-
+  bremen |>
+  mutate(
+    party = fct_inorder(party),
+    se_share = (100 * calculate_se(share/100)),
+    ci_80 = se_share * cv,
+    ci_lower_80 = share + ci_80,
+    ci_upper_80 = share - ci_80,
+    share_20_4 = share - change,
+  )
+```
+
+```{r}
+#| label: fig-parteien
+#| fig-cap: "Umfrage-Ergebnisse mit Konfidenz-Invervallen (80%)"
+
+party_colors <- c("black", "red", "darkgreen", "purple", "yellow", "blue")
+
+pl <-
+  ggplot(bremen, aes(x = party, y = share)) +
+    geom_bar(stat = "identity", fill = party_colors) +
+    geom_errorbar(aes(ymin = ci_lower_80, ymax = ci_upper_80), color = "darkgrey", width = 0.2) +
+    geom_point(aes(y = share_20_4), color = "darkorange", shape = 8, size = 3, show.legend = FALSE) +
+    labs(caption = "Konfidenz-Invervalle 80%",
+         x = "Parteien",
+         y = "Stimmenanteile") +
+    theme_minimal()
+
+ggsave("wahlbefragung.png", pl, width = 8, height = 6)
+pl
+```
+
+Hinweise @fig-parteien
+
++ Umfrage-Ergebnisse 4. Mai // Balken-Diagramm
++ Umfrage-Ergebnisse 20. April // Punkte (orange)
++ Konfidenz-Intervalle (grau)
+
+```{r}
+bremen |>
+  select(-se_share) |>
+  kable(digits = 1)
+```
+
+
+### OpenIntro · Lehrbuch
+
+Überblick zur Berechnung der Genauigkeit von Schätzungen durch Stichproben
+
+[openintro.org/book/os/](https://www.openintro.org/book/os/) --- OpenIntro Statistics 2019
+
+Kapitel 5.1, Seite 170 ff. --- Punktschätzer und Stichproben-Variabilität
+
+```{r}
+#| eval: false
+
+## Source OpenIntro Stats (2019, p. 171) -- some modifications
+
+# set parameters
+pop_size <- 500000
+pop_share <- 0.2
+sample_size <- 1000
+
+# 1. Create a set of entries, where a share of them are "support"
+# and 12% are "not".
+possible_entries <- c(rep("support", pop_share * pop_size), rep("not", (1-pop_share) * pop_size))
+
+# 2. Sample 1000 entries without replacement.
+sampled_entries <- sample(possible_entries, size = sample_size)
+
+# 3. Compute p-hat: count the number that are "support", then divide by # the sample size.
+sum(sampled_entries == "support") / sample_size
+```
+
+### Simulation Grüne (13%)
+
+```{r}
+#| include: false
+
+share_greens <- 0.13
+
+get_sample <- function(pop_share, pop_size = 500000, sample_size = 1000) {
+ possible_entries <- c(rep("support", pop_share * pop_size), rep("not", (1-pop_share) * pop_size))
+ sampled_entries <- sample(possible_entries, size = sample_size)
+ sum(sampled_entries == "support") / sample_size
+}
+
+get_sample(share_greens)
+```
+
+```{r}
+#| cache: true
+
+n_simulations <- 10000
+
+df_simulations <- tibble(share = map_dbl(1:n_simulations, \(.x) get_sample(share_greens)))
+```
+
+Eine Simulation der Umfrage-Ergebnisse für die Grünen
+
+```{r}
+#| label: fig-simulation-gruene
+#| fig-cap: "Simulation Umfrage-Ergebnis Grüne (10000 Simulationen)."
+df_simulations |>
+  mutate(share = 100 * share) |>
+  ggplot(aes(share)) +
+  geom_vline(aes(xintercept = 11.6), color = "darkgrey", linetype = "longdash", size = 0.5) +
+  geom_vline(aes(xintercept = 14.4), color = "darkgrey", linetype = "longdash", size = 0.5) +
+  geom_histogram(bins = 20, fill = "darkgreen", color = "white") +
+  geom_vline(aes(xintercept = 13), color = "black", linetype = "longdash", size = 0.75) +
+  geom_vline(aes(xintercept = 17), color = "darkorange", linetype = "longdash", size = 0.75) +
+  labs(x = "Stimmen-Anteil", y = "Anzahl")
+```
+
++ 500000 Bremer Wahlberechtigte //  [wahlen-in-deutschland.de](https://www.wahlen-in-deutschland.de/blBremen.htm)
++ 1000 Befragte
++ 10000 Simulationen Befragungen
+
+```{r}
+df_simulations |>
+  mutate(vote_share = round(100 * share)) |>
+  count(vote_share) |>
+  mutate(n_share = 100 * n/sum(n)) |>
+  kable(digits = 0)
+```
+
+
+### Konfidenz-Intervall 80%
+
+__4 von 5__ Umfragen liegen in einem Konfidenz-Interval von 80% -- so die Wahrscheinlichkeit.
+
+Die Wahl des 80% Konfidenz-Intervals ist angelehnt an das Blog [zweitstimme.org](http://2017.zweitstimme.org/index.html) der Universität Mannheim.
+
+> Die Bänder für jede Partei geben an in welchem Bereich wir den tatsächlichen Wert mit 83% Wahrscheinlichkeit vermuten. Das heißt, dass das tatsächliche Wahlergebnis nicht in diesem Bereich liegt, ist so wahrscheinlich wie eine 6 zu würfeln - nicht sehr wahrscheinlich, aber doch möglich.
+
+```{r}
+#| eval: false
+#| include: false
+
+# Set up the data
+mean_value <- bremen[bremen$party == "Gruene", ][["share"]]
+std_error <- bremen[bremen$party == "Gruene", ][["se_share"]]
+observed_value <- 17
+
+# Calculate the t-value
+t_value <- (observed_value - mean_value) / (std_error / sqrt(sample_size - 1))
+
+# Calculate the p-value
+p_value <- pt(t_value, df = sample_size - 1, lower.tail = FALSE)
+
+# Print the p-value
+print(format(p_value, nsmall = 20))
+```
