@@ -1,6 +1,7 @@
 ESS9e03*
 
 .DS_Store
+.vscode/
 
 ## ----------------------------------------------------------------------------
 ## https://github.com/github/gitignore/blob/main/R.gitignore
