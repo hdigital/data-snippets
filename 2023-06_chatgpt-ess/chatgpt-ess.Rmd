@@ -2,10 +2,11 @@
 title: "ChatGPT ESS"
 output:
   html_notebook:
-    # code_folding: hide
     toc: yes
     toc_float: yes
 ---
+
+[ChatGPT: A tutor for data analysis?](https://blog.gesis.org/chatgpt-a-tutor-for-data-analysis/) · GESIS Blog · 5 June 2023
 
 ```{r}
 library(tidyverse)
@@ -88,7 +89,7 @@ ess_data %>%
 
 ```{r}
 # Recode "vote" variable as 1, 0, or NA
-ess_data <- 
+ess_data <-
   ess_data %>%
   mutate(voted = case_when(
     vote == 1 ~ 1,
@@ -200,7 +201,7 @@ cor(ess_data$agea, ess_data$sex, use = "complete.obs")
 ```
 ```{r}
 # Create a new column centered_age that is the age variable minus its mean
-ess_data <- 
+ess_data <-
   ess_data %>%
   group_by(cntry) %>%
   mutate(age_c = agea - mean(agea, na.rm = TRUE))
@@ -211,6 +212,3 @@ model <- glmer(voted ~ age_c * sex + (1|cntry), data = ess_data, family = binomi
 # Summary of the model
 summary(model)
 ```
-
-
-

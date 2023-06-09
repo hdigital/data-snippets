@@ -6,7 +6,7 @@ format:
     minimal: true
 ---
 
-+ [ESS analysis with ChatGPT](notebooks/chatgpt-ess.nb.html) // 2 June 2023
++ [ESS analysis with ChatGPT](notebooks/chatgpt-ess.nb.html) // 5 June 2023
 + [Polls TV coverage Bremen election](notebooks/Bremen-Wahlbefragung-2023.html) // 5 May 2023
 
 ![](computer-ai.png){width=200}
