@@ -10,6 +10,13 @@ render index page with [Quarto](https://quarto.org/)
 quarto render _site/index.qmd
 ```
 
+run local server with Python at [localhost:8000](http://localhost:8000)
+
+```sh
+cd _site
+python -m http.server
+```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
