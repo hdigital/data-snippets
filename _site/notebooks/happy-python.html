@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Python · 🐍</title>
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <py-script>
+    import random
+
+    n = 100
+    emojis = "🙂😊🙂😀😇😅😃😄😁😂😆😉😋😎🤗"
+    lines = ["".join(random.choices(emojis, k=n)) for index in range(n)]
+
+    print("\n".join(lines))
+  </py-script>
+</body>
+
+</html>
