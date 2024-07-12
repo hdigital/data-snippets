@@ -1,9 +1,8 @@
 ---
-title: "Data snippets"
+title: "Data snippets · 📊"
 format:
   html:
     embed-resources: true
-    minimal: true
 ---
 
 + [DSS data tools presentation](notebooks/2023_dss-data-presentation.html) // 9 November 2023
@@ -19,5 +18,8 @@ format:
   + [German elections 2017](notebooks/2021_German-elections-2017.html)
   + [Party families Europe](notebooks/2019_party-family.html)
   + [OLS Diagnose SoWi](notebooks/2020_OLS-Diagnose-SoWi.nb.html) (German)
+
+
+[GitHub repository](https://github.com/hdigital/data-snippets) · 📁💻
 
 ![](computer-ai.png){width=200}
