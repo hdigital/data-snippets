@@ -10,5 +10,14 @@ format:
 + [ESS analysis with ChatGPT](notebooks/2023_chatgpt-ess.nb.html) // 5 June 2023
 + [Polls TV coverage Bremen election](notebooks/2023_Bremen-Wahlbefragung.html) // 5 May 2023
 + [Happy Python ](notebooks/happy-python.html) · [pdf](notebooks/happy-python.pdf) // 2023
++ [Teaching snippets](https://github.com/hdigital/teaching/) (selection) // until 2021
+  + Electoral systems —
+    [types](notebooks/2021_electoral-systems_types.nb.html)
+    · [evolution](notebooks/2021_electoral-systems_evolution.nb.html)
+    · [turnout](notebooks/2019_maps-turnout.html)
+  + [State election Saxony-Anhalt 2021](notebooks/2021_Wahl-Sachsen-Anhalt.nb.html) (German)
+  + [German elections 2017](notebooks/2021_German-elections-2017.html)
+  + [Party families Europe](notebooks/2019_party-family.html)
+  + [OLS Diagnose SoWi](notebooks/2020_OLS-Diagnose-SoWi.nb.html) (German)
 
 ![](computer-ai.png){width=200}
