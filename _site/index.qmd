@@ -6,9 +6,9 @@ format:
     minimal: true
 ---
 
-+ [DSS data tools presentation](notebooks/dss-data-presentation.html) // 9 November 2023
-+ [Happy Python ](notebooks/happy-python.html) · [pdf](notebooks/happy-python.pdf) // 10 June 2023
-+ [ESS analysis with ChatGPT](notebooks/chatgpt-ess.nb.html) // 5 June 2023
-+ [Polls TV coverage Bremen election](notebooks/Bremen-Wahlbefragung-2023.html) // 5 May 2023
++ [DSS data tools presentation](notebooks/2023_dss-data-presentation.html) // 9 November 2023
++ [ESS analysis with ChatGPT](notebooks/2023_chatgpt-ess.nb.html) // 5 June 2023
++ [Polls TV coverage Bremen election](notebooks/2023_Bremen-Wahlbefragung.html) // 5 May 2023
++ [Happy Python ](notebooks/happy-python.html) · [pdf](notebooks/happy-python.pdf) // 2023
 
 ![](computer-ai.png){width=200}
