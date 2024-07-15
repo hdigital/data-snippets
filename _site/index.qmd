@@ -5,6 +5,7 @@ format:
     embed-resources: true
 ---
 
++ [Majoritarian elections](notebooks/2024_majoritarian-elections.html) (UK election 2024) // 13 July 2024
 + [DSS data tools presentation](notebooks/2023_dss-data-presentation.html) // 9 November 2023
 + [ESS analysis with ChatGPT](notebooks/2023_chatgpt-ess.nb.html) // 5 June 2023
 + [Polls TV coverage Bremen election](notebooks/2023_Bremen-Wahlbefragung.html) // 5 May 2023

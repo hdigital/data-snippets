@@ -1,0 +1,55 @@
+# Local scripts and data files (ignore with prefix)
+data-raw/
+source__*
+tmp__*
+z-tmp__*
+
+# Local settings files
+.vscode/settings.json
+
+# Quarto files
+_freeze/
+_site/
+.quarto/
+/.quarto/
+.luarc.json
+/.luarc.json
+
+# Rocker files
+.cache/
+.config/
+.local/
+.TinyTeX/
+.sh_history
+
+# OS files
+.DS_Store
+
+
+## R --------------------------------------------------------------------------
+## see also https://github.com/github/gitignore/blob/main/R.gitignore
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session data files
+.RData
+.RDataTmp
+
+# RStudio files
+.Rproj.user/
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R Markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+
+
+## ----------------------------------------------------------------------------

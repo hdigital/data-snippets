@@ -1,0 +1,1338 @@
+country,country_name,year,party,vote_share,seat_share,share_diff,seats,seats_total,elec_sys
+CAN,Canada,1900,CPC,47.4,37.6,-9.8,80,213,First-past-post
+CAN,Canada,1900,LP,51.2,62.4,11.2,133,213,First-past-post
+GBR,United Kingdom,1900,LUP,7.4,10.1,2.7,68,670,First-past-post
+GBR,United Kingdom,1900,Lib,41.2,27.5,-13.7,184,670,First-past-post
+GBR,United Kingdom,1900,Con,41.2,49.9,8.7,334,670,First-past-post
+USA,United States of America,1900,Dem,43,42.3,-0.7,151,357,First-past-post
+USA,United States of America,1900,Rep,52.1,55.2,3.1,197,357,First-past-post
+DNK,Denmark,1901,MV,11.4,14,2.6,16,114,First-past-post
+DNK,Denmark,1901,SD,17.1,12.3,-4.8,14,114,First-past-post
+DNK,Denmark,1901,KF,24,7,-17,8,114,First-past-post
+DNK,Denmark,1901,V,42.9,66.7,23.8,76,114,First-past-post
+NLD,Netherlands,1901,CHU,6.7,10,3.3,10,100,Two-round
+NLD,Netherlands,1901,BVL,6.8,8,1.2,8,100,Two-round
+NLD,Netherlands,1901,VDB,7.3,9,1.7,9,100,Two-round
+NLD,Netherlands,1901,SDAP,9.5,7,-2.5,7,100,Two-round
+NLD,Netherlands,1901,AB/RSKP,15.7,25,9.3,25,100,Two-round
+NLD,Netherlands,1901,LU,20.8,18,-2.8,18,100,Two-round
+NLD,Netherlands,1901,ARP,27.4,22,-5.4,22,100,Two-round
+CHE,Switzerland,1902,LPS,8.6,12,3.4,20,167,Two-round
+CHE,Switzerland,1902,SP,12.6,4.2,-8.4,7,167,Two-round
+CHE,Switzerland,1902,KK/CVP,23.1,21.6,-1.5,36,167,Two-round
+CHE,Switzerland,1902,FDP,50.4,59.9,9.5,100,167,Two-round
+FRA,France,1902,PS,6.3,7.8,1.5,45,575,Two-round
+FRA,France,1902,PR,10.1,13,2.9,75,575,Two-round
+FRA,France,1902,Con,14.1,25.2,11.1,145,575,Two-round
+FRA,France,1902,RI,16.8,20.3,3.5,117,575,Two-round
+FRA,France,1902,GR,29.7,30.4,0.7,175,575,Two-round
+GRC,Greece,1902,KE,NA,46.8,NA,110,235,First-past-post
+GRC,Greece,1902,NK,NA,29.8,NA,70,235,First-past-post
+GRC,Greece,1902,TM,NA,12.8,NA,30,235,First-past-post
+NZL,New Zealand,1902,RP,20.6,23.8,3.2,19,80,First-past-post
+NZL,New Zealand,1902,LP/UP,51.8,58.8,7,47,80,First-past-post
+NZL,New Zealand,1902,indep,NA,12.5,NA,10,80,First-past-post
+USA,United States of America,1902,Dem,43.8,46.1,2.3,178,386,First-past-post
+USA,United States of America,1902,Rep,50.5,53.9,3.4,208,386,First-past-post
+AUS,Australia,1903,PP,29.7,34.7,5,26,75,First-past-post
+AUS,Australia,1903,ALP,31,30.7,-0.3,23,75,First-past-post
+AUS,Australia,1903,FTP,34.4,33.3,-1.1,25,75,First-past-post
+DNK,Denmark,1903,MV,8,10.5,2.5,12,114,First-past-post
+DNK,Denmark,1903,SD,20.1,14,-6.1,16,114,First-past-post
+DNK,Denmark,1903,KF,20.5,10.5,-10,12,114,First-past-post
+DNK,Denmark,1903,V,47.1,64,16.9,73,114,First-past-post
+NOR,Norway,1903,DNA,9.7,4.3,-5.4,5,117,Two-round
+NOR,Norway,1903,V,42.7,41,-1.7,48,117,Two-round
+NOR,Norway,1903,H and MV + FV,44.8,NA,NA,NA,NA,Two-round
+NOR,Norway,1903,H,NA,40.2,NA,47,117,Two-round
+NOR,Norway,1903,MV,NA,9.4,NA,11,117,Two-round
+NOR,Norway,1903,SP,NA,4.3,NA,5,117,Two-round
+CAN,Canada,1904,CPC,46.4,35,-11.4,75,214,First-past-post
+CAN,Canada,1904,LP,52,64.5,12.5,138,214,First-past-post
+USA,United States of America,1904,Dem,39.8,35.2,-4.6,136,386,First-past-post
+USA,United States of America,1904,Rep,55,64.8,9.8,250,386,First-past-post
+CHE,Switzerland,1905,LPS,6.7,11.4,4.7,19,167,Two-round
+CHE,Switzerland,1905,SP,14.7,1.2,-13.5,2,167,Two-round
+CHE,Switzerland,1905,KK/CVP,22.5,21.6,-0.9,36,167,Two-round
+CHE,Switzerland,1905,FDP,49.2,62.3,13.1,104,167,Two-round
+NLD,Netherlands,1905,BVL,8.2,9,0.8,9,100,Two-round
+NLD,Netherlands,1905,VDB,8.8,11,2.2,11,100,Two-round
+NLD,Netherlands,1905,CHU,10.8,8,-2.8,8,100,Two-round
+NLD,Netherlands,1905,SDAP,11.2,7,-4.2,7,100,Two-round
+NLD,Netherlands,1905,AB/RSKP,13.1,25,11.9,25,100,Two-round
+NLD,Netherlands,1905,LU,20,25,5,25,100,Two-round
+NLD,Netherlands,1905,ARP,24.7,15,-9.7,15,100,Two-round
+NZL,New Zealand,1905,RP,29.7,20,-9.7,16,80,First-past-post
+NZL,New Zealand,1905,LP/UP,53.1,72.5,19.4,58,80,First-past-post
+NZL,New Zealand,1905,indep,NA,7.5,NA,6,80,First-past-post
+AUS,Australia,1906,PP,16.4,21.3,4.9,16,75,First-past-post
+AUS,Australia,1906,ALP,36.6,34.7,-1.9,26,75,First-past-post
+AUS,Australia,1906,FTP,38.2,36,-2.2,27,75,First-past-post
+DNK,Denmark,1906,MV,6.8,7.9,1.1,9,114,First-past-post
+DNK,Denmark,1906,RV,12.6,7.9,-4.7,9,114,First-past-post
+DNK,Denmark,1906,KF,21,10.5,-10.5,12,114,First-past-post
+DNK,Denmark,1906,SD,25.4,21.1,-4.3,24,114,First-past-post
+DNK,Denmark,1906,V,31.2,49.1,17.9,56,114,First-past-post
+FRA,France,1906,RI,7.8,6.8,-1,39,575,Two-round
+FRA,France,1906,GR,8,9,1,52,575,Two-round
+FRA,France,1906,PS,9.9,9.2,-0.7,53,575,Two-round
+FRA,France,1906,RP,14.1,11.7,-2.4,67,575,Two-round
+FRA,France,1906,PR,28.5,41.6,13.1,239,575,Two-round
+FRA,France,1906,C-FR,29.2,18.6,-10.6,107,575,Two-round
+GBR,United Kingdom,1906,Lab,5.5,4.3,-1.2,29,670,First-past-post
+GBR,United Kingdom,1906,LUP,5.9,3.9,-2,26,670,First-past-post
+GBR,United Kingdom,1906,Con,36.8,19.6,-17.2,131,670,First-past-post
+GBR,United Kingdom,1906,Lib,44.5,59.7,15.2,400,670,First-past-post
+NOR,Norway,1906,DNA,16,8.1,-7.9,10,123,Two-round
+NOR,Norway,1906,H,32.8,29.3,-3.5,36,123,Two-round
+NOR,Norway,1906,V,45.1,59.3,14.2,73,123,Two-round
+USA,United States of America,1906,Dem,42.5,42.5,0,164,386,First-past-post
+USA,United States of America,1906,Rep,51.2,57.5,6.3,222,386,First-past-post
+CAN,Canada,1908,CPC,46.8,38.5,-8.3,85,221,First-past-post
+CAN,Canada,1908,LP,50.4,61.1,10.7,135,221,First-past-post
+CHE,Switzerland,1908,LPS,5.9,9,3.1,15,167,Two-round
+CHE,Switzerland,1908,SP,17.6,4.2,-13.4,7,167,Two-round
+CHE,Switzerland,1908,KK/CVP,20.5,21,0.5,35,167,Two-round
+CHE,Switzerland,1908,FDP,50.9,62.9,12,105,167,Two-round
+NZL,New Zealand,1908,RP,27.8,32.5,4.7,26,80,First-past-post
+NZL,New Zealand,1908,LP/UP,58.7,62.5,3.8,50,80,First-past-post
+USA,United States of America,1908,Dem,44.5,44,-0.5,172,391,First-past-post
+USA,United States of America,1908,Rep,50.9,56,5.1,219,391,First-past-post
+DNK,Denmark,1909,indep,5.7,5.3,-0.4,6,114,First-past-post
+DNK,Denmark,1909,MV,5.9,9.6,3.7,11,114,First-past-post
+DNK,Denmark,1909,RV,15.5,13.2,-2.3,15,114,First-past-post
+DNK,Denmark,1909,KF,19.8,18.4,-1.4,21,114,First-past-post
+DNK,Denmark,1909,V,24,32.5,8.5,37,114,First-past-post
+DNK,Denmark,1909,SD,28.7,21.1,-7.6,24,114,First-past-post
+NLD,Netherlands,1909,BVL,5.6,4,-1.6,4,100,Two-round
+NLD,Netherlands,1909,VDB,9.1,9,-0.1,9,100,Two-round
+NLD,Netherlands,1909,CHU,10.6,10,-0.6,10,100,Two-round
+NLD,Netherlands,1909,AB/RSKP,12.8,25,12.2,25,100,Two-round
+NLD,Netherlands,1909,SDAP,13.9,7,-6.9,7,100,Two-round
+NLD,Netherlands,1909,LU,17.8,20,2.2,20,100,Two-round
+NLD,Netherlands,1909,ARP,27.9,25,-2.9,25,100,Two-round
+NOR,Norway,1909,DNA,21.6,8.9,-12.7,11,123,Two-round
+NOR,Norway,1909,V,30.4,37.4,7,46,123,Two-round
+NOR,Norway,1909,H & FV,41.5,52,10.5,64,123,Two-round
+AUS,Australia,1910,CLP,45.1,41.3,-3.8,31,75,First-past-post
+AUS,Australia,1910,ALP,50,57.3,7.3,43,75,First-past-post
+DNK,Denmark,1910,KF,18.6,11.4,-7.2,13,114,First-past-post
+DNK,Denmark,1910,RV,18.6,17.5,-1.1,20,114,First-past-post
+DNK,Denmark,1910,SD,28.3,21.1,-7.2,24,114,First-past-post
+DNK,Denmark,1910,V,34.1,50,15.9,57,114,First-past-post
+FRA,France,1910,RI,11.4,18.1,6.7,105,580,Two-round
+FRA,France,1910,GR,12.1,0,-12.1,0,580,Two-round
+FRA,France,1910,PS,13.2,12.9,-0.3,75,580,Two-round
+FRA,France,1910,UR/AD,17.4,23.6,6.2,137,580,Two-round
+FRA,France,1910,C-FR,19,15.7,-3.3,91,580,Two-round
+FRA,France,1910,PR,20.4,25,4.6,145,580,Two-round
+GBR,United Kingdom,1910,LUP,5.6,7.3,1.7,49,670,First-past-post
+GBR,United Kingdom,1910,Lab,7,6.3,-0.7,42,670,First-past-post
+GBR,United Kingdom,1910,Con,40.6,33.4,-7.2,224,670,First-past-post
+GBR,United Kingdom,1910,Lib,40.7,40.4,-0.3,271,670,First-past-post
+USA,United States of America,1910,Dem,45.9,58.5,12.6,228,390,First-past-post
+USA,United States of America,1910,Rep,46.8,41.3,-5.5,161,390,First-past-post
+CAN,Canada,1911,LP,47.7,39.4,-8.3,87,221,First-past-post
+CAN,Canada,1911,CPC,50.9,60.6,9.7,134,221,First-past-post
+CHE,Switzerland,1911,LPS,6.8,7.4,0.6,14,189,Two-round
+CHE,Switzerland,1911,KK/CVP,19.1,20.1,1,38,189,Two-round
+CHE,Switzerland,1911,SP,20,7.9,-12.1,15,189,Two-round
+CHE,Switzerland,1911,FDP,49.5,60.3,10.8,114,189,Two-round
+NZL,New Zealand,1911,LP,8.8,5,-3.8,4,80,First-past-post
+NZL,New Zealand,1911,indep,14.7,7.5,-7.2,6,80,First-past-post
+NZL,New Zealand,1911,RP,35.4,46.3,10.9,37,80,First-past-post
+NZL,New Zealand,1911,LP/UP,41.1,41.3,0.2,33,80,First-past-post
+NOR,Norway,1912,DNA,26.3,18.7,-7.6,23,123,Two-round
+NOR,Norway,1912,H & FV,33.2,19.5,-13.7,24,123,Two-round
+NOR,Norway,1912,V and AD,40,NA,NA,NA,NA,Two-round
+NOR,Norway,1912,V,NA,56.9,NA,70,123,Two-round
+NOR,Norway,1912,RF,NA,4.9,NA,6,123,Two-round
+USA,United States of America,1912,SPA,6.9,NA,NA,NA,NA,First-past-post
+USA,United States of America,1912,PP,8.7,NA,NA,NA,NA,First-past-post
+USA,United States of America,1912,Rep,31.6,29.2,-2.4,127,435,First-past-post
+USA,United States of America,1912,Dem,41.4,66.9,25.5,291,435,First-past-post
+AUS,Australia,1913,ALP,48.5,49.3,0.8,37,75,First-past-post
+AUS,Australia,1913,CLP,48.9,50.7,1.8,38,75,First-past-post
+DNK,Denmark,1913,RV,18.7,27.2,8.5,31,114,First-past-post
+DNK,Denmark,1913,KF,22.4,6.1,-16.3,7,114,First-past-post
+DNK,Denmark,1913,V,28.6,38.6,10,44,114,First-past-post
+DNK,Denmark,1913,SD,29.6,28.1,-1.5,32,114,First-past-post
+NLD,Netherlands,1913,BVL,6.6,10,3.4,10,100,Two-round
+NLD,Netherlands,1913,VDB,7.3,7,-0.3,7,100,Two-round
+NLD,Netherlands,1913,CHU,10.5,10,-0.5,10,100,Two-round
+NLD,Netherlands,1913,AB/RSKP,14.5,25,10.5,25,100,Two-round
+NLD,Netherlands,1913,LU,16.7,22,5.3,22,100,Two-round
+NLD,Netherlands,1913,SDAP,18.5,15,-3.5,15,100,Two-round
+NLD,Netherlands,1913,ARP,21.5,11,-10.5,11,100,Two-round
+AUS,Australia,1914,CLP,47.2,42.7,-4.5,32,75,First-past-post
+AUS,Australia,1914,ALP,50.9,56,5.1,42,75,First-past-post
+CHE,Switzerland,1914,LPS,7.4,7.9,0.5,15,189,Two-round
+CHE,Switzerland,1914,SP,10.1,10.1,0,19,189,Two-round
+CHE,Switzerland,1914,KK/CVP,21.1,19.6,-1.5,37,189,Two-round
+CHE,Switzerland,1914,FDP,56.1,59.3,3.2,112,189,Two-round
+FRA,France,1914,GR,9.7,0,-9.7,0,586,Two-round
+FRA,France,1914,C-FR,15.4,12.5,-2.9,73,586,Two-round
+FRA,France,1914,RI,16.6,16.4,-0.2,96,586,Two-round
+FRA,France,1914,PS,16.8,17.6,0.8,103,586,Two-round
+FRA,France,1914,PR,18.1,23.4,5.3,137,586,Two-round
+FRA,France,1914,UR/AD,18.8,25.6,6.8,150,586,Two-round
+NZL,New Zealand,1914,LP/UP,42.6,42.5,-0.1,34,80,First-past-post
+NZL,New Zealand,1914,RP,45.5,50,4.5,40,80,First-past-post
+USA,United States of America,1914,PP,5.1,NA,NA,NA,NA,First-past-post
+USA,United States of America,1914,Dem,39.7,52.9,13.2,230,435,First-past-post
+USA,United States of America,1914,Rep,43,45.1,2.1,196,435,First-past-post
+DNK,Denmark,1915,SD,NA,28.1,NA,32,114,First-past-post
+DNK,Denmark,1915,KF,NA,6.1,NA,7,114,First-past-post
+DNK,Denmark,1915,V,NA,37.7,NA,43,114,First-past-post
+DNK,Denmark,1915,RV,NA,27.2,NA,31,114,First-past-post
+USA,United States of America,1916,Dem,44.5,50,5.5,216,432,First-past-post
+USA,United States of America,1916,Rep,49.1,48.6,-0.5,210,432,First-past-post
+AUS,Australia,1917,ALP,43.9,29.3,-14.6,22,75,First-past-post
+AUS,Australia,1917,NAT,54.2,70.7,16.5,53,75,First-past-post
+CAN,Canada,1917,LP,39.9,34.9,-5,82,235,First-past-post
+CAN,Canada,1917,CPC,57,65.1,8.1,153,235,First-past-post
+CHE,Switzerland,1917,KK/CVP,16.5,22.2,5.7,42,189,Two-round
+CHE,Switzerland,1917,SP,30.8,10.6,-20.2,20,189,Two-round
+CHE,Switzerland,1917,FDP,40.8,54.5,13.7,103,189,Two-round
+GBR,United Kingdom,1918,NLP-LG,12.6,18,5.4,127,707,First-past-post
+GBR,United Kingdom,1918,Lib,13,5.1,-7.9,36,707,First-past-post
+GBR,United Kingdom,1918,Lab,20.8,8.1,-12.7,57,707,First-past-post
+GBR,United Kingdom,1918,Con,38.4,54,15.6,382,707,First-past-post
+NOR,Norway,1918,V,28.3,40.5,12.2,51,126,Two-round
+NOR,Norway,1918,H & FV,30.4,39.7,9.3,50,126,Two-round
+NOR,Norway,1918,DNA,31.6,14.3,-17.3,18,126,Two-round
+USA,United States of America,1918,Dem,40.5,43.9,3.4,190,433,First-past-post
+USA,United States of America,1918,Rep,54.6,55.4,0.8,240,433,First-past-post
+FRA,France,1919,RI,6.3,8.3,2,51,616,Two-round
+FRA,France,1919,GR,11.1,12.8,1.7,79,616,Two-round
+FRA,France,1919,C-FR,14.2,14.3,0.1,88,616,Two-round
+FRA,France,1919,PR,17.7,17.2,-0.5,106,616,Two-round
+FRA,France,1919,UR/AD,22.7,32.6,9.9,201,616,Two-round
+FRA,France,1919,PS,23.4,10.9,-12.5,67,616,Two-round
+NZL,New Zealand,1919,indep,10,10,0,8,80,First-past-post
+NZL,New Zealand,1919,LP,24.2,10,-14.2,8,80,First-past-post
+NZL,New Zealand,1919,LP/UP,30.1,23.8,-6.3,19,80,First-past-post
+NZL,New Zealand,1919,RP,35.6,56.3,20.7,45,80,First-past-post
+LTU,Lithuania,1920,LSLDP,5.8,8,2.2,9,112,Two-round
+LTU,Lithuania,1920,ZDS,6.6,5.4,-1.2,6,112,Two-round
+LTU,Lithuania,1920,LDF,10.2,13.4,3.2,15,112,Two-round
+LTU,Lithuania,1920,LSDP,12.8,11.6,-1.2,13,112,Two-round
+LTU,Lithuania,1920,VS,17,17,0,19,112,Two-round
+LTU,Lithuania,1920,LKDP,35.2,21.4,-13.8,24,112,Two-round
+USA,United States of America,1920,Dem,35.7,30.1,-5.6,131,435,First-past-post
+USA,United States of America,1920,Rep,58.2,69.7,11.5,303,435,First-past-post
+CAN,Canada,1921,PPC,22.9,27.2,4.3,64,235,First-past-post
+CAN,Canada,1921,CPC,30.3,21.3,-9,50,235,First-past-post
+CAN,Canada,1921,LP,40.7,49.4,8.7,116,235,First-past-post
+GBR,United Kingdom,1922,NLP,10.2,8.6,-1.6,53,615,First-past-post
+GBR,United Kingdom,1922,Lib,18.5,10.1,-8.4,62,615,First-past-post
+GBR,United Kingdom,1922,Lab,29.4,23.1,-6.3,142,615,First-past-post
+GBR,United Kingdom,1922,Con,38.2,55.9,17.7,344,615,First-past-post
+NZL,New Zealand,1922,indep,10.7,5,-5.7,4,80,First-past-post
+NZL,New Zealand,1922,LP,23.7,21.3,-2.4,17,80,First-past-post
+NZL,New Zealand,1922,LP/UP,26.3,27.5,1.2,22,80,First-past-post
+NZL,New Zealand,1922,RP,39.4,46.3,6.9,37,80,First-past-post
+USA,United States of America,1922,Dem,44.2,47.1,2.9,205,435,First-past-post
+USA,United States of America,1922,Rep,51.8,51.7,-0.1,225,435,First-past-post
+GBR,United Kingdom,1923,Lib,29.7,25.7,-4,158,615,First-past-post
+GBR,United Kingdom,1923,Lab,30.7,31.1,0.4,191,615,First-past-post
+GBR,United Kingdom,1923,Con,38,42,4,258,615,First-past-post
+FRA,France,1924,PCF,9.8,4.5,-5.3,26,574,Two-round
+FRA,France,1924,GR,11.7,9.2,-2.5,53,574,Two-round
+FRA,France,1924,PR,17.9,28.2,10.3,162,574,Two-round
+FRA,France,1924,PS,20.1,18.1,-2,104,574,Two-round
+FRA,France,1924,UR/AD,35.4,35.5,0.1,204,574,Two-round
+GBR,United Kingdom,1924,Lib,17.6,6.5,-11.1,40,615,First-past-post
+GBR,United Kingdom,1924,Lab,33,24.6,-8.4,151,615,First-past-post
+GBR,United Kingdom,1924,Con,47.2,67,19.8,412,615,First-past-post
+USA,United States of America,1924,Dem,39.9,42.3,2.4,184,435,First-past-post
+USA,United States of America,1924,Rep,55.9,56.8,0.9,247,435,First-past-post
+CAN,Canada,1925,PPC,9,9.8,0.8,24,245,First-past-post
+CAN,Canada,1925,LP,39.9,40.4,0.5,99,245,First-past-post
+CAN,Canada,1925,CPC,46.5,47.3,0.8,116,245,First-past-post
+NZL,New Zealand,1925,LP/UP,20.9,13.8,-7.1,11,80,First-past-post
+NZL,New Zealand,1925,LP,27.3,15,-12.3,12,80,First-past-post
+NZL,New Zealand,1925,RP,47.2,68.8,21.6,55,80,First-past-post
+CAN,Canada,1926,PPC,5.3,8.2,2.9,20,245,First-past-post
+CAN,Canada,1926,CPC,45.3,37.1,-8.2,91,245,First-past-post
+CAN,Canada,1926,LP,46.1,52.2,6.1,128,245,First-past-post
+USA,United States of America,1926,Dem,40.5,44.8,4.3,195,435,First-past-post
+USA,United States of America,1926,Rep,57,54.5,-2.5,237,435,First-past-post
+FRA,France,1928,PRS,5.2,5.5,0.3,33,602,Two-round
+FRA,France,1928,PCF,11.3,2.3,-9,14,602,Two-round
+FRA,France,1928,PR,17.8,19.9,2.1,120,602,Two-round
+FRA,France,1928,PS,18,16.4,-1.6,99,602,Two-round
+FRA,France,1928,UR/AD,22,30.2,8.2,182,602,Two-round
+FRA,France,1928,RepG + RadI,23.2,NA,NA,NA,NA,Two-round
+FRA,France,1928,RI,NA,8.6,NA,52,602,Two-round
+FRA,France,1928,GR,NA,12.3,NA,74,602,Two-round
+NZL,New Zealand,1928,indep,5.5,6.3,0.8,5,80,First-past-post
+NZL,New Zealand,1928,LP,26.2,23.8,-2.4,19,80,First-past-post
+NZL,New Zealand,1928,LP/UP,30.2,33.8,3.6,27,80,First-past-post
+NZL,New Zealand,1928,RP,35.9,35,-0.9,28,80,First-past-post
+USA,United States of America,1928,Dem,41.5,38.2,-3.3,166,435,First-past-post
+USA,United States of America,1928,Rep,56.6,61.6,5,268,435,First-past-post
+GBR,United Kingdom,1929,Lib,23.4,9.6,-13.8,59,615,First-past-post
+GBR,United Kingdom,1929,Lab,37,46.7,9.7,287,615,First-past-post
+GBR,United Kingdom,1929,Con,38.2,42.3,4.1,260,615,First-past-post
+CAN,Canada,1930,LP,45.2,37.1,-8.1,91,245,First-past-post
+CAN,Canada,1930,CPC,48.8,55.9,7.1,137,245,First-past-post
+USA,United States of America,1930,Dem,44.7,49.7,5,216,435,First-past-post
+USA,United States of America,1930,Rep,52.7,50.1,-2.6,218,435,First-past-post
+GBR,United Kingdom,1931,Lib,6.3,5.2,-1.1,32,615,First-past-post
+GBR,United Kingdom,1931,Lab,30.7,8.5,-22.2,52,615,First-past-post
+GBR,United Kingdom,1931,Con,55,76.4,21.4,470,615,First-past-post
+NZL,New Zealand,1931,indep,9.4,5,-4.4,4,80,First-past-post
+NZL,New Zealand,1931,LP/UP,16.9,23.8,6.9,19,80,First-past-post
+NZL,New Zealand,1931,RP,26.6,35,8.4,28,80,First-past-post
+NZL,New Zealand,1931,LP,34.3,30,-4.3,24,80,First-past-post
+FRA,France,1932,PRS,5.4,6.1,0.7,37,605,Two-round
+FRA,France,1932,C-FR,6.1,5.5,-0.6,33,605,Two-round
+FRA,France,1932,PCF,8.3,2,-6.3,12,605,Two-round
+FRA,France,1932,RI,10,10.2,0.2,62,605,Two-round
+FRA,France,1932,UR/AD,12.9,12.6,-0.3,76,605,Two-round
+FRA,France,1932,GR,13.6,11.9,-1.7,72,605,Two-round
+FRA,France,1932,PR,19.2,26,6.8,157,605,Two-round
+FRA,France,1932,PS,20.5,21.3,0.8,129,605,Two-round
+USA,United States of America,1932,Rep,42.2,26.9,-15.3,117,435,First-past-post
+USA,United States of America,1932,Dem,54.1,72,17.9,313,435,First-past-post
+USA,United States of America,1934,Rep,42.5,24.1,-18.4,105,435,First-past-post
+USA,United States of America,1934,Dem,53.2,73.6,20.4,320,435,First-past-post
+CAN,Canada,1935,RPC,8.7,0.4,-8.3,1,245,First-past-post
+CAN,Canada,1935,NDP,8.8,2.9,-5.9,7,245,First-past-post
+CAN,Canada,1935,CPC,29.6,16.3,-13.3,40,245,First-past-post
+CAN,Canada,1935,LP,44.8,70.6,25.8,173,245,First-past-post
+GBR,United Kingdom,1935,Lib,6.6,3.4,-3.2,21,615,First-past-post
+GBR,United Kingdom,1935,Lab,37.9,25,-12.9,154,615,First-past-post
+GBR,United Kingdom,1935,Con,47.7,62.9,15.2,387,615,First-past-post
+NZL,New Zealand,1935,DP,7.8,0,-7.8,0,80,First-past-post
+NZL,New Zealand,1935,indep,10.6,5,-5.6,4,80,First-past-post
+NZL,New Zealand,1935,RP,33.5,23.8,-9.7,19,80,First-past-post
+NZL,New Zealand,1935,LP,45.7,66.3,20.6,53,80,First-past-post
+FRA,France,1936,PRS,7.6,9.2,1.6,56,608,Two-round
+FRA,France,1936,PR,14.4,17.9,3.5,109,608,Two-round
+FRA,France,1936,PCF,15.3,11.8,-3.5,72,608,Two-round
+FRA,France,1936,UR/AD,16.9,36.5,19.6,222,608,Two-round
+FRA,France,1936,PS,19.9,24.5,4.6,149,608,Two-round
+FRA,France,1936,GR,25.8,0,-25.8,0,608,Two-round
+USA,United States of America,1936,Rep,39.6,20.5,-19.1,89,435,First-past-post
+USA,United States of America,1936,Dem,56.3,76.8,20.5,334,435,First-past-post
+NZL,New Zealand,1938,NP,40.3,31.3,-9,25,80,First-past-post
+NZL,New Zealand,1938,LP,55.8,66.3,10.5,53,80,First-past-post
+USA,United States of America,1938,Dem,47.5,60.2,12.7,262,435,First-past-post
+USA,United States of America,1938,Rep,47.8,38.9,-8.9,169,435,First-past-post
+CAN,Canada,1940,NDP,8.5,3.3,-5.2,8,245,First-past-post
+CAN,Canada,1940,CPC,30.6,16.3,-14.3,40,245,First-past-post
+CAN,Canada,1940,LP,51.5,73.9,22.4,181,245,First-past-post
+USA,United States of America,1940,Rep,45.9,37.2,-8.7,162,435,First-past-post
+USA,United States of America,1940,Dem,51.8,61.6,9.8,268,435,First-past-post
+USA,United States of America,1942,Dem,44.2,51,6.8,222,435,First-past-post
+USA,United States of America,1942,Rep,51.7,48,-3.7,209,435,First-past-post
+USA,United States of America,1944,Rep,47,43.7,-3.3,190,435,First-past-post
+USA,United States of America,1944,Dem,52.1,55.9,3.8,243,435,First-past-post
+CAN,Canada,1945,NDP,15.7,11.4,-4.3,28,245,First-past-post
+CAN,Canada,1945,PCP,27.7,27.3,-0.4,67,245,First-past-post
+CAN,Canada,1945,LP,41.4,51,9.6,125,245,First-past-post
+GBR,United Kingdom,1945,Lib,9,1.9,-7.1,12,640,First-past-post
+GBR,United Kingdom,1945,Con,36.2,30.8,-5.4,197,640,First-past-post
+GBR,United Kingdom,1945,Lab,48,61.4,13.4,393,640,First-past-post
+NZL,New Zealand,1946,NP,48.4,47.5,-0.9,38,80,First-past-post
+NZL,New Zealand,1946,LP,51.3,52.5,1.2,42,80,First-past-post
+USA,United States of America,1946,Dem,42.7,43.2,0.5,188,435,First-past-post
+USA,United States of America,1946,Rep,54.5,56.6,2.1,246,435,First-past-post
+USA,United States of America,1948,Rep,45.4,39.3,-6.1,171,435,First-past-post
+USA,United States of America,1948,Dem,52.7,60.5,7.8,263,435,First-past-post
+CAN,Canada,1949,NDP,13.4,5,-8.4,13,262,First-past-post
+CAN,Canada,1949,PCP,29.8,15.6,-14.2,41,262,First-past-post
+CAN,Canada,1949,LP,50.1,72.5,22.4,190,262,First-past-post
+NZL,New Zealand,1949,LP,47.2,42.5,-4.7,34,80,First-past-post
+NZL,New Zealand,1949,NP,51.9,57.5,5.6,46,80,First-past-post
+GBR,United Kingdom,1950,Lib,9.1,1.4,-7.7,9,625,First-past-post
+GBR,United Kingdom,1950,Con,43.4,47.7,4.3,298,625,First-past-post
+GBR,United Kingdom,1950,Lab,46.1,50.4,4.3,315,625,First-past-post
+USA,United States of America,1950,Dem,46,53.8,7.8,234,435,First-past-post
+USA,United States of America,1950,Rep,50.9,45.7,-5.2,199,435,First-past-post
+GBR,United Kingdom,1951,Con,48,51.4,3.4,321,625,First-past-post
+GBR,United Kingdom,1951,Lab,48.8,47.2,-1.6,295,625,First-past-post
+NZL,New Zealand,1951,LP,45.9,37.5,-8.4,30,80,First-past-post
+NZL,New Zealand,1951,NP,53.9,62.5,8.6,50,80,First-past-post
+LKA,Sri Lanka,1952,CP / VLSSP,5.8,NA,NA,NA,NA,First-past-post
+LKA,Sri Lanka,1952,LSS,13.1,9.5,-3.6,9,95,First-past-post
+LKA,Sri Lanka,1952,indep,14,12.6,-1.4,12,95,First-past-post
+LKA,Sri Lanka,1952,SLFP,15.5,9.5,-6,9,95,First-past-post
+LKA,Sri Lanka,1952,UNP,44.1,56.8,12.7,54,95,First-past-post
+LKA,Sri Lanka,1952,CP,NA,4.2,NA,4,95,First-past-post
+LKA,Sri Lanka,1952,VLSSP,NA,0,NA,0,95,First-past-post
+USA,United States of America,1952,Rep,49.3,50.8,1.5,221,435,First-past-post
+USA,United States of America,1952,Dem,49.7,49,-0.7,213,435,First-past-post
+CAN,Canada,1953,SSC,5.4,5.7,0.3,15,265,First-past-post
+CAN,Canada,1953,NDP,11.3,8.7,-2.6,23,265,First-past-post
+CAN,Canada,1953,PCP,31,19.2,-11.8,51,265,First-past-post
+CAN,Canada,1953,LP,50,64.5,14.5,171,265,First-past-post
+NZL,New Zealand,1954,SC/DP,11.1,0,-11.1,0,80,First-past-post
+NZL,New Zealand,1954,LP,44.1,43.8,-0.3,35,80,First-past-post
+NZL,New Zealand,1954,NP,44.3,56.3,12,45,80,First-past-post
+USA,United States of America,1954,Rep,48.4,46.7,-1.7,203,435,First-past-post
+USA,United States of America,1954,Dem,49.4,53.3,3.9,232,435,First-past-post
+GBR,United Kingdom,1955,Lab,46.4,44,-2.4,277,630,First-past-post
+GBR,United Kingdom,1955,Con,49.7,54.8,5.1,345,630,First-past-post
+JAM,Jamaica,1955,indep,6.4,0,-6.4,0,32,First-past-post
+JAM,Jamaica,1955,JLP,39,43.8,4.8,14,32,First-past-post
+JAM,Jamaica,1955,PNP,50.5,56.3,5.8,18,32,First-past-post
+BRB,Barbados,1956,indep,7.7,8.3,0.6,2,24,First-past-post
+BRB,Barbados,1956,DLP,19.9,16.7,-3.2,4,24,First-past-post
+BRB,Barbados,1956,PCP,21.4,12.5,-8.9,3,24,First-past-post
+BRB,Barbados,1956,BLP,49.4,62.5,13.1,15,24,First-past-post
+LKA,Sri Lanka,1956,ITAK,5.4,10.5,5.1,10,95,First-past-post
+LKA,Sri Lanka,1956,LSS,10.4,14.7,4.3,14,95,First-past-post
+LKA,Sri Lanka,1956,UNP,27.9,8.4,-19.5,8,95,First-past-post
+LKA,Sri Lanka,1956,MEP,39.5,53.7,14.2,51,95,First-past-post
+TTO,Trinidad and Tobago,1956,PDP,20.8,20.8,0,5,24,First-past-post
+TTO,Trinidad and Tobago,1956,PNM,39.8,54.2,14.4,13,24,First-past-post
+USA,United States of America,1956,Rep,48.7,46.2,-2.5,201,435,First-past-post
+USA,United States of America,1956,Dem,51.1,53.8,2.7,234,435,First-past-post
+CAN,Canada,1957,SSC,6.6,7.2,0.6,19,265,First-past-post
+CAN,Canada,1957,NDP,10.7,9.4,-1.3,25,265,First-past-post
+CAN,Canada,1957,PCP,39,42.3,3.3,112,265,First-past-post
+CAN,Canada,1957,LP,42.3,39.6,-2.7,105,265,First-past-post
+IND,India,1957,CPI,8.9,5,-3.9,27,545,First-past-post
+IND,India,1957,indep,19.4,7.7,-11.7,42,545,First-past-post
+IND,India,1957,INC,47.5,68.1,20.6,371,545,First-past-post
+NZL,New Zealand,1957,SC/DP,7.2,0,-7.2,0,80,First-past-post
+NZL,New Zealand,1957,NP,44.2,48.8,4.6,39,80,First-past-post
+NZL,New Zealand,1957,LP,48.3,51.3,3,41,80,First-past-post
+CAN,Canada,1958,NDP,9.5,3,-6.5,8,265,First-past-post
+CAN,Canada,1958,LP,33.6,18.1,-15.5,48,265,First-past-post
+CAN,Canada,1958,PCP,53.7,78.5,24.8,208,265,First-past-post
+FRA,France,1958,PR,9.7,4.9,-4.8,23,465,Two-round
+FRA,France,1958,MRP,11.1,12.3,1.2,57,465,Two-round
+FRA,France,1958,PS,15.5,9.5,-6,44,465,Two-round
+FRA,France,1958,PCF,18.9,2.2,-16.7,10,465,Two-round
+FRA,France,1958,CNIP,20,28.6,8.6,133,465,Two-round
+FRA,France,1958,UNR,20.6,42.6,22,198,465,Two-round
+USA,United States of America,1958,Rep,44.9,35,-9.9,153,437,First-past-post
+USA,United States of America,1958,Dem,52.9,65,12.1,284,437,First-past-post
+GBR,United Kingdom,1959,Lib,5.9,1,-4.9,6,630,First-past-post
+GBR,United Kingdom,1959,Lab,43.8,41,-2.8,258,630,First-past-post
+GBR,United Kingdom,1959,Con,49.4,57.9,8.5,365,630,First-past-post
+JAM,Jamaica,1959,JLP,44.3,35.6,-8.7,16,45,First-past-post
+JAM,Jamaica,1959,PNP,54.8,64.4,9.6,29,45,First-past-post
+LKA,Sri Lanka,1960,ITAK,7,10.6,3.6,16,151,First-past-post
+LKA,Sri Lanka,1960,LSS,7.4,7.9,0.5,12,151,First-past-post
+LKA,Sri Lanka,1960,SLFP,33.6,49.7,16.1,75,151,First-past-post
+LKA,Sri Lanka,1960,UNP,37.6,19.9,-17.7,30,151,First-past-post
+NZL,New Zealand,1960,SC/DP,8.6,0,-8.6,0,80,First-past-post
+NZL,New Zealand,1960,LP,43.4,42.5,-0.9,34,80,First-past-post
+NZL,New Zealand,1960,NP,47.6,57.5,9.9,46,80,First-past-post
+USA,United States of America,1960,Rep,44.6,40,-4.6,175,437,First-past-post
+USA,United States of America,1960,Dem,54.7,60,5.3,262,437,First-past-post
+BRB,Barbados,1961,indep,4.8,4.2,-0.6,1,24,First-past-post
+BRB,Barbados,1961,BNP,22.1,16.7,-5.4,4,24,First-past-post
+BRB,Barbados,1961,DLP,36.3,58.3,22,14,24,First-past-post
+BRB,Barbados,1961,BLP,36.8,20.8,-16,5,24,First-past-post
+PHL,Philippines,1961,PLP,33.7,27.9,-5.8,29,104,First-past-post
+PHL,Philippines,1961,PNP,61,71.2,10.2,74,104,First-past-post
+TTO,Trinidad and Tobago,1961,DLP,41.7,33.3,-8.4,10,30,First-past-post
+TTO,Trinidad and Tobago,1961,PNM,57,66.7,9.7,20,30,First-past-post
+CAN,Canada,1962,SSC,11.6,11.3,-0.3,30,265,First-past-post
+CAN,Canada,1962,NDP,13.5,7.2,-6.3,19,265,First-past-post
+CAN,Canada,1962,PCP,37.2,43.8,6.6,116,265,First-past-post
+CAN,Canada,1962,LP,37.3,37.4,0.1,99,265,First-past-post
+FRA,France,1962,PR,7.4,8.8,1.4,41,465,Two-round
+FRA,France,1962,MRP,7.8,8,0.2,37,465,Two-round
+FRA,France,1962,CNIP,11.5,6.9,-4.6,32,465,Two-round
+FRA,France,1962,PS,12.4,13.8,1.4,64,465,Two-round
+FRA,France,1962,PCF,21.9,8.8,-13.1,41,465,Two-round
+FRA,France,1962,UNR,33.7,49.5,15.8,230,465,Two-round
+IND,India,1962,BJS,6.4,2.8,-3.6,14,494,First-past-post
+IND,India,1962,PSP,6.8,2.4,-4.4,12,494,First-past-post
+IND,India,1962,SWP,7.9,3.6,-4.3,18,494,First-past-post
+IND,India,1962,CPI,9.9,5.9,-4,29,494,First-past-post
+IND,India,1962,indep,11.1,4,-7.1,20,494,First-past-post
+IND,India,1962,INC,44.7,73.1,28.4,361,494,First-past-post
+JAM,Jamaica,1962,PNP,48.6,42.2,-6.4,19,45,First-past-post
+JAM,Jamaica,1962,JLP,50.1,57.8,7.7,26,45,First-past-post
+USA,United States of America,1962,Rep,47.2,40.5,-6.7,176,435,First-past-post
+USA,United States of America,1962,Dem,51.1,59.5,8.4,259,435,First-past-post
+CAN,Canada,1963,SSC,11.9,9.1,-2.8,24,265,First-past-post
+CAN,Canada,1963,NDP,13.2,6.4,-6.8,17,265,First-past-post
+CAN,Canada,1963,PCP,32.8,35.8,3,95,265,First-past-post
+CAN,Canada,1963,LP,41.7,48.7,7,129,265,First-past-post
+NZL,New Zealand,1963,SC/DP,7.9,0,-7.9,0,80,First-past-post
+NZL,New Zealand,1963,LP,43.7,43.8,0.1,35,80,First-past-post
+NZL,New Zealand,1963,NP,47.1,56.3,9.2,45,80,First-past-post
+GBR,United Kingdom,1964,Lib,11.2,1.4,-9.8,9,630,First-past-post
+GBR,United Kingdom,1964,Con,43.4,48.3,4.9,304,630,First-past-post
+GBR,United Kingdom,1964,Lab,44.1,50.3,6.2,317,630,First-past-post
+USA,United States of America,1964,Rep,41.9,32.2,-9.7,140,435,First-past-post
+USA,United States of America,1964,Dem,57.7,67.8,10.1,295,435,First-past-post
+CAN,Canada,1965,NDP,17.9,7.9,-10,21,265,First-past-post
+CAN,Canada,1965,PCP,32.4,36.6,4.2,97,265,First-past-post
+CAN,Canada,1965,LP,40.2,49.4,9.2,131,265,First-past-post
+LKA,Sri Lanka,1965,ITAK,5.4,9.3,3.9,14,151,First-past-post
+LKA,Sri Lanka,1965,LSS,7.5,6.6,-0.9,10,151,First-past-post
+LKA,Sri Lanka,1965,SLFP,30.2,27.2,-3,41,151,First-past-post
+LKA,Sri Lanka,1965,UNP,39.3,43.7,4.4,66,151,First-past-post
+PHL,Philippines,1965,PNP,41.8,36.9,-4.9,38,103,First-past-post
+PHL,Philippines,1965,PLP,51.3,59.2,7.9,61,103,First-past-post
+BRB,Barbados,1966,indep,7.3,0,-7.3,0,24,First-past-post
+BRB,Barbados,1966,BNP,10.1,8.3,-1.8,2,24,First-past-post
+BRB,Barbados,1966,BLP,32.6,33.3,0.7,8,24,First-past-post
+BRB,Barbados,1966,DLP,49.6,58.3,8.7,14,24,First-past-post
+GBR,United Kingdom,1966,Lib,8.6,1.9,-6.7,12,630,First-past-post
+GBR,United Kingdom,1966,Con,41.9,40.2,-1.7,253,630,First-past-post
+GBR,United Kingdom,1966,Lab,48,57.8,9.8,364,630,First-past-post
+GMB,The Gambia,1966,UP,NA,25,NA,8,32,First-past-post
+GMB,The Gambia,1966,PPP,NA,75,NA,24,32,First-past-post
+NZL,New Zealand,1966,SC/DP,14.5,1.3,-13.2,1,80,First-past-post
+NZL,New Zealand,1966,LP,41.4,43.8,2.4,35,80,First-past-post
+NZL,New Zealand,1966,NP,43.6,55,11.4,44,80,First-past-post
+TTO,Trinidad and Tobago,1966,DLP,34,33.3,-0.7,12,36,First-past-post
+TTO,Trinidad and Tobago,1966,PNM,52.4,66.7,14.3,24,36,First-past-post
+USA,United States of America,1966,Dem,48.8,57,8.2,248,435,First-past-post
+USA,United States of America,1966,Rep,48.8,43,-5.8,187,435,First-past-post
+FRA,France,1967,RI,5.5,8.7,3.2,41,470,Two-round
+FRA,France,1967,CD,14.1,8.1,-6,38,470,Two-round
+FRA,France,1967,PS,18.9,25.1,6.2,118,470,Two-round
+FRA,France,1967,PCF,22.5,15.3,-7.2,72,470,Two-round
+FRA,France,1967,UDR,33,40.6,7.6,191,470,Two-round
+IND,India,1967,CPI(M),4.4,3.5,-0.9,19,545,First-past-post
+IND,India,1967,SSP,4.9,2.4,-2.5,13,545,First-past-post
+IND,India,1967,CPI,5,4.2,-0.8,23,545,First-past-post
+IND,India,1967,SWP,8.7,8.1,-0.6,44,545,First-past-post
+IND,India,1967,BJS,9.4,6.4,-3,35,545,First-past-post
+IND,India,1967,indep,13.7,6.4,-7.3,35,545,First-past-post
+IND,India,1967,INC,40.8,51.9,11.1,283,545,First-past-post
+JAM,Jamaica,1967,PNP,49.7,37.7,-12,20,53,First-past-post
+JAM,Jamaica,1967,JLP,50,62.3,12.3,33,53,First-past-post
+CAN,Canada,1968,NDP,17,8.3,-8.7,22,264,First-past-post
+CAN,Canada,1968,PCP,31.4,27.3,-4.1,72,264,First-past-post
+CAN,Canada,1968,LP,45.5,58.7,13.2,155,264,First-past-post
+FRA,France,1968,RI,8.4,13.6,5.2,64,470,Two-round
+FRA,France,1968,CD,10.5,5.5,-5,26,470,Two-round
+FRA,France,1968,PS,16.5,12.1,-4.4,57,470,Two-round
+FRA,France,1968,PCF,20,7,-13,33,470,Two-round
+FRA,France,1968,UDR,38,60,22,282,470,Two-round
+USA,United States of America,1968,Rep,48.3,44.1,-4.2,192,435,First-past-post
+USA,United States of America,1968,Dem,50.5,55.9,5.4,243,435,First-past-post
+BWA,Botswana,1969,BIP,6,NA,NA,NA,NA,First-past-post
+BWA,Botswana,1969,BPP,12.1,9.7,-2.4,3,31,First-past-post
+BWA,Botswana,1969,BNF,13.5,9.7,-3.8,3,31,First-past-post
+BWA,Botswana,1969,BDP,68.3,77.4,9.1,24,31,First-past-post
+NZL,New Zealand,1969,SC/DP,9.1,0,-9.1,0,84,First-past-post
+NZL,New Zealand,1969,LP,44.2,46.4,2.2,39,84,First-past-post
+NZL,New Zealand,1969,NP,45.2,53.6,8.4,45,84,First-past-post
+GBR,United Kingdom,1970,Lib,7.5,1,-6.5,6,630,First-past-post
+GBR,United Kingdom,1970,Lab,43.1,45.7,2.6,288,630,First-past-post
+GBR,United Kingdom,1970,Con,46.4,52.4,6,330,630,First-past-post
+LKA,Sri Lanka,1970,indep,5,1.3,-3.7,2,151,First-past-post
+LKA,Sri Lanka,1970,LSS,8.7,12.6,3.9,19,151,First-past-post
+LKA,Sri Lanka,1970,SLFP,36.9,60.3,23.4,91,151,First-past-post
+LKA,Sri Lanka,1970,UNP,37.9,11.3,-26.6,17,151,First-past-post
+USA,United States of America,1970,Rep,45.3,41.4,-3.9,180,435,First-past-post
+USA,United States of America,1970,Dem,50.9,58.6,7.7,255,435,First-past-post
+BRB,Barbados,1971,BLP,42.4,25,-17.4,6,24,First-past-post
+BRB,Barbados,1971,DLP,57.4,75,17.6,18,24,First-past-post
+IND,India,1971,CPI(M),5.1,4.8,-0.3,25,518,First-past-post
+IND,India,1971,BJS,7.4,4.2,-3.2,22,518,First-past-post
+IND,India,1971,indep,9.9,2.7,-7.2,14,518,First-past-post
+IND,India,1971,INC-O,10.4,3.1,-7.3,16,518,First-past-post
+IND,India,1971,INC,43.7,68,24.3,352,518,First-past-post
+TTO,Trinidad and Tobago,1971,DLP,12.6,0,-12.6,0,36,First-past-post
+TTO,Trinidad and Tobago,1971,PNM,84.1,100,15.9,36,36,First-past-post
+CAN,Canada,1972,SSC,7.4,5.7,-1.7,15,264,First-past-post
+CAN,Canada,1972,NDP,17.3,11.7,-5.6,31,264,First-past-post
+CAN,Canada,1972,PCP,34.1,40.5,6.4,107,264,First-past-post
+CAN,Canada,1972,LP,37.5,41.3,3.8,109,264,First-past-post
+GMB,The Gambia,1972,UP,NA,9.4,NA,3,32,First-past-post
+GMB,The Gambia,1972,PPP,NA,87.5,NA,28,32,First-past-post
+JAM,Jamaica,1972,JLP,43.2,28.3,-14.9,15,53,First-past-post
+JAM,Jamaica,1972,PNP,56.5,69.8,13.3,37,53,First-past-post
+NZL,New Zealand,1972,SC/DP,6.7,0,-6.7,0,87,First-past-post
+NZL,New Zealand,1972,NP,41.5,36.8,-4.7,32,87,First-past-post
+NZL,New Zealand,1972,LP,48.4,63.2,14.8,55,87,First-past-post
+USA,United States of America,1972,Rep,46.2,44.1,-2.1,192,435,First-past-post
+USA,United States of America,1972,Dem,52.6,55.9,3.3,243,435,First-past-post
+FRA,France,1973,CDP,3.8,4.4,0.6,21,473,Two-round
+FRA,France,1973,RI,7.2,11.4,4.2,54,473,Two-round
+FRA,France,1973,MR,13.3,6.3,-7,30,473,Two-round
+FRA,France,1973,PS,19.1,18.8,-0.3,89,473,Two-round
+FRA,France,1973,PCF,21.4,15.4,-6,73,473,Two-round
+FRA,France,1973,UDR,26,37.6,11.6,178,473,Two-round
+FRA,France,1973,PRG,NA,NA,NA,NA,NA,Two-round
+FRA,France,1973,Presidential...,NA,NA,NA,NA,NA,Two-round
+FRA,France,1973,Union of Left,NA,NA,NA,NA,NA,Two-round
+BWA,Botswana,1974,BPP,6.6,6.3,-0.3,2,32,First-past-post
+BWA,Botswana,1974,BNF,11.5,6.3,-5.2,2,32,First-past-post
+BWA,Botswana,1974,BDP,76.6,84.4,7.8,27,32,First-past-post
+CAN,Canada,1974,SSC,5.1,4.2,-0.9,11,264,First-past-post
+CAN,Canada,1974,NDP,15.4,6.1,-9.3,16,264,First-past-post
+CAN,Canada,1974,PCP,35.4,36,0.6,95,264,First-past-post
+CAN,Canada,1974,LP,43.2,53.4,10.2,141,264,First-past-post
+GBR,United Kingdom,1974,Lib,18.3,2,-16.3,13,635,First-past-post
+GBR,United Kingdom,1974,Con,35.8,43.6,7.8,277,635,First-past-post
+GBR,United Kingdom,1974,Lab,39.2,50.2,11,319,635,First-past-post
+USA,United States of America,1974,Rep,40.5,33.1,-7.4,144,435,First-past-post
+USA,United States of America,1974,Dem,55.6,66.9,11.3,291,435,First-past-post
+NZL,New Zealand,1975,VP,5.2,0,-5.2,0,87,First-past-post
+NZL,New Zealand,1975,SC/DP,7.4,0,-7.4,0,87,First-past-post
+NZL,New Zealand,1975,LP,39.7,36.8,-2.9,32,87,First-past-post
+NZL,New Zealand,1975,NP,47.4,63.2,15.8,55,87,First-past-post
+BRB,Barbados,1976,DLP,46.4,29.2,-17.2,7,24,First-past-post
+BRB,Barbados,1976,BLP,52.7,70.8,18.1,17,24,First-past-post
+JAM,Jamaica,1976,JLP,43.2,21.7,-21.5,13,60,First-past-post
+JAM,Jamaica,1976,PNP,56.8,78.3,21.5,47,60,First-past-post
+TTO,Trinidad and Tobago,1976,DAC,8.1,5.6,-2.5,2,36,First-past-post
+TTO,Trinidad and Tobago,1976,ULF,26.9,27.8,0.9,10,36,First-past-post
+TTO,Trinidad and Tobago,1976,PNM,53.6,66.7,13.1,24,36,First-past-post
+USA,United States of America,1976,Rep,41.7,32.9,-8.8,143,435,First-past-post
+USA,United States of America,1976,Dem,56.7,67.1,10.4,292,435,First-past-post
+GMB,The Gambia,1977,NCP,22.7,15.2,-7.5,5,33,First-past-post
+GMB,The Gambia,1977,PPP,69.6,81.8,12.2,27,33,First-past-post
+IND,India,1977,CPI(M),4.3,4.1,-0.2,22,542,First-past-post
+IND,India,1977,indep,5.5,1.7,-3.8,9,542,First-past-post
+IND,India,1977,INC,34.5,28.4,-6.1,154,542,First-past-post
+IND,India,1977,JNP,41.3,54.4,13.1,295,542,First-past-post
+LKA,Sri Lanka,1977,indep,5.7,0.6,-5.1,1,168,First-past-post
+LKA,Sri Lanka,1977,TULF,6.8,10.7,3.9,18,168,First-past-post
+LKA,Sri Lanka,1977,SLFP,29.7,4.8,-24.9,8,168,First-past-post
+LKA,Sri Lanka,1977,UNP,50.9,83.3,32.4,140,168,First-past-post
+PNG,Papua New Guinea,1977,UP,10,22.2,12.2,24,108,First-past-post
+PNG,Papua New Guinea,1977,PPP,15,18.5,3.5,20,108,First-past-post
+PNG,Papua New Guinea,1977,indep,30,10.2,-19.8,11,108,First-past-post
+PNG,Papua New Guinea,1977,PP/PNUP,35,37,2,40,108,First-past-post
+FRA,France,1978,PCF,20.6,18.1,-2.5,86,474,Two-round
+FRA,France,1978,UDF,21.6,26.2,4.6,124,474,Two-round
+FRA,France,1978,RPR,22.5,30,7.5,142,474,Two-round
+FRA,France,1978,PS,22.8,21.5,-1.3,102,474,Two-round
+NZL,New Zealand,1978,SC/DP,16.1,1.1,-15,1,92,First-past-post
+NZL,New Zealand,1978,NP,39.8,55.4,15.6,51,92,First-past-post
+NZL,New Zealand,1978,LP,40.4,43.5,3.1,40,92,First-past-post
+USA,United States of America,1978,Rep,44.7,37,-7.7,161,435,First-past-post
+USA,United States of America,1978,Dem,53.4,63,9.6,274,435,First-past-post
+BWA,Botswana,1979,BPP,7.5,3.1,-4.4,1,32,First-past-post
+BWA,Botswana,1979,BNF,13.1,6.3,-6.8,2,32,First-past-post
+BWA,Botswana,1979,BDP,75.4,90.6,15.2,29,32,First-past-post
+CAN,Canada,1979,NDP,17.9,9.2,-8.7,26,282,First-past-post
+CAN,Canada,1979,PCP,35.9,48.2,12.3,136,282,First-past-post
+CAN,Canada,1979,LP,40.1,40.4,0.3,114,282,First-past-post
+GBR,United Kingdom,1979,Lib,13.8,1.7,-12.1,11,635,First-past-post
+GBR,United Kingdom,1979,Lab,36.9,42.4,5.5,269,635,First-past-post
+GBR,United Kingdom,1979,Con,43.9,53.4,9.5,339,635,First-past-post
+CAN,Canada,1980,NDP,19.8,11.3,-8.5,32,282,First-past-post
+CAN,Canada,1980,PCP,32.5,36.5,4,103,282,First-past-post
+CAN,Canada,1980,LP,44.3,52.1,7.8,147,282,First-past-post
+IND,India,1980,CPI(M),6.1,6.6,0.5,36,542,First-past-post
+IND,India,1980,JP,9.4,7.6,-1.8,41,542,First-past-post
+IND,India,1980,JNP,19,5.7,-13.3,31,542,First-past-post
+IND,India,1980,INC,42.7,65.1,22.4,353,542,First-past-post
+JAM,Jamaica,1980,PNP,42.3,13.3,-29,8,60,First-past-post
+JAM,Jamaica,1980,JLP,57.6,86.7,29.1,52,60,First-past-post
+SLB,Solomon Islands,1980,NDP/SILP,8.4,5.3,-3.1,2,38,First-past-post
+SLB,Solomon Islands,1980,PAP,15.7,26.3,10.6,10,38,First-past-post
+SLB,Solomon Islands,1980,SIUP,18,42.1,24.1,16,38,First-past-post
+SLB,Solomon Islands,1980,indep,57.6,26.3,-31.3,10,38,First-past-post
+USA,United States of America,1980,Rep,47.9,44.1,-3.8,192,435,First-past-post
+USA,United States of America,1980,Dem,50.6,55.9,5.3,243,435,First-past-post
+BRB,Barbados,1981,DLP,47.1,29.2,-17.9,7,24,First-past-post
+BRB,Barbados,1981,BLP,52.2,70.8,18.6,17,24,First-past-post
+FRA,France,1981,PCF,16.1,9.1,-7,43,474,Two-round
+FRA,France,1981,UDF,19.2,13.1,-6.1,62,474,Two-round
+FRA,France,1981,RPR,20.7,16.9,-3.8,80,474,Two-round
+FRA,France,1981,PS,36,56.5,20.5,268,474,Two-round
+NZL,New Zealand,1981,SC/DP,20.6,2.2,-18.4,2,92,First-past-post
+NZL,New Zealand,1981,NP,38.8,51.1,12.3,47,92,First-past-post
+NZL,New Zealand,1981,LP,39,46.7,7.7,43,92,First-past-post
+TTO,Trinidad and Tobago,1981,NAR,20.2,27.8,7.6,10,36,First-past-post
+TTO,Trinidad and Tobago,1981,PNM,53.8,72.2,18.4,26,36,First-past-post
+GMB,The Gambia,1982,NCP,19.7,8.6,-11.1,3,35,First-past-post
+GMB,The Gambia,1982,PPP,61.7,77.1,15.4,27,35,First-past-post
+PNG,Papua New Guinea,1982,IG,6.9,0,-6.9,0,108,First-past-post
+PNG,Papua New Guinea,1982,UP,7.2,5.6,-1.6,6,108,First-past-post
+PNG,Papua New Guinea,1982,PPP,10,12,2,13,108,First-past-post
+PNG,Papua New Guinea,1982,NP,10,17.6,7.6,19,108,First-past-post
+PNG,Papua New Guinea,1982,indep,20.9,NA,NA,NA,NA,First-past-post
+PNG,Papua New Guinea,1982,PP/PNUP,34,56.5,22.5,61,108,First-past-post
+USA,United States of America,1982,Rep,43.2,38.4,-4.8,167,435,First-past-post
+USA,United States of America,1982,Dem,55,61.6,6.6,268,435,First-past-post
+GBR,United Kingdom,1983,Lib,25.4,2.6,-22.8,17,650,First-past-post
+GBR,United Kingdom,1983,Lab,27.6,32.2,4.6,209,650,First-past-post
+GBR,United Kingdom,1983,Con,42.4,61.1,18.7,397,650,First-past-post
+JAM,Jamaica,1983,JLP,100,100,0,60,60,First-past-post
+BWA,Botswana,1984,BPP,6.6,2.9,-3.7,1,34,First-past-post
+BWA,Botswana,1984,BNF,20.4,20.6,0.2,7,34,First-past-post
+BWA,Botswana,1984,BDP,68,76.5,8.5,26,34,First-past-post
+CAN,Canada,1984,NDP,18.8,10.6,-8.2,30,282,First-past-post
+CAN,Canada,1984,LP,28,14.2,-13.8,40,282,First-past-post
+CAN,Canada,1984,PCP,50,74.8,24.8,211,282,First-past-post
+IND,India,1984,CPI(M),5.7,4.1,-1.6,22,542,First-past-post
+IND,India,1984,JP,5.7,0.4,-5.3,2,542,First-past-post
+IND,India,1984,JNP,6.7,1.8,-4.9,10,542,First-past-post
+IND,India,1984,BJP,7.4,0.6,-6.8,3,542,First-past-post
+IND,India,1984,indep,8.1,0.9,-7.2,5,542,First-past-post
+IND,India,1984,INC,48,76.6,28.6,415,542,First-past-post
+NZL,New Zealand,1984,SC/DP,7.6,2.1,-5.5,2,95,First-past-post
+NZL,New Zealand,1984,NZP,12.2,0,-12.2,0,95,First-past-post
+NZL,New Zealand,1984,NP,35.9,38.9,3,37,95,First-past-post
+NZL,New Zealand,1984,LP,43,58.9,15.9,56,95,First-past-post
+SLB,Solomon Islands,1984,NDP/SILP,7.1,2.6,-4.5,1,38,First-past-post
+SLB,Solomon Islands,1984,SAS,8.9,10.5,1.6,4,38,First-past-post
+SLB,Solomon Islands,1984,SIUP,21.4,34.2,12.8,13,38,First-past-post
+SLB,Solomon Islands,1984,PAP,23.2,31.6,8.4,12,38,First-past-post
+SLB,Solomon Islands,1984,indep,35.3,21.1,-14.2,8,38,First-past-post
+USA,United States of America,1984,Rep,46.8,41.8,-5,182,435,First-past-post
+USA,United States of America,1984,Dem,52.4,58.2,5.8,253,435,First-past-post
+BRB,Barbados,1986,BLP,40.4,11.1,-29.3,3,27,First-past-post
+BRB,Barbados,1986,DLP,59.5,88.9,29.4,24,27,First-past-post
+TTO,Trinidad and Tobago,1986,PNM,31.1,8.3,-22.8,3,36,First-past-post
+TTO,Trinidad and Tobago,1986,NAR,67.3,91.7,24.4,33,36,First-past-post
+USA,United States of America,1986,Rep,44.2,40.7,-3.5,177,435,First-past-post
+USA,United States of America,1986,Dem,54.1,59.3,5.2,258,435,First-past-post
+GBR,United Kingdom,1987,Lib,22.6,2.6,-20,17,650,First-past-post
+GBR,United Kingdom,1987,Lab,30.8,35.2,4.4,229,650,First-past-post
+GBR,United Kingdom,1987,Con,42.3,57.8,15.5,376,650,First-past-post
+GMB,The Gambia,1987,NCP,27.6,13.9,-13.7,5,36,First-past-post
+GMB,The Gambia,1987,PPP,56.6,86.1,29.5,31,36,First-past-post
+NZL,New Zealand,1987,SC/DP,5.7,0,-5.7,0,97,First-past-post
+NZL,New Zealand,1987,NP,44,40.2,-3.8,39,97,First-past-post
+NZL,New Zealand,1987,LP,48,59.8,11.8,58,97,First-past-post
+PNG,Papua New Guinea,1987,PAP,3.2,13.2,10,14,106,First-past-post
+PNG,Papua New Guinea,1987,NP,5,9.4,4.4,10,106,First-past-post
+PNG,Papua New Guinea,1987,MAP,5.6,6.6,1,7,106,First-past-post
+PNG,Papua New Guinea,1987,PPP,6.4,9.4,3,10,106,First-past-post
+PNG,Papua New Guinea,1987,PDM,10.9,24.5,13.6,26,106,First-past-post
+PNG,Papua New Guinea,1987,PP/PNUP,14.9,25.5,10.6,27,106,First-past-post
+PNG,Papua New Guinea,1987,indep,40.9,0,-40.9,0,106,First-past-post
+CAN,Canada,1988,NDP,20.2,14.6,-5.6,43,295,First-past-post
+CAN,Canada,1988,LP,31.7,28.1,-3.6,83,295,First-past-post
+CAN,Canada,1988,PCP,42.7,57.3,14.6,169,295,First-past-post
+FRA,France,1988,FN,9.8,0.2,-9.6,1,555,Two-round
+FRA,France,1988,PCF,11.2,4.3,-6.9,24,555,Two-round
+FRA,France,1988,UDF,18.8,23.4,4.6,130,555,Two-round
+FRA,France,1988,RPR,19.2,22.2,3,123,555,Two-round
+FRA,France,1988,PS,34.9,46.8,11.9,260,555,Two-round
+USA,United States of America,1988,Rep,45.2,40.2,-5,175,435,First-past-post
+USA,United States of America,1988,Dem,53.7,59.8,6.1,260,435,First-past-post
+BWA,Botswana,1989,BNF,27,8.8,-18.2,3,34,First-past-post
+BWA,Botswana,1989,BDP,64.8,91.2,26.4,31,34,First-past-post
+IND,India,1989,indep,5.2,2.2,-3,12,543,First-past-post
+IND,India,1989,CPI(M),6.6,6.1,-0.5,33,543,First-past-post
+IND,India,1989,BJP,11.9,15.8,3.9,86,543,First-past-post
+IND,India,1989,JD,17.7,26.2,8.5,142,543,First-past-post
+IND,India,1989,INC,40.6,36.3,-4.3,197,543,First-past-post
+JAM,Jamaica,1989,JLP,44.1,26.7,-17.4,16,60,First-past-post
+JAM,Jamaica,1989,PNP,55.8,73.3,17.5,44,60,First-past-post
+SLB,Solomon Islands,1989,NFP,0.8,7.9,7.1,3,38,First-past-post
+SLB,Solomon Islands,1989,SILP,6,5.3,-0.7,2,38,First-past-post
+SLB,Solomon Islands,1989,SIUP,18.1,10.5,-7.6,4,38,First-past-post
+SLB,Solomon Islands,1989,PAP,19.2,60.5,41.3,23,38,First-past-post
+SLB,Solomon Islands,1989,indep,55.7,10.5,-45.2,4,38,First-past-post
+ARM,Armenia,1990,HHS,NA,22.8,NA,59,259,Two-round
+ARM,Armenia,1990,CPA,NA,52.5,NA,136,259,Two-round
+BLR,Belarus,1990,PKB,NA,100,NA,100,100,Two-round
+LTU,Lithuania,1990,LSDP,NA,6.7,NA,9,135,Two-round
+LTU,Lithuania,1990,LKP,NA,34.1,NA,46,135,Two-round
+LTU,Lithuania,1990,indep,NA,47.4,NA,64,135,Two-round
+LTU,Lithuania,1990,CPL/CPSU,NA,5.2,NA,7,135,Two-round
+NZL,New Zealand,1990,NLP,5.2,1,-4.2,1,97,First-past-post
+NZL,New Zealand,1990,Greens,6.8,0,-6.8,0,97,First-past-post
+NZL,New Zealand,1990,LP,35.1,29.9,-5.2,29,97,First-past-post
+NZL,New Zealand,1990,NP,47.8,69.1,21.3,67,97,First-past-post
+USA,United States of America,1990,Rep,44,38.4,-5.6,167,435,First-past-post
+USA,United States of America,1990,Dem,52,61.4,9.4,267,435,First-past-post
+BGD,Bangladesh,1991,BAL,NA,28.9,NA,85,294,First-past-post
+BGD,Bangladesh,1991,JEB,NA,6.1,NA,18,294,First-past-post
+BGD,Bangladesh,1991,JD,NA,11.9,NA,35,294,First-past-post
+BGD,Bangladesh,1991,BNP,NA,46.9,NA,138,294,First-past-post
+BRB,Barbados,1991,BLP,43,35.7,-7.3,10,28,First-past-post
+BRB,Barbados,1991,DLP,49.8,64.3,14.5,18,28,First-past-post
+IND,India,1991,CPI(M),6.2,6.4,0.2,35,543,First-past-post
+IND,India,1991,JD,11.8,10.9,-0.9,59,543,First-past-post
+IND,India,1991,BJP,20.1,22.1,2,120,543,First-past-post
+IND,India,1991,INC,36.5,42.7,6.2,232,543,First-past-post
+TTO,Trinidad and Tobago,1991,NAR,24.5,5.6,-18.9,2,36,First-past-post
+TTO,Trinidad and Tobago,1991,UNC,29.1,36.1,7,13,36,First-past-post
+TTO,Trinidad and Tobago,1991,PNM,45,58.3,13.3,21,36,First-past-post
+COM,Comoros,1992,URFC,5.3,0,-5.3,0,42,Two-round
+COM,Comoros,1992,DPA,5.4,0,-5.4,0,42,Two-round
+COM,Comoros,1992,CHUMA,6.2,7.1,0.9,3,42,Two-round
+COM,Comoros,1992,PCDP,6.4,7.1,0.7,3,42,Two-round
+COM,Comoros,1992,MB,6.7,7.1,0.4,3,42,Two-round
+COM,Comoros,1992,FDC,8,0,-8,0,42,Two-round
+COM,Comoros,1992,RACHADE,8.1,0,-8.1,0,42,Two-round
+COM,Comoros,1992,indep,9.5,16.7,7.2,7,42,Two-round
+COM,Comoros,1992,UDD,10.3,16.7,6.4,7,42,Two-round
+COM,Comoros,1992,MDP,10.4,7.1,-3.3,3,42,Two-round
+GBR,United Kingdom,1992,Lib,17.8,3.1,-14.7,20,651,First-past-post
+GBR,United Kingdom,1992,Lab,34.9,41.6,6.7,271,651,First-past-post
+GBR,United Kingdom,1992,Con,41.9,51.6,9.7,336,651,First-past-post
+GMB,The Gambia,1992,NCP,NA,16.7,NA,6,36,First-past-post
+GMB,The Gambia,1992,PPP,NA,69.4,NA,25,36,First-past-post
+GMB,The Gambia,1992,Gpp,NA,5.6,NA,2,36,First-past-post
+MLI,Mali,1992,PMD,2.7,4.7,2,6,129,Two-round
+MLI,Mali,1992,PDP,5.1,1.6,-3.5,2,129,Two-round
+MLI,Mali,1992,CNID,5.6,7,1.4,9,129,Two-round
+MLI,Mali,1992,US-RDA,17.6,6.2,-11.4,8,129,Two-round
+MLI,Mali,1992,ADEMA-PASJ,48.4,58.9,10.5,76,129,Two-round
+PNG,Papua New Guinea,1992,PPP,2.9,9.2,6.3,10,109,First-past-post
+PNG,Papua New Guinea,1992,PAP,4.7,11.9,7.2,13,109,First-past-post
+PNG,Papua New Guinea,1992,PDM,7.8,13.8,6,15,109,First-past-post
+PNG,Papua New Guinea,1992,PP/PNUP,9.3,20.2,10.9,22,109,First-past-post
+PNG,Papua New Guinea,1992,indep,63.1,27.5,-35.6,30,109,First-past-post
+USA,United States of America,1992,Rep,44.8,40.5,-4.3,176,435,First-past-post
+USA,United States of America,1992,Dem,50,59.3,9.3,258,435,First-past-post
+CAN,Canada,1993,NDP,6.9,3.1,-3.8,9,295,First-past-post
+CAN,Canada,1993,BQ,13.5,18.3,4.8,54,295,First-past-post
+CAN,Canada,1993,PCP,16,0.7,-15.3,2,295,First-past-post
+CAN,Canada,1993,RPC,18.7,17.6,-1.1,52,295,First-past-post
+CAN,Canada,1993,LP,41.3,60,18.7,177,295,First-past-post
+COG,Republic of the Congo,1993,MCDDI,NA,22.4,NA,28,125,Two-round
+COG,Republic of the Congo,1993,UPADS,NA,37.6,NA,47,125,Two-round
+COG,Republic of the Congo,1993,PCT,NA,12,NA,15,125,Two-round
+COG,Republic of the Congo,1993,RDSP,NA,8,NA,10,125,Two-round
+FRA,France,1993,V,7.6,0,-7.6,0,577,Two-round
+FRA,France,1993,PCF,9.2,4.2,-5,24,577,Two-round
+FRA,France,1993,FN,12.4,0,-12.4,0,577,Two-round
+FRA,France,1993,PS,17.6,9.5,-8.1,55,577,Two-round
+FRA,France,1993,UDF,19.1,37.3,18.2,215,577,Two-round
+FRA,France,1993,RPR,20.4,43,22.6,248,577,Two-round
+JAM,Jamaica,1993,JLP,39.4,13.3,-26.1,8,60,First-past-post
+JAM,Jamaica,1993,PNP,60.6,86.7,26.1,52,60,First-past-post
+LSO,Lesotho,1993,BNP,22.6,0,-22.6,0,65,First-past-post
+LSO,Lesotho,1993,BCP,74.8,100,25.2,65,65,First-past-post
+NZL,New Zealand,1993,NZFP,8.4,2,-6.4,2,99,First-past-post
+NZL,New Zealand,1993,A,18.2,2,-16.2,2,99,First-past-post
+NZL,New Zealand,1993,LP,34.7,45.5,10.8,45,99,First-past-post
+NZL,New Zealand,1993,NP,35,50.5,15.5,50,99,First-past-post
+RUS,Russia,1993,DPR,5.5,3.4,-2.1,15,444,Two-round
+RUS,Russia,1993,PRES,6.7,6.8,0.1,30,444,Two-round
+RUS,Russia,1993,Yabloko,7.9,5.6,-2.3,25,444,Two-round
+RUS,Russia,1993,APR,8,12.4,4.4,55,444,Two-round
+RUS,Russia,1993,ZR,8.1,5.2,-2.9,23,444,Two-round
+RUS,Russia,1993,KPRF,12.4,10.1,-2.3,45,444,Two-round
+RUS,Russia,1993,DVR,15.5,17.1,1.6,76,444,Two-round
+RUS,Russia,1993,LDPR,22.9,14.2,-8.7,63,444,Two-round
+RUS,Russia,1993,indep,NA,10.6,NA,47,444,Two-round
+SLB,Solomon Islands,1993,NAP,13.1,6.4,-6.7,3,47,First-past-post
+SLB,Solomon Islands,1993,PAP,16.4,19.1,2.7,9,47,First-past-post
+SLB,Solomon Islands,1993,NURPP,23,42.6,19.6,20,47,First-past-post
+SLB,Solomon Islands,1993,indep,27.3,8.5,-18.8,4,47,First-past-post
+BRB,Barbados,1994,NDP,12.1,3.6,-8.5,1,28,First-past-post
+BRB,Barbados,1994,DLP,38.8,28.6,-10.2,8,28,First-past-post
+BRB,Barbados,1994,BLP,48.8,67.9,19.1,19,28,First-past-post
+BWA,Botswana,1994,BNF,37.1,32.5,-4.6,13,40,First-past-post
+BWA,Botswana,1994,BDP,54.4,67.5,13.1,27,40,First-past-post
+MDA,Moldova,1994,CDPP,7.5,8.7,1.2,9,104,Two-round
+MDA,Moldova,1994,BTI,9.2,10.6,1.4,11,104,Two-round
+MDA,Moldova,1994,Electoral Bl...,22,26.9,4.9,28,104,Two-round
+MDA,Moldova,1994,PDAM,43.2,53.8,10.6,56,104,Two-round
+MDA,Moldova,1994,PSM,NA,NA,NA,NA,NA,Two-round
+MDA,Moldova,1994,MUE,NA,NA,NA,NA,NA,Two-round
+NPL,Nepal,1994,RPP,17.9,9.8,-8.1,20,205,First-past-post
+NPL,Nepal,1994,CPN-UML,30.8,42.9,12.1,88,205,First-past-post
+NPL,Nepal,1994,NC,33.4,40.5,7.1,83,205,First-past-post
+UKR,Ukraine,1994,Rukh,5.5,4.4,-1.1,20,450,Two-round
+UKR,Ukraine,1994,KPU,13.6,19.1,5.5,86,450,Two-round
+UKR,Ukraine,1994,indep,54.9,37.3,-17.6,168,450,Two-round
+UKR,Ukraine,1994,tech,NA,24.9,NA,112,450,Two-round
+USA,United States of America,1994,Dem,44.8,46.9,2.1,204,435,First-past-post
+USA,United States of America,1994,Rep,51.5,52.9,1.4,230,435,First-past-post
+BLR,Belarus,1995,PKB,NA,21.2,NA,42,198,Two-round
+BLR,Belarus,1995,AP,NA,16.7,NA,33,198,Two-round
+BLR,Belarus,1995,indep,NA,48,NA,95,198,Two-round
+TTO,Trinidad and Tobago,1995,UNC,45.8,47.2,1.4,17,36,First-past-post
+TTO,Trinidad and Tobago,1995,PNM,48.8,47.2,-1.6,17,36,First-past-post
+TZA,Tanzania,1995,CCW,5,10.2,5.2,28,275,First-past-post
+TZA,Tanzania,1995,Chadema,6.2,1.5,-4.7,4,275,First-past-post
+TZA,Tanzania,1995,NCCR-Ma,21.8,6.9,-14.9,19,275,First-past-post
+TZA,Tanzania,1995,CCM,59.2,77.8,18.6,214,275,First-past-post
+BGD,Bangladesh,1996,BAL,NA,48.7,NA,146,300,First-past-post
+BGD,Bangladesh,1996,JD,NA,10.7,NA,32,300,First-past-post
+BGD,Bangladesh,1996,BNP,NA,38.7,NA,116,300,First-past-post
+GHA,Ghana,1996,NDC,NA,66.8,NA,133,199,First-past-post
+GHA,Ghana,1996,NPP,NA,30.2,NA,60,199,First-past-post
+IND,India,1996,BSP,4,2,-2,11,543,First-past-post
+IND,India,1996,CPI(M),6.1,5.9,-0.2,32,543,First-past-post
+IND,India,1996,indep,6.3,1.7,-4.6,9,543,First-past-post
+IND,India,1996,JD,8.1,8.5,0.4,46,543,First-past-post
+IND,India,1996,BJP,20.3,29.7,9.4,161,543,First-past-post
+IND,India,1996,INC,28.8,25.8,-3,140,543,First-past-post
+MNG,Mongolia,1996,MAN,39,32.9,-6.1,25,76,Two-round
+MNG,Mongolia,1996,NA,45,NA,NA,NA,NA,Two-round
+MNG,Mongolia,1996,AN,NA,43.4,NA,33,76,Two-round
+MNG,Mongolia,1996,MSDP,NA,15.8,NA,12,76,Two-round
+USA,United States of America,1996,Rep,47.8,52.2,4.4,227,435,First-past-post
+USA,United States of America,1996,Dem,48.1,47.6,-0.5,207,435,First-past-post
+ZMB,Zambia,1996,NP,7.2,3.3,-3.9,5,150,First-past-post
+ZMB,Zambia,1996,ZDC,14.1,1.3,-12.8,2,150,First-past-post
+ZMB,Zambia,1996,MMD,60.1,87.3,27.2,131,150,First-past-post
+CAN,Canada,1997,BQ,10.7,14.6,3.9,44,301,First-past-post
+CAN,Canada,1997,NDP,11.1,7,-4.1,21,301,First-past-post
+CAN,Canada,1997,PCP,18.8,6.6,-12.2,20,301,First-past-post
+CAN,Canada,1997,RPC,19.4,19.9,0.5,60,301,First-past-post
+CAN,Canada,1997,LP,38.5,51.5,13,155,301,First-past-post
+FRA,France,1997,droite,6.6,1,-5.6,6,577,Two-round
+FRA,France,1997,V,6.8,1.4,-5.4,8,577,Two-round
+FRA,France,1997,PCF,9.9,6.8,-3.1,39,577,Two-round
+FRA,France,1997,UDF,14.2,19.2,5,111,577,Two-round
+FRA,France,1997,FN,14.9,0.2,-14.7,1,577,Two-round
+FRA,France,1997,RPR,15.7,24.1,8.4,139,577,Two-round
+FRA,France,1997,PS,23.5,43.7,20.2,252,577,Two-round
+GBR,United Kingdom,1997,Lib,16.8,7,-9.8,46,659,First-past-post
+GBR,United Kingdom,1997,Con,30.7,25,-5.7,165,659,First-past-post
+GBR,United Kingdom,1997,Lab,43.2,63.6,20.4,419,659,First-past-post
+JAM,Jamaica,1997,JLP,40,16.7,-23.3,10,60,First-past-post
+JAM,Jamaica,1997,PNP,55,83.3,28.3,50,60,First-past-post
+MLI,Mali,1997,PARENA,7.1,5.4,-1.7,8,147,Two-round
+MLI,Mali,1997,ADEMA-PASJ,62.8,87.1,24.3,128,147,Two-round
+PAK,Pakistan,1997,MQM / HPG,4,5.8,1.8,12,207,First-past-post
+PAK,Pakistan,1997,indep,14.1,10.1,-4,21,207,First-past-post
+PAK,Pakistan,1997,PPP,21.8,8.7,-13.1,18,207,First-past-post
+PAK,Pakistan,1997,PML(N),45.9,64.7,18.8,134,207,First-past-post
+PNG,Papua New Guinea,1997,PP/PNUP,5.3,11.9,6.6,13,109,First-past-post
+PNG,Papua New Guinea,1997,PPP,6.5,14.7,8.2,16,109,First-past-post
+PNG,Papua New Guinea,1997,NAP,6.5,5.5,-1,6,109,First-past-post
+PNG,Papua New Guinea,1997,indep,61.4,33,-28.4,36,109,First-past-post
+SLB,Solomon Islands,1997,indep,NA,12,NA,6,50,First-past-post
+SLB,Solomon Islands,1997,NAP,NA,10,NA,5,50,First-past-post
+SLB,Solomon Islands,1997,NURPP,NA,42,NA,21,50,First-past-post
+SLB,Solomon Islands,1997,PAP,NA,14,NA,7,50,First-past-post
+SLB,Solomon Islands,1997,SIUP,NA,8,NA,4,50,First-past-post
+SLB,Solomon Islands,1997,SILP,NA,8,NA,4,50,First-past-post
+ECU,Ecuador,1998,MPD,4.3,1.7,-2.6,2,121,First-past-post
+ECU,Ecuador,1998,PCE,5.2,2.5,-2.7,3,121,First-past-post
+ECU,Ecuador,1998,MUPP-NP,9.2,5.8,-3.4,7,121,First-past-post
+ECU,Ecuador,1998,ID,15.4,14,-1.4,17,121,First-past-post
+ECU,Ecuador,1998,PRE,17.8,19.8,2,24,121,First-past-post
+ECU,Ecuador,1998,UDC/DP,19,26.4,7.4,32,121,First-past-post
+ECU,Ecuador,1998,PSC,23.8,22.3,-1.5,27,121,First-past-post
+IND,India,1998,SP,4.9,3.7,-1.2,20,543,First-past-post
+IND,India,1998,CPI(M),5.2,5.9,0.7,32,543,First-past-post
+IND,India,1998,BJP,25.5,33.5,8,182,543,First-past-post
+IND,India,1998,INC,25.9,26,0.1,141,543,First-past-post
+USA,United States of America,1998,Dem,47.1,48.5,1.4,211,435,First-past-post
+USA,United States of America,1998,Rep,48,51.3,3.3,223,435,First-past-post
+BRB,Barbados,1999,DLP,35,7.1,-27.9,2,28,First-past-post
+BRB,Barbados,1999,BLP,65,92.9,27.9,26,28,First-past-post
+BWA,Botswana,1999,BCP,12,2.5,-9.5,1,40,First-past-post
+BWA,Botswana,1999,BNF,26,15,-11,6,40,First-past-post
+BWA,Botswana,1999,BDP,57,82.5,25.5,33,40,First-past-post
+IND,India,1999,TDP,3.7,5.3,1.6,29,543,First-past-post
+IND,India,1999,CPI(M),5.4,6.1,0.7,33,543,First-past-post
+IND,India,1999,BJP,23.8,33.5,9.7,182,543,First-past-post
+IND,India,1999,INC,28.3,21,-7.3,114,543,First-past-post
+MWI,Malawi,1999,AFORD,10.6,15,4.4,29,193,First-past-post
+MWI,Malawi,1999,MCP,33.8,34.2,0.4,66,193,First-past-post
+MWI,Malawi,1999,UDF,47.3,48.2,0.9,93,193,First-past-post
+NPL,Nepal,1999,RPP,10.4,5.5,-4.9,11,201,First-past-post
+NPL,Nepal,1999,CPN-UML,31.6,33.8,2.2,68,201,First-past-post
+NPL,Nepal,1999,NC,37.2,54.7,17.5,110,201,First-past-post
+CAN,Canada,2000,NDP,8.5,4.3,-4.2,13,301,First-past-post
+CAN,Canada,2000,BQ,10.7,12.6,1.9,38,301,First-past-post
+CAN,Canada,2000,PCP,12.2,4,-8.2,12,301,First-past-post
+CAN,Canada,2000,RPC,25.5,21.9,-3.6,66,301,First-past-post
+CAN,Canada,2000,LP,40.9,57.1,16.2,172,301,First-past-post
+HTI,Haiti,2000,FL,NA,87.8,NA,72,82,Two-round
+MNG,Mongolia,2000,MAN,NA,94.7,NA,72,76,Two-round
+TTO,Trinidad and Tobago,2000,UNC,45.8,52.8,7,19,36,First-past-post
+TTO,Trinidad and Tobago,2000,PNM,48.8,44.4,-4.4,16,36,First-past-post
+TZA,Tanzania,2000,Chadema,4.2,1.7,-2.5,5,295,First-past-post
+TZA,Tanzania,2000,UDP,4.4,1.4,-3,4,295,First-past-post
+TZA,Tanzania,2000,TLP,9.2,1.7,-7.5,5,295,First-past-post
+TZA,Tanzania,2000,CCW,12.5,7.5,-5,22,295,First-past-post
+TZA,Tanzania,2000,CCM,65.2,87.5,22.3,258,295,First-past-post
+USA,United States of America,2000,Rep,47,50.8,3.8,221,435,First-past-post
+USA,United States of America,2000,Dem,47.3,48.7,1.4,212,435,First-past-post
+BGD,Bangladesh,2001,JD,7.5,4.7,-2.8,14,298,First-past-post
+BGD,Bangladesh,2001,BAL,40.1,20.8,-19.3,62,298,First-past-post
+BGD,Bangladesh,2001,BNP,41,64.8,23.8,193,298,First-past-post
+CIV,Ivory Coast,2001,FPI,NA,43,NA,96,223,First-past-post
+CIV,Ivory Coast,2001,PDCI-RDA,NA,42.2,NA,94,223,First-past-post
+GBR,United Kingdom,2001,UKIP,1.5,0,-1.5,0,659,First-past-post
+GBR,United Kingdom,2001,Lib,18.3,7.9,-10.4,52,659,First-past-post
+GBR,United Kingdom,2001,Con,31.7,25.2,-6.5,166,659,First-past-post
+GBR,United Kingdom,2001,Lab,40.7,62.5,21.8,412,659,First-past-post
+TTO,Trinidad and Tobago,2001,UNC,46.6,44.4,-2.2,16,36,First-past-post
+TTO,Trinidad and Tobago,2001,PNM,50.7,55.6,4.9,20,36,First-past-post
+ZMB,Zambia,2001,UNIP,10.6,8.7,-1.9,13,150,First-past-post
+ZMB,Zambia,2001,FDD,15.6,8,-7.6,12,150,First-past-post
+ZMB,Zambia,2001,UPND,23.9,32.7,8.8,49,150,First-past-post
+ZMB,Zambia,2001,MMD,28,46,18,69,150,First-past-post
+FRA,France,2002,FN,11.3,0,-11.3,0,577,Two-round
+FRA,France,2002,PS,24.1,24.4,0.3,141,577,Two-round
+FRA,France,2002,UMP,33.3,61.7,28.4,356,577,Two-round
+JAM,Jamaica,2002,JLP,47,43.3,-3.7,26,60,First-past-post
+JAM,Jamaica,2002,PNP,52.4,56.7,4.3,34,60,First-past-post
+MLI,Mali,2002,RPM,NA,33.3,NA,46,138,Two-round
+MLI,Mali,2002,ADEMA-PASJ,NA,38.4,NA,53,138,Two-round
+MLI,Mali,2002,CNID,NA,9.4,NA,13,138,Two-round
+PNG,Papua New Guinea,2002,indep,NA,15.6,NA,17,109,First-past-post
+PNG,Papua New Guinea,2002,PP/PNUP,NA,5.5,NA,6,109,First-past-post
+PNG,Papua New Guinea,2002,PPP,NA,7.3,NA,8,109,First-past-post
+PNG,Papua New Guinea,2002,PDM,NA,11,NA,12,109,First-past-post
+PNG,Papua New Guinea,2002,NAP,NA,17.4,NA,19,109,First-past-post
+SLE,Sierra Leone,2002,APC,19.8,24.1,4.3,27,112,First-past-post
+SLE,Sierra Leone,2002,SLPP,69.9,74.1,4.2,83,112,First-past-post
+TTO,Trinidad and Tobago,2002,UNC,46.6,44.4,-2.2,16,36,First-past-post
+TTO,Trinidad and Tobago,2002,PNM,50.7,55.6,4.9,20,36,First-past-post
+USA,United States of America,2002,Dem,45,47.2,2.2,205,434,First-past-post
+USA,United States of America,2002,Rep,49.7,52.5,2.8,228,434,First-past-post
+BRB,Barbados,2003,DLP,44.1,23.3,-20.8,7,30,First-past-post
+BRB,Barbados,2003,BLP,55.8,76.7,20.9,23,30,First-past-post
+NGA,Nigeria,2003,AD,9.3,9.4,0.1,34,360,First-past-post
+NGA,Nigeria,2003,ANPP,27.4,26.7,-0.7,96,360,First-past-post
+NGA,Nigeria,2003,PDP,54.5,61.9,7.4,223,360,First-past-post
+BWA,Botswana,2004,BCP,16.6,1.8,-14.8,1,57,First-past-post
+BWA,Botswana,2004,BNF,26.1,21.1,-5,12,57,First-past-post
+BWA,Botswana,2004,BDP,51.7,77.2,25.5,44,57,First-past-post
+CAN,Canada,2004,BQ,12.4,17.5,5.1,54,308,First-past-post
+CAN,Canada,2004,NDP,15.7,6.2,-9.5,19,308,First-past-post
+CAN,Canada,2004,CPC,29.6,32.1,2.5,99,308,First-past-post
+CAN,Canada,2004,LP,36.7,43.8,7.1,135,308,First-past-post
+COM,Comoros,2004,CRC,NA,18.2,NA,6,33,Two-round
+COM,Comoros,2004,CdIA,NA,36.4,NA,12,33,Two-round
+COM,Comoros,2004,PCDP,NA,NA,NA,NA,NA,Two-round
+COM,Comoros,2004,RND,NA,NA,NA,NA,NA,Two-round
+COM,Comoros,2004,MDP,NA,NA,NA,NA,NA,Two-round
+COM,Comoros,2004,CHUMA,NA,NA,NA,NA,NA,Two-round
+COM,Comoros,2004,FDC,NA,NA,NA,NA,NA,Two-round
+COM,Comoros,2004,tech,NA,45.5,NA,15,33,Two-round
+GHA,Ghana,2004,NDC,40.9,40.9,0,94,230,First-past-post
+GHA,Ghana,2004,NPP,55.6,55.7,0.1,128,230,First-past-post
+IND,India,2004,SP,4.3,6.8,2.5,37,543,First-past-post
+IND,India,2004,BSP,5.3,3.3,-2,18,543,First-past-post
+IND,India,2004,CPI(M),5.7,7.9,2.2,43,543,First-past-post
+IND,India,2004,BJP,22.2,25.2,3,137,543,First-past-post
+IND,India,2004,INC,26.5,26.9,0.4,146,543,First-past-post
+MNG,Mongolia,2004,Motherland-D...,44.3,NA,NA,NA,NA,Two-round
+MNG,Mongolia,2004,MAN,48.2,47.4,-0.8,36,76,Two-round
+MNG,Mongolia,2004,AN,NA,32.9,NA,25,76,Two-round
+MNG,Mongolia,2004,IZN,NA,2.6,NA,2,76,Two-round
+MNG,Mongolia,2004,EON/MASSN`,NA,9.2,NA,7,76,Two-round
+MWI,Malawi,2004,RP,7.3,7.8,0.5,15,193,First-past-post
+MWI,Malawi,2004,NDA,8.1,4.7,-3.4,9,193,First-past-post
+MWI,Malawi,2004,indep,24.2,20.7,-3.5,40,193,First-past-post
+MWI,Malawi,2004,MCP,24.9,29.5,4.6,57,193,First-past-post
+MWI,Malawi,2004,UDF,25.3,25.4,0.1,49,193,First-past-post
+USA,United States of America,2004,Dem,46.5,46.7,0.2,203,435,First-past-post
+USA,United States of America,2004,Rep,49.3,53.1,3.8,231,435,First-past-post
+GBR,United Kingdom,2005,UKIP,2.2,0,-2.2,0,646,First-past-post
+GBR,United Kingdom,2005,Lib,22,9.6,-12.4,62,646,First-past-post
+GBR,United Kingdom,2005,Con,32.4,30.7,-1.7,198,646,First-past-post
+GBR,United Kingdom,2005,Lab,35.2,55,19.8,355,646,First-past-post
+TZA,Tanzania,2005,Chadema,8.2,3.4,-4.8,11,323,First-past-post
+TZA,Tanzania,2005,CCW,14.2,9.6,-4.6,31,323,First-past-post
+TZA,Tanzania,2005,CCM,70,85.1,15.1,275,323,First-past-post
+CAN,Canada,2006,BQ,10.5,16.6,6.1,51,308,First-past-post
+CAN,Canada,2006,NDP,17.5,9.4,-8.1,29,308,First-past-post
+CAN,Canada,2006,LP,30.2,33.4,3.2,103,308,First-past-post
+CAN,Canada,2006,CPC,36.3,40.3,4,124,308,First-past-post
+SLB,Solomon Islands,2006,indep,NA,60,NA,30,50,First-past-post
+SLB,Solomon Islands,2006,PAP,NA,6,NA,3,50,First-past-post
+SLB,Solomon Islands,2006,SIPRA,NA,8,NA,4,50,First-past-post
+SLB,Solomon Islands,2006,DP,NA,6,NA,3,50,First-past-post
+SLB,Solomon Islands,2006,NP,NA,8,NA,4,50,First-past-post
+USA,United States of America,2006,Rep,44.3,46.4,2.1,202,435,First-past-post
+USA,United States of America,2006,Dem,52.3,53.6,1.3,233,435,First-past-post
+ZMB,Zambia,2006,UDA,22.5,17.3,-5.2,26,150,First-past-post
+ZMB,Zambia,2006,PF,23,28.7,5.7,43,150,First-past-post
+ZMB,Zambia,2006,MMD,39.1,50,10.9,75,150,First-past-post
+ZMB,Zambia,2006,FDD,NA,NA,NA,NA,NA,First-past-post
+ZMB,Zambia,2006,UNIP,NA,NA,NA,NA,NA,First-past-post
+ZMB,Zambia,2006,UPND,NA,NA,NA,NA,NA,First-past-post
+FRA,France,2007,UDF,7.6,0.5,-7.1,3,577,Two-round
+FRA,France,2007,PS,24.7,32.2,7.5,186,577,Two-round
+FRA,France,2007,UMP,39.5,54.2,14.7,313,577,Two-round
+JAM,Jamaica,2007,PNP,49.8,46.7,-3.1,28,60,First-past-post
+JAM,Jamaica,2007,JLP,50.1,53.3,3.2,32,60,First-past-post
+KEN,Kenya,2007,KANU,6.4,7.1,0.7,15,210,First-past-post
+KEN,Kenya,2007,WDM-K,6.6,7.6,1,16,210,First-past-post
+KEN,Kenya,2007,PNU,20.9,20.5,-0.4,43,210,First-past-post
+KEN,Kenya,2007,ODM,30.8,47.1,16.3,99,210,First-past-post
+KEN,Kenya,2007,S,NA,2.4,NA,5,210,First-past-post
+KEN,Kenya,2007,DP,NA,1,NA,2,210,First-past-post
+KEN,Kenya,2007,FORD-A,NA,0.5,NA,1,210,First-past-post
+KEN,Kenya,2007,FORD-K,NA,0.5,NA,1,210,First-past-post
+KEN,Kenya,2007,NARC-K,NA,1.9,NA,4,210,First-past-post
+KEN,Kenya,2007,FORD-P,NA,1.4,NA,3,210,First-past-post
+KEN,Kenya,2007,NFK,NA,1,NA,2,210,First-past-post
+KEN,Kenya,2007,Party of Nat...,NA,NA,NA,NA,NA,First-past-post
+MDG,Madagascar,2007,TIM,NA,82.7,NA,105,127,Two-round
+MDG,Madagascar,2007,indep,NA,7.9,NA,10,127,Two-round
+MLI,Mali,2007,RPM,NA,7.5,NA,11,147,Two-round
+MLI,Mali,2007,URD,NA,23.1,NA,34,147,Two-round
+MLI,Mali,2007,ADEMA-PASJ,NA,34.7,NA,51,147,Two-round
+MLI,Mali,2007,MPR,NA,5.4,NA,8,147,Two-round
+NGA,Nigeria,2007,ANPP,NA,17.8,NA,64,359,First-past-post
+NGA,Nigeria,2007,ACN,NA,8.9,NA,32,359,First-past-post
+NGA,Nigeria,2007,PDP,NA,71.9,NA,258,359,First-past-post
+SLE,Sierra Leone,2007,APC,NA,52.7,NA,59,112,First-past-post
+SLE,Sierra Leone,2007,SLPP,NA,38.4,NA,43,112,First-past-post
+TTO,Trinidad and Tobago,2007,UNC,29.8,36.6,6.8,15,41,First-past-post
+TTO,Trinidad and Tobago,2007,PNM,45.9,63.4,17.5,26,41,First-past-post
+BRB,Barbados,2008,BLP,33,33.3,0.3,10,30,First-past-post
+BRB,Barbados,2008,DLP,67,66.7,-0.3,20,30,First-past-post
+BTN,Bhutan,2008,PDP,33,4.3,-28.7,2,47,First-past-post
+BTN,Bhutan,2008,DPT,67,95.7,28.7,45,47,First-past-post
+CAN,Canada,2008,GPC,6.8,0,-6.8,0,308,First-past-post
+CAN,Canada,2008,BQ,10,15.9,5.9,49,308,First-past-post
+CAN,Canada,2008,NDP,18.2,12,-6.2,37,308,First-past-post
+CAN,Canada,2008,LP,26.3,25,-1.3,77,308,First-past-post
+CAN,Canada,2008,CPC,37.7,46.4,8.7,143,308,First-past-post
+GHA,Ghana,2008,NDC,NA,49.3,NA,113,229,First-past-post
+GHA,Ghana,2008,NPP,NA,47.6,NA,109,229,First-past-post
+PAK,Pakistan,2008,PPP,NA,36.8,NA,125,340,First-past-post
+PAK,Pakistan,2008,PML(N),NA,26.8,NA,91,340,First-past-post
+PAK,Pakistan,2008,PML(Q),NA,15.6,NA,53,340,First-past-post
+PAK,Pakistan,2008,MQM / HPG,NA,7.4,NA,25,340,First-past-post
+PAK,Pakistan,2008,indep,NA,5.3,NA,18,340,First-past-post
+USA,United States of America,2008,Rep,42.4,40.9,-1.5,178,435,First-past-post
+USA,United States of America,2008,Dem,52.9,59.1,6.2,257,435,First-past-post
+BWA,Botswana,2009,BCP,19.1,7,-12.1,4,57,First-past-post
+BWA,Botswana,2009,BNF,21.9,10.5,-11.4,6,57,First-past-post
+BWA,Botswana,2009,BDP,53.3,78.9,25.6,45,57,First-past-post
+COM,Comoros,2009,BM,NA,83.3,NA,20,24,Two-round
+IND,India,2009,DMK,NA,3.3,NA,18,545,First-past-post
+IND,India,2009,BJP,NA,21.3,NA,116,545,First-past-post
+IND,India,2009,CPI(M),NA,2.9,NA,16,545,First-past-post
+IND,India,2009,BSP,NA,3.9,NA,21,545,First-past-post
+IND,India,2009,INC,NA,37.8,NA,206,545,First-past-post
+IND,India,2009,SP,NA,4,NA,22,545,First-past-post
+IND,India,2009,JD(U),NA,3.7,NA,20,545,First-past-post
+MDV,Maldives,2009,PA,5,9.1,4.1,7,77,First-past-post
+MDV,Maldives,2009,DRP,24.6,36.4,11.8,28,77,First-past-post
+MDV,Maldives,2009,indep,30,16.9,-13.1,13,77,First-past-post
+MDV,Maldives,2009,MDP,30.8,33.8,3,26,77,First-past-post
+MWI,Malawi,2009,MCP,NA,14.6,NA,27,185,First-past-post
+MWI,Malawi,2009,UDF,NA,9.7,NA,18,185,First-past-post
+MWI,Malawi,2009,DPP,NA,60.5,NA,112,185,First-past-post
+GBR,United Kingdom,2010,UKIP,3.1,0,-3.1,0,650,First-past-post
+GBR,United Kingdom,2010,Lib,23,8.8,-14.2,57,650,First-past-post
+GBR,United Kingdom,2010,Lab,29,39.7,10.7,258,650,First-past-post
+GBR,United Kingdom,2010,Con,36.1,47.2,11.1,307,650,First-past-post
+HTI,Haiti,2010,INITE,NA,47.9,NA,46,96,Two-round
+HTI,Haiti,2010,Alternativ,NA,7.3,NA,7,96,Two-round
+HTI,Haiti,2010,ANF,NA,4.2,NA,4,96,Two-round
+HTI,Haiti,2010,LA,NA,8.3,NA,8,96,Two-round
+HTI,Haiti,2010,LO,NA,8.3,NA,8,96,Two-round
+SLB,Solomon Islands,2010,indep,NA,38,NA,19,50,First-past-post
+SLB,Solomon Islands,2010,DP,NA,26,NA,13,50,First-past-post
+SLB,Solomon Islands,2010,OUR,NA,6,NA,3,50,First-past-post
+SLB,Solomon Islands,2010,RDP,NA,6,NA,3,50,First-past-post
+TTO,Trinidad and Tobago,2010,PNM,39.7,29.3,-10.4,12,41,First-past-post
+TTO,Trinidad and Tobago,2010,PP,60,70.7,10.7,29,41,First-past-post
+TZA,Tanzania,2010,CCM,NA,74,NA,259,350,First-past-post
+TZA,Tanzania,2010,Chadema,NA,13.7,NA,48,350,First-past-post
+TZA,Tanzania,2010,CCW,NA,10.3,NA,36,350,First-past-post
+USA,United States of America,2010,Dem,44.9,44.4,-0.5,193,435,First-past-post
+USA,United States of America,2010,Rep,51.7,55.6,3.9,242,435,First-past-post
+CAN,Canada,2011,BQ,6.1,1.3,-4.8,4,308,First-past-post
+CAN,Canada,2011,LP,18.9,11,-7.9,34,308,First-past-post
+CAN,Canada,2011,NDP,30.6,33.4,2.8,103,308,First-past-post
+CAN,Canada,2011,CPC,39.6,53.9,14.3,166,308,First-past-post
+CIV,Ivory Coast,2011,RDR,NA,57,NA,127,223,First-past-post
+CIV,Ivory Coast,2011,PDCI-RDA,NA,34.5,NA,77,223,First-past-post
+JAM,Jamaica,2011,JLP,46.3,33.3,-13,21,63,First-past-post
+JAM,Jamaica,2011,PNP,53,66.7,13.7,42,63,First-past-post
+LBR,Liberia,2011,NUDP,3.9,8.2,4.3,6,73,First-past-post
+LBR,Liberia,2011,NDC,5.7,6.8,1.1,5,73,First-past-post
+LBR,Liberia,2011,LPC,9.2,9.6,0.4,7,73,First-past-post
+LBR,Liberia,2011,CDC,12.8,15.1,2.3,11,73,First-past-post
+LBR,Liberia,2011,UP,17.8,32.9,15.1,24,73,First-past-post
+LBR,Liberia,2011,indep,NA,12.3,NA,9,73,First-past-post
+LBR,Liberia,2011,NPP,NA,NA,NA,NA,NA,First-past-post
+LBR,Liberia,2011,NDPL,NA,NA,NA,NA,NA,First-past-post
+LBR,Liberia,2011,LPP,NA,NA,NA,NA,NA,First-past-post
+LBR,Liberia,2011,UPP,NA,NA,NA,NA,NA,First-past-post
+NGA,Nigeria,2011,ANPP,NA,6.4,NA,23,359,First-past-post
+NGA,Nigeria,2011,ACN,NA,18.4,NA,66,359,First-past-post
+NGA,Nigeria,2011,PDP,NA,56.3,NA,202,359,First-past-post
+NGA,Nigeria,2011,CPC,NA,8.6,NA,31,359,First-past-post
+SGP,Singapore,2011,NSP,12,0,-12,0,87,Two-round
+SGP,Singapore,2011,WP,12.8,6.9,-5.9,6,87,Two-round
+SGP,Singapore,2011,PAP,60.2,93.1,32.9,81,87,Two-round
+ZMB,Zambia,2011,UPND,17.2,18.7,1.5,28,150,First-past-post
+ZMB,Zambia,2011,MMD,33.4,36.7,3.3,55,150,First-past-post
+ZMB,Zambia,2011,PF,38.4,40,1.6,60,150,First-past-post
+FRA,France,2012,V,5.5,2.9,-2.6,17,577,Two-round
+FRA,France,2012,PCF,6.9,1.7,-5.2,10,577,Two-round
+FRA,France,2012,FN,13.6,0.3,-13.3,2,577,Two-round
+FRA,France,2012,UMP,27.1,33.6,6.5,194,577,Two-round
+FRA,France,2012,PS,29.4,48.5,19.1,280,577,Two-round
+GHA,Ghana,2012,NDC,NA,53.8,NA,148,275,First-past-post
+GHA,Ghana,2012,NPP,NA,44.7,NA,123,275,First-past-post
+SLE,Sierra Leone,2012,APC,NA,59.8,NA,67,112,First-past-post
+SLE,Sierra Leone,2012,SLPP,NA,37.5,NA,42,112,First-past-post
+USA,United States of America,2012,Rep,48.5,53.8,5.3,234,435,First-past-post
+USA,United States of America,2012,Dem,48.7,46.2,-2.5,201,435,First-past-post
+BRB,Barbados,2013,BLP,48.2,46.7,-1.5,14,30,First-past-post
+BRB,Barbados,2013,DLP,51.3,53.3,2,16,30,First-past-post
+BTN,Bhutan,2013,DPT,45.1,31.9,-13.2,15,47,First-past-post
+BTN,Bhutan,2013,PDP,54.9,68.1,13.2,32,47,First-past-post
+KEN,Kenya,2013,ODM,NA,33.1,NA,96,290,First-past-post
+KEN,Kenya,2013,WDM-K,NA,9,NA,26,290,First-past-post
+KEN,Kenya,2013,URP,NA,25.9,NA,75,290,First-past-post
+KEN,Kenya,2013,TNA,NA,27.2,NA,79,290,First-past-post
+PAK,Pakistan,2013,PPP,NA,12.1,NA,39,323,First-past-post
+PAK,Pakistan,2013,PML(N),NA,48.6,NA,157,323,First-past-post
+PAK,Pakistan,2013,MQM / HPG,NA,7.1,NA,23,323,First-past-post
+PAK,Pakistan,2013,indep,NA,8.4,NA,27,323,First-past-post
+PAK,Pakistan,2013,PTI,NA,10.8,NA,35,323,First-past-post
+BWA,Botswana,2014,BCP,20.4,5.3,-15.1,3,57,First-past-post
+BWA,Botswana,2014,UDC,30,29.8,-0.2,17,57,First-past-post
+BWA,Botswana,2014,BDP,46.5,64.9,18.4,37,57,First-past-post
+IND,India,2014,BJP,NA,51.9,NA,282,543,First-past-post
+IND,India,2014,INC,NA,8.1,NA,44,543,First-past-post
+IND,India,2014,AIADMK,NA,6.8,NA,37,543,First-past-post
+IND,India,2014,AITMC,NA,6.3,NA,34,543,First-past-post
+MDV,Maldives,2014,MDA,4,5.9,1.9,5,85,First-past-post
+MDV,Maldives,2014,indep,10.9,5.9,-5,5,85,First-past-post
+MDV,Maldives,2014,JP,13.6,17.6,4,15,85,First-past-post
+MDV,Maldives,2014,PPM,27.7,38.8,11.1,33,85,First-past-post
+MDV,Maldives,2014,MDP,40.8,30.6,-10.2,26,85,First-past-post
+MWI,Malawi,2014,MCP,NA,25,NA,48,192,First-past-post
+MWI,Malawi,2014,UDF,NA,7.3,NA,14,192,First-past-post
+MWI,Malawi,2014,DPP,NA,26,NA,50,192,First-past-post
+MWI,Malawi,2014,PP,NA,13.5,NA,26,192,First-past-post
+SLB,Solomon Islands,2014,indep,NA,64,NA,32,50,First-past-post
+SLB,Solomon Islands,2014,PAP,NA,6,NA,3,50,First-past-post
+SLB,Solomon Islands,2014,DAP,NA,14,NA,7,50,First-past-post
+SLB,Solomon Islands,2014,UDP,NA,10,NA,5,50,First-past-post
+USA,United States of America,2014,Dem,45.5,43.2,-2.3,188,435,First-past-post
+USA,United States of America,2014,Rep,51.2,56.8,5.6,247,435,First-past-post
+CAN,Canada,2015,NDP,19.7,13,-6.7,44,338,First-past-post
+CAN,Canada,2015,CPC,31.9,29.3,-2.6,99,338,First-past-post
+CAN,Canada,2015,LP,39.5,54.4,14.9,184,338,First-past-post
+COM,Comoros,2015,PO,6,0,-6,0,33,Two-round
+COM,Comoros,2015,CRC,7.2,6.1,-1.1,2,33,Two-round
+COM,Comoros,2015,RDC,10.4,12.1,1.7,4,33,Two-round
+COM,Comoros,2015,PJ,18,30.3,12.3,10,33,Two-round
+COM,Comoros,2015,UPDC,18.5,33.3,14.8,11,33,Two-round
+COM,Comoros,2015,indep,25.1,9.1,-16,3,33,Two-round
+GBR,United Kingdom,2015,Lib,7.9,1.2,-6.7,8,650,First-past-post
+GBR,United Kingdom,2015,UKIP,12.7,0.2,-12.5,1,650,First-past-post
+GBR,United Kingdom,2015,Lab,30.5,35.7,5.2,232,650,First-past-post
+GBR,United Kingdom,2015,Con,36.9,50.9,14,331,650,First-past-post
+HTI,Haiti,2015,FL,NA,6.9,NA,8,116,Two-round
+HTI,Haiti,2015,OPL,NA,7.8,NA,9,116,Two-round
+HTI,Haiti,2015,LA,NA,5.2,NA,6,116,Two-round
+HTI,Haiti,2015,PHTK,NA,26.7,NA,31,116,Two-round
+HTI,Haiti,2015,VERITE,NA,14.7,NA,17,116,Two-round
+HTI,Haiti,2015,KID,NA,6.9,NA,8,116,Two-round
+NGA,Nigeria,2015,PDP,NA,38.9,NA,140,360,First-past-post
+NGA,Nigeria,2015,APC,NA,58.9,NA,212,360,First-past-post
+SGP,Singapore,2015,WP,12.5,6.7,-5.8,6,89,Two-round
+SGP,Singapore,2015,PAP,69.9,93.3,23.4,83,89,Two-round
+TTO,Trinidad and Tobago,2015,COP,6,2.4,-3.6,1,41,First-past-post
+TTO,Trinidad and Tobago,2015,UNC,39.6,41.5,1.9,17,41,First-past-post
+TTO,Trinidad and Tobago,2015,PNM,51.7,56.1,4.4,23,41,First-past-post
+TZA,Tanzania,2015,CCW,8.6,11.4,2.8,42,367,First-past-post
+TZA,Tanzania,2015,Chadema,31.8,19.1,-12.7,70,367,First-past-post
+TZA,Tanzania,2015,CCM,55,68.9,13.9,253,367,First-past-post
+CAF,Central African Republic,2016,indep,NA,42.7,NA,56,131,Two-round
+CAF,Central African Republic,2016,KNK,NA,5.3,NA,7,131,Two-round
+CAF,Central African Republic,2016,MLPC,NA,6.9,NA,9,131,Two-round
+CAF,Central African Republic,2016,ADP,NA,9.9,NA,13,131,Two-round
+CAF,Central African Republic,2016,RDC,NA,7.6,NA,10,131,Two-round
+CAF,Central African Republic,2016,URCA,NA,9.9,NA,13,131,Two-round
+CIV,Ivory Coast,2016,FPI,5.8,1.2,-4.6,3,255,First-past-post
+CIV,Ivory Coast,2016,indep,38.5,29.8,-8.7,76,255,First-past-post
+CIV,Ivory Coast,2016,RHDP,50.3,65.5,15.2,167,255,First-past-post
+GHA,Ghana,2016,NDC,46.4,53.6,7.2,148,276,First-past-post
+GHA,Ghana,2016,NPP,47.5,44.6,-2.9,123,276,First-past-post
+JAM,Jamaica,2016,PNP,49.7,49.2,-0.5,31,63,First-past-post
+JAM,Jamaica,2016,JLP,50.1,50.8,0.7,32,63,First-past-post
+MNG,Mongolia,2016,MPRP,8.1,1.3,-6.8,1,76,First-past-post
+MNG,Mongolia,2016,AN,33.7,11.8,-21.9,9,76,First-past-post
+MNG,Mongolia,2016,MAN,45.9,85.5,39.6,65,76,First-past-post
+USA,United States of America,2016,Dem,49.4,44.6,-4.8,194,435,First-past-post
+USA,United States of America,2016,Rep,50.6,55.4,4.8,241,435,First-past-post
+ZMB,Zambia,2016,indep,9.3,9,-0.3,14,156,First-past-post
+ZMB,Zambia,2016,UPND,40.6,37.2,-3.4,58,156,First-past-post
+ZMB,Zambia,2016,PF,41,51.3,10.3,80,156,First-past-post
+FRA,France,2017,UDF,4.1,7.3,3.2,42,577,Two-round
+FRA,France,2017,PS,7.4,5.2,-2.2,30,577,Two-round
+FRA,France,2017,FI,11,2.9,-8.1,17,577,Two-round
+FRA,France,2017,FN,13.2,1.4,-11.8,8,577,Two-round
+FRA,France,2017,UMP,15.8,19.4,3.6,112,577,Two-round
+FRA,France,2017,LaREM,28.2,53.4,25.2,308,577,Two-round
+GBR,United Kingdom,2017,UKIP,1.8,0,-1.8,0,650,First-past-post
+GBR,United Kingdom,2017,LD,7.4,1.8,-5.6,12,650,First-past-post
+GBR,United Kingdom,2017,Lab,40,40.3,0.3,262,650,First-past-post
+GBR,United Kingdom,2017,Con,42.5,48.9,6.4,318,650,First-past-post
+GMB,The Gambia,2017,NRP,6.3,8.6,2.3,5,58,First-past-post
+GMB,The Gambia,2017,PDOIS,8,5.2,-2.8,3,58,First-past-post
+GMB,The Gambia,2017,APRC,16,8.6,-7.4,5,58,First-past-post
+GMB,The Gambia,2017,GDC,17,8.6,-8.4,5,58,First-past-post
+GMB,The Gambia,2017,UDP,37,53.4,16.4,31,58,First-past-post
+KEN,Kenya,2017,KANU,NA,2.9,NA,10,348,First-past-post
+KEN,Kenya,2017,ODM,NA,21.8,NA,76,348,First-past-post
+KEN,Kenya,2017,WDM-K,NA,6.6,NA,23,348,First-past-post
+KEN,Kenya,2017,indep,NA,4,NA,14,348,First-past-post
+KEN,Kenya,2017,FORD-K,NA,3.4,NA,12,348,First-past-post
+KEN,Kenya,2017,JP,NA,49.1,NA,171,348,First-past-post
+KEN,Kenya,2017,ANC,NA,4,NA,14,348,First-past-post
+LBR,Liberia,2017,ALP,5.1,4.1,-1,3,73,First-past-post
+LBR,Liberia,2017,PUP,5.9,6.8,0.9,5,73,First-past-post
+LBR,Liberia,2017,ANC,6.1,0,-6.1,0,73,First-past-post
+LBR,Liberia,2017,LPC,8.6,4.1,-4.5,3,73,First-past-post
+LBR,Liberia,2017,UP,14,26,12,19,73,First-past-post
+LBR,Liberia,2017,Coalition fo...,15.6,28.8,13.2,21,73,First-past-post
+LBR,Liberia,2017,indep,15.7,16.4,0.7,12,73,First-past-post
+LBR,Liberia,2017,CDC,NA,NA,NA,NA,NA,First-past-post
+LBR,Liberia,2017,NPP,NA,NA,NA,NA,NA,First-past-post
+BRB,Barbados,2018,DLP,22.1,0,-22.1,0,30,First-past-post
+BRB,Barbados,2018,BLP,72.8,100,27.2,30,30,First-past-post
+GAB,Gabon,2018,indep,NA,5.6,NA,8,143,Two-round
+GAB,Gabon,2018,BDG / PDG,NA,68.5,NA,98,143,Two-round
+GAB,Gabon,2018,LD,NA,7.7,NA,11,143,Two-round
+PAK,Pakistan,2018,MMA,5.9,4.7,-1.2,16,342,First-past-post
+PAK,Pakistan,2018,indep,11.5,3.8,-7.7,13,342,First-past-post
+PAK,Pakistan,2018,PPP,13,15.8,2.8,54,342,First-past-post
+PAK,Pakistan,2018,PML(N),24.4,24.3,-0.1,83,342,First-past-post
+PAK,Pakistan,2018,PTI,31.8,43.6,11.8,149,342,First-past-post
+SLE,Sierra Leone,2018,indep,NA,2.1,NA,3,146,First-past-post
+SLE,Sierra Leone,2018,APC,NA,46.6,NA,68,146,First-past-post
+SLE,Sierra Leone,2018,SLPP,NA,33.6,NA,49,146,First-past-post
+SLE,Sierra Leone,2018,C4C,NA,5.5,NA,8,146,First-past-post
+SLE,Sierra Leone,2018,NGC,NA,2.7,NA,4,146,First-past-post
+SLE,Sierra Leone,2018,tech,NA,9.6,NA,14,146,First-past-post
+USA,United States of America,2018,Rep,45.6,50.6,5,241,476,First-past-post
+USA,United States of America,2018,Dem,54.4,49.4,-5,235,476,First-past-post
+BWA,Botswana,2019,UDC,35.9,23.8,-12.1,15,63,First-past-post
+BWA,Botswana,2019,BDP,52.7,60.3,7.6,38,63,First-past-post
+BWA,Botswana,2019,BCP,NA,NA,NA,NA,NA,First-past-post
+CAN,Canada,2019,GPC,6.5,0.9,-5.6,3,338,First-past-post
+CAN,Canada,2019,BQ,7.7,9.5,1.8,32,338,First-past-post
+CAN,Canada,2019,NDP,15.9,7.1,-8.8,24,338,First-past-post
+CAN,Canada,2019,LP,33.1,46.4,13.3,157,338,First-past-post
+CAN,Canada,2019,CPC,34.4,35.8,1.4,121,338,First-past-post
+GBR,United Kingdom,2019,SNP,3.9,7.4,3.5,48,650,First-past-post
+GBR,United Kingdom,2019,LD,11.5,1.7,-9.8,11,650,First-past-post
+GBR,United Kingdom,2019,Lab,32.2,31.2,-1,203,650,First-past-post
+GBR,United Kingdom,2019,Con,43.6,56,12.4,364,650,First-past-post
+IND,India,2019,INC,19.5,9.6,-9.9,52,543,First-past-post
+IND,India,2019,BJP,37.4,55.8,18.4,303,543,First-past-post
+MDV,Maldives,2019,JP,11.2,5.7,-5.5,5,87,First-past-post
+MDV,Maldives,2019,PPM - PNC,16,9.2,-6.8,8,87,First-past-post
+MDV,Maldives,2019,indep,21.6,8,-13.6,7,87,First-past-post
+MDV,Maldives,2019,MDP,45.8,74.7,28.9,65,87,First-past-post
+MDV,Maldives,2019,PPM,NA,NA,NA,NA,NA,First-past-post
+MDV,Maldives,2019,PNC,NA,NA,NA,NA,NA,First-past-post
+MWI,Malawi,2019,indep,NA,28.5,NA,55,193,First-past-post
+MWI,Malawi,2019,MCP,NA,28.5,NA,55,193,First-past-post
+MWI,Malawi,2019,UDF,NA,5.2,NA,10,193,First-past-post
+MWI,Malawi,2019,DPP,NA,32.1,NA,62,193,First-past-post
+MWI,Malawi,2019,PP,NA,2.6,NA,5,193,First-past-post
+MWI,Malawi,2019,UTM,NA,2.1,NA,4,193,First-past-post
+NGA,Nigeria,2019,PDP,NA,31.9,NA,115,360,First-past-post
+NGA,Nigeria,2019,APC,NA,60.3,NA,217,360,First-past-post
+SLB,Solomon Islands,2019,indep,NA,42,NA,21,50,First-past-post
+SLB,Solomon Islands,2019,PAP,NA,4,NA,2,50,First-past-post
+SLB,Solomon Islands,2019,SIUP,NA,4,NA,2,50,First-past-post
+SLB,Solomon Islands,2019,SIPRA,NA,2,NA,1,50,First-past-post
+SLB,Solomon Islands,2019,DP,NA,16,NA,8,50,First-past-post
+SLB,Solomon Islands,2019,DAP,NA,6,NA,3,50,First-past-post
+SLB,Solomon Islands,2019,UDP,NA,8,NA,4,50,First-past-post
+SLB,Solomon Islands,2019,KP,NA,16,NA,8,50,First-past-post
+SLB,Solomon Islands,2019,PFP,NA,2,NA,1,50,First-past-post

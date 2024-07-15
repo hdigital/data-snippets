@@ -1,0 +1,677 @@
+country,country_name,year,party,rank,vote_share,seat_share,share_diff,seats,seats_total,elec_sys
+AUS,Australia,1903,PP,Top 1,29.7,34.7,5,26,75,First-past-post
+AUS,Australia,1903,FTP,Top 2,34.4,33.3,-1.1,25,75,First-past-post
+AUS,Australia,1906,FTP,Top 1,38.2,36,-2.2,27,75,First-past-post
+AUS,Australia,1906,ALP,Top 2,36.6,34.7,-1.9,26,75,First-past-post
+AUS,Australia,1910,ALP,Top 1,50,57.3,7.3,43,75,First-past-post
+AUS,Australia,1910,CLP,Top 2,45.1,41.3,-3.8,31,75,First-past-post
+AUS,Australia,1913,CLP,Top 1,48.9,50.7,1.8,38,75,First-past-post
+AUS,Australia,1913,ALP,Top 2,48.5,49.3,0.8,37,75,First-past-post
+AUS,Australia,1914,ALP,Top 1,50.9,56,5.1,42,75,First-past-post
+AUS,Australia,1914,CLP,Top 2,47.2,42.7,-4.5,32,75,First-past-post
+AUS,Australia,1917,NAT,Top 1,54.2,70.7,16.5,53,75,First-past-post
+AUS,Australia,1917,ALP,Top 2,43.9,29.3,-14.6,22,75,First-past-post
+BGD,Bangladesh,2001,BNP,Top 1,41,64.8,23.8,193,298,First-past-post
+BGD,Bangladesh,2001,BAL,Top 2,40.1,20.8,-19.3,62,298,First-past-post
+BRB,Barbados,1956,BLP,Top 1,49.4,62.5,13.1,15,24,First-past-post
+BRB,Barbados,1956,DLP,Top 2,19.9,16.7,-3.2,4,24,First-past-post
+BRB,Barbados,1961,DLP,Top 1,36.3,58.3,22,14,24,First-past-post
+BRB,Barbados,1961,BLP,Top 2,36.8,20.8,-16,5,24,First-past-post
+BRB,Barbados,1966,DLP,Top 1,49.6,58.3,8.7,14,24,First-past-post
+BRB,Barbados,1966,BLP,Top 2,32.6,33.3,0.7,8,24,First-past-post
+BRB,Barbados,1971,DLP,Top 1,57.4,75,17.6,18,24,First-past-post
+BRB,Barbados,1971,BLP,Top 2,42.4,25,-17.4,6,24,First-past-post
+BRB,Barbados,1976,BLP,Top 1,52.7,70.8,18.1,17,24,First-past-post
+BRB,Barbados,1976,DLP,Top 2,46.4,29.2,-17.2,7,24,First-past-post
+BRB,Barbados,1981,BLP,Top 1,52.2,70.8,18.6,17,24,First-past-post
+BRB,Barbados,1981,DLP,Top 2,47.1,29.2,-17.9,7,24,First-past-post
+BRB,Barbados,1986,DLP,Top 1,59.5,88.9,29.4,24,27,First-past-post
+BRB,Barbados,1986,BLP,Top 2,40.4,11.1,-29.3,3,27,First-past-post
+BRB,Barbados,1991,DLP,Top 1,49.8,64.3,14.5,18,28,First-past-post
+BRB,Barbados,1991,BLP,Top 2,43,35.7,-7.3,10,28,First-past-post
+BRB,Barbados,1994,BLP,Top 1,48.8,67.9,19.1,19,28,First-past-post
+BRB,Barbados,1994,DLP,Top 2,38.8,28.6,-10.2,8,28,First-past-post
+BRB,Barbados,1999,BLP,Top 1,65,92.9,27.9,26,28,First-past-post
+BRB,Barbados,1999,DLP,Top 2,35,7.1,-27.9,2,28,First-past-post
+BRB,Barbados,2003,BLP,Top 1,55.8,76.7,20.9,23,30,First-past-post
+BRB,Barbados,2003,DLP,Top 2,44.1,23.3,-20.8,7,30,First-past-post
+BRB,Barbados,2008,DLP,Top 1,67,66.7,-0.3,20,30,First-past-post
+BRB,Barbados,2008,BLP,Top 2,33,33.3,0.3,10,30,First-past-post
+BRB,Barbados,2013,DLP,Top 1,51.3,53.3,2,16,30,First-past-post
+BRB,Barbados,2013,BLP,Top 2,48.2,46.7,-1.5,14,30,First-past-post
+BRB,Barbados,2018,BLP,Top 1,72.8,100,27.2,30,30,First-past-post
+BRB,Barbados,2018,DLP,Top 2,22.1,0,-22.1,0,30,First-past-post
+BTN,Bhutan,2008,DPT,Top 1,67,95.7,28.7,45,47,First-past-post
+BTN,Bhutan,2008,PDP,Top 2,33,4.3,-28.7,2,47,First-past-post
+BTN,Bhutan,2013,PDP,Top 1,54.9,68.1,13.2,32,47,First-past-post
+BTN,Bhutan,2013,DPT,Top 2,45.1,31.9,-13.2,15,47,First-past-post
+BWA,Botswana,1969,BDP,Top 1,68.3,77.4,9.1,24,31,First-past-post
+BWA,Botswana,1969,BPP,Top 2,12.1,9.7,-2.4,3,31,First-past-post
+BWA,Botswana,1969,BNF,Top 3,13.5,9.7,-3.8,3,31,First-past-post
+BWA,Botswana,1974,BDP,Top 1,76.6,84.4,7.8,27,32,First-past-post
+BWA,Botswana,1974,BPP,Top 2,6.6,6.3,-0.3,2,32,First-past-post
+BWA,Botswana,1974,BNF,Top 3,11.5,6.3,-5.2,2,32,First-past-post
+BWA,Botswana,1979,BDP,Top 1,75.4,90.6,15.2,29,32,First-past-post
+BWA,Botswana,1979,BNF,Top 2,13.1,6.3,-6.8,2,32,First-past-post
+BWA,Botswana,1984,BDP,Top 1,68,76.5,8.5,26,34,First-past-post
+BWA,Botswana,1984,BNF,Top 2,20.4,20.6,0.2,7,34,First-past-post
+BWA,Botswana,1989,BDP,Top 1,64.8,91.2,26.4,31,34,First-past-post
+BWA,Botswana,1989,BNF,Top 2,27,8.8,-18.2,3,34,First-past-post
+BWA,Botswana,1994,BDP,Top 1,54.4,67.5,13.1,27,40,First-past-post
+BWA,Botswana,1994,BNF,Top 2,37.1,32.5,-4.6,13,40,First-past-post
+BWA,Botswana,1999,BDP,Top 1,57,82.5,25.5,33,40,First-past-post
+BWA,Botswana,1999,BNF,Top 2,26,15,-11,6,40,First-past-post
+BWA,Botswana,2004,BDP,Top 1,51.7,77.2,25.5,44,57,First-past-post
+BWA,Botswana,2004,BNF,Top 2,26.1,21.1,-5,12,57,First-past-post
+BWA,Botswana,2009,BDP,Top 1,53.3,78.9,25.6,45,57,First-past-post
+BWA,Botswana,2009,BNF,Top 2,21.9,10.5,-11.4,6,57,First-past-post
+BWA,Botswana,2014,BDP,Top 1,46.5,64.9,18.4,37,57,First-past-post
+BWA,Botswana,2014,UDC,Top 2,30,29.8,-0.2,17,57,First-past-post
+BWA,Botswana,2019,BDP,Top 1,52.7,60.3,7.6,38,63,First-past-post
+BWA,Botswana,2019,UDC,Top 2,35.9,23.8,-12.1,15,63,First-past-post
+CAN,Canada,1900,LP,Top 1,51.2,62.4,11.2,133,213,First-past-post
+CAN,Canada,1900,CPC,Top 2,47.4,37.6,-9.8,80,213,First-past-post
+CAN,Canada,1904,LP,Top 1,52,64.5,12.5,138,214,First-past-post
+CAN,Canada,1904,CPC,Top 2,46.4,35,-11.4,75,214,First-past-post
+CAN,Canada,1908,LP,Top 1,50.4,61.1,10.7,135,221,First-past-post
+CAN,Canada,1908,CPC,Top 2,46.8,38.5,-8.3,85,221,First-past-post
+CAN,Canada,1911,CPC,Top 1,50.9,60.6,9.7,134,221,First-past-post
+CAN,Canada,1911,LP,Top 2,47.7,39.4,-8.3,87,221,First-past-post
+CAN,Canada,1917,CPC,Top 1,57,65.1,8.1,153,235,First-past-post
+CAN,Canada,1917,LP,Top 2,39.9,34.9,-5,82,235,First-past-post
+CAN,Canada,1921,LP,Top 1,40.7,49.4,8.7,116,235,First-past-post
+CAN,Canada,1921,PPC,Top 2,22.9,27.2,4.3,64,235,First-past-post
+CAN,Canada,1925,CPC,Top 1,46.5,47.3,0.8,116,245,First-past-post
+CAN,Canada,1925,LP,Top 2,39.9,40.4,0.5,99,245,First-past-post
+CAN,Canada,1926,LP,Top 1,46.1,52.2,6.1,128,245,First-past-post
+CAN,Canada,1926,CPC,Top 2,45.3,37.1,-8.2,91,245,First-past-post
+CAN,Canada,1930,CPC,Top 1,48.8,55.9,7.1,137,245,First-past-post
+CAN,Canada,1930,LP,Top 2,45.2,37.1,-8.1,91,245,First-past-post
+CAN,Canada,1935,LP,Top 1,44.8,70.6,25.8,173,245,First-past-post
+CAN,Canada,1935,CPC,Top 2,29.6,16.3,-13.3,40,245,First-past-post
+CAN,Canada,1940,LP,Top 1,51.5,73.9,22.4,181,245,First-past-post
+CAN,Canada,1940,CPC,Top 2,30.6,16.3,-14.3,40,245,First-past-post
+CAN,Canada,1945,LP,Top 1,41.4,51,9.6,125,245,First-past-post
+CAN,Canada,1945,PCP,Top 2,27.7,27.3,-0.4,67,245,First-past-post
+CAN,Canada,1949,LP,Top 1,50.1,72.5,22.4,190,262,First-past-post
+CAN,Canada,1949,PCP,Top 2,29.8,15.6,-14.2,41,262,First-past-post
+CAN,Canada,1953,LP,Top 1,50,64.5,14.5,171,265,First-past-post
+CAN,Canada,1953,PCP,Top 2,31,19.2,-11.8,51,265,First-past-post
+CAN,Canada,1957,PCP,Top 1,39,42.3,3.3,112,265,First-past-post
+CAN,Canada,1957,LP,Top 2,42.3,39.6,-2.7,105,265,First-past-post
+CAN,Canada,1958,PCP,Top 1,53.7,78.5,24.8,208,265,First-past-post
+CAN,Canada,1958,LP,Top 2,33.6,18.1,-15.5,48,265,First-past-post
+CAN,Canada,1962,PCP,Top 1,37.2,43.8,6.6,116,265,First-past-post
+CAN,Canada,1962,LP,Top 2,37.3,37.4,0.1,99,265,First-past-post
+CAN,Canada,1963,LP,Top 1,41.7,48.7,7,129,265,First-past-post
+CAN,Canada,1963,PCP,Top 2,32.8,35.8,3,95,265,First-past-post
+CAN,Canada,1965,LP,Top 1,40.2,49.4,9.2,131,265,First-past-post
+CAN,Canada,1965,PCP,Top 2,32.4,36.6,4.2,97,265,First-past-post
+CAN,Canada,1968,LP,Top 1,45.5,58.7,13.2,155,264,First-past-post
+CAN,Canada,1968,PCP,Top 2,31.4,27.3,-4.1,72,264,First-past-post
+CAN,Canada,1972,LP,Top 1,37.5,41.3,3.8,109,264,First-past-post
+CAN,Canada,1972,PCP,Top 2,34.1,40.5,6.4,107,264,First-past-post
+CAN,Canada,1974,LP,Top 1,43.2,53.4,10.2,141,264,First-past-post
+CAN,Canada,1974,PCP,Top 2,35.4,36,0.6,95,264,First-past-post
+CAN,Canada,1979,PCP,Top 1,35.9,48.2,12.3,136,282,First-past-post
+CAN,Canada,1979,LP,Top 2,40.1,40.4,0.3,114,282,First-past-post
+CAN,Canada,1980,LP,Top 1,44.3,52.1,7.8,147,282,First-past-post
+CAN,Canada,1980,PCP,Top 2,32.5,36.5,4,103,282,First-past-post
+CAN,Canada,1984,PCP,Top 1,50,74.8,24.8,211,282,First-past-post
+CAN,Canada,1984,LP,Top 2,28,14.2,-13.8,40,282,First-past-post
+CAN,Canada,1988,PCP,Top 1,42.7,57.3,14.6,169,295,First-past-post
+CAN,Canada,1988,LP,Top 2,31.7,28.1,-3.6,83,295,First-past-post
+CAN,Canada,1993,LP,Top 1,41.3,60,18.7,177,295,First-past-post
+CAN,Canada,1993,BQ,Top 2,13.5,18.3,4.8,54,295,First-past-post
+CAN,Canada,1997,LP,Top 1,38.5,51.5,13,155,301,First-past-post
+CAN,Canada,1997,RPC,Top 2,19.4,19.9,0.5,60,301,First-past-post
+CAN,Canada,2000,LP,Top 1,40.9,57.1,16.2,172,301,First-past-post
+CAN,Canada,2000,RPC,Top 2,25.5,21.9,-3.6,66,301,First-past-post
+CAN,Canada,2004,LP,Top 1,36.7,43.8,7.1,135,308,First-past-post
+CAN,Canada,2004,CPC,Top 2,29.6,32.1,2.5,99,308,First-past-post
+CAN,Canada,2006,CPC,Top 1,36.3,40.3,4,124,308,First-past-post
+CAN,Canada,2006,LP,Top 2,30.2,33.4,3.2,103,308,First-past-post
+CAN,Canada,2008,CPC,Top 1,37.7,46.4,8.7,143,308,First-past-post
+CAN,Canada,2008,LP,Top 2,26.3,25,-1.3,77,308,First-past-post
+CAN,Canada,2011,CPC,Top 1,39.6,53.9,14.3,166,308,First-past-post
+CAN,Canada,2011,NDP,Top 2,30.6,33.4,2.8,103,308,First-past-post
+CAN,Canada,2015,LP,Top 1,39.5,54.4,14.9,184,338,First-past-post
+CAN,Canada,2015,CPC,Top 2,31.9,29.3,-2.6,99,338,First-past-post
+CAN,Canada,2019,LP,Top 1,33.1,46.4,13.3,157,338,First-past-post
+CAN,Canada,2019,CPC,Top 2,34.4,35.8,1.4,121,338,First-past-post
+CHE,Switzerland,1902,FDP,Top 1,50.4,59.9,9.5,100,167,Two-round
+CHE,Switzerland,1902,KK/CVP,Top 2,23.1,21.6,-1.5,36,167,Two-round
+CHE,Switzerland,1905,FDP,Top 1,49.2,62.3,13.1,104,167,Two-round
+CHE,Switzerland,1905,KK/CVP,Top 2,22.5,21.6,-0.9,36,167,Two-round
+CHE,Switzerland,1908,FDP,Top 1,50.9,62.9,12,105,167,Two-round
+CHE,Switzerland,1908,KK/CVP,Top 2,20.5,21,0.5,35,167,Two-round
+CHE,Switzerland,1911,FDP,Top 1,49.5,60.3,10.8,114,189,Two-round
+CHE,Switzerland,1911,KK/CVP,Top 2,19.1,20.1,1,38,189,Two-round
+CHE,Switzerland,1914,FDP,Top 1,56.1,59.3,3.2,112,189,Two-round
+CHE,Switzerland,1914,KK/CVP,Top 2,21.1,19.6,-1.5,37,189,Two-round
+CHE,Switzerland,1917,FDP,Top 1,40.8,54.5,13.7,103,189,Two-round
+CHE,Switzerland,1917,KK/CVP,Top 2,16.5,22.2,5.7,42,189,Two-round
+CIV,Ivory Coast,2016,RHDP,Top 1,50.3,65.5,15.2,167,255,First-past-post
+CIV,Ivory Coast,2016,indep,Top 2,38.5,29.8,-8.7,76,255,First-past-post
+COM,Comoros,1992,indep,Top 1,9.5,16.7,7.2,7,42,Two-round
+COM,Comoros,1992,UDD,Top 2,10.3,16.7,6.4,7,42,Two-round
+COM,Comoros,2015,UPDC,Top 1,18.5,33.3,14.8,11,33,Two-round
+COM,Comoros,2015,PJ,Top 2,18,30.3,12.3,10,33,Two-round
+DNK,Denmark,1901,V,Top 1,42.9,66.7,23.8,76,114,First-past-post
+DNK,Denmark,1901,MV,Top 2,11.4,14,2.6,16,114,First-past-post
+DNK,Denmark,1903,V,Top 1,47.1,64,16.9,73,114,First-past-post
+DNK,Denmark,1903,SD,Top 2,20.1,14,-6.1,16,114,First-past-post
+DNK,Denmark,1906,V,Top 1,31.2,49.1,17.9,56,114,First-past-post
+DNK,Denmark,1906,SD,Top 2,25.4,21.1,-4.3,24,114,First-past-post
+DNK,Denmark,1909,V,Top 1,24,32.5,8.5,37,114,First-past-post
+DNK,Denmark,1909,SD,Top 2,28.7,21.1,-7.6,24,114,First-past-post
+DNK,Denmark,1910,V,Top 1,34.1,50,15.9,57,114,First-past-post
+DNK,Denmark,1910,SD,Top 2,28.3,21.1,-7.2,24,114,First-past-post
+DNK,Denmark,1913,V,Top 1,28.6,38.6,10,44,114,First-past-post
+DNK,Denmark,1913,SD,Top 2,29.6,28.1,-1.5,32,114,First-past-post
+ECU,Ecuador,1998,UDC/DP,Top 1,19,26.4,7.4,32,121,First-past-post
+ECU,Ecuador,1998,PSC,Top 2,23.8,22.3,-1.5,27,121,First-past-post
+FRA,France,1902,GR,Top 1,29.7,30.4,0.7,175,575,Two-round
+FRA,France,1902,Con,Top 2,14.1,25.2,11.1,145,575,Two-round
+FRA,France,1906,PR,Top 1,28.5,41.6,13.1,239,575,Two-round
+FRA,France,1906,C-FR,Top 2,29.2,18.6,-10.6,107,575,Two-round
+FRA,France,1910,PR,Top 1,20.4,25,4.6,145,580,Two-round
+FRA,France,1910,UR/AD,Top 2,17.4,23.6,6.2,137,580,Two-round
+FRA,France,1914,UR/AD,Top 1,18.8,25.6,6.8,150,586,Two-round
+FRA,France,1914,PR,Top 2,18.1,23.4,5.3,137,586,Two-round
+FRA,France,1919,UR/AD,Top 1,22.7,32.6,9.9,201,616,Two-round
+FRA,France,1919,PR,Top 2,17.7,17.2,-0.5,106,616,Two-round
+FRA,France,1924,UR/AD,Top 1,35.4,35.5,0.1,204,574,Two-round
+FRA,France,1924,PR,Top 2,17.9,28.2,10.3,162,574,Two-round
+FRA,France,1928,UR/AD,Top 1,22,30.2,8.2,182,602,Two-round
+FRA,France,1928,PR,Top 2,17.8,19.9,2.1,120,602,Two-round
+FRA,France,1932,PR,Top 1,19.2,26,6.8,157,605,Two-round
+FRA,France,1932,PS,Top 2,20.5,21.3,0.8,129,605,Two-round
+FRA,France,1936,UR/AD,Top 1,16.9,36.5,19.6,222,608,Two-round
+FRA,France,1936,PS,Top 2,19.9,24.5,4.6,149,608,Two-round
+FRA,France,1958,UNR,Top 1,20.6,42.6,22,198,465,Two-round
+FRA,France,1958,CNIP,Top 2,20,28.6,8.6,133,465,Two-round
+FRA,France,1962,UNR,Top 1,33.7,49.5,15.8,230,465,Two-round
+FRA,France,1962,PS,Top 2,12.4,13.8,1.4,64,465,Two-round
+FRA,France,1967,UDR,Top 1,33,40.6,7.6,191,470,Two-round
+FRA,France,1967,PS,Top 2,18.9,25.1,6.2,118,470,Two-round
+FRA,France,1968,UDR,Top 1,38,60,22,282,470,Two-round
+FRA,France,1968,RI,Top 2,8.4,13.6,5.2,64,470,Two-round
+FRA,France,1973,UDR,Top 1,26,37.6,11.6,178,473,Two-round
+FRA,France,1973,PS,Top 2,19.1,18.8,-0.3,89,473,Two-round
+FRA,France,1978,RPR,Top 1,22.5,30,7.5,142,474,Two-round
+FRA,France,1978,UDF,Top 2,21.6,26.2,4.6,124,474,Two-round
+FRA,France,1981,PS,Top 1,36,56.5,20.5,268,474,Two-round
+FRA,France,1981,RPR,Top 2,20.7,16.9,-3.8,80,474,Two-round
+FRA,France,1988,PS,Top 1,34.9,46.8,11.9,260,555,Two-round
+FRA,France,1988,UDF,Top 2,18.8,23.4,4.6,130,555,Two-round
+FRA,France,1993,RPR,Top 1,20.4,43,22.6,248,577,Two-round
+FRA,France,1993,UDF,Top 2,19.1,37.3,18.2,215,577,Two-round
+FRA,France,1997,PS,Top 1,23.5,43.7,20.2,252,577,Two-round
+FRA,France,1997,RPR,Top 2,15.7,24.1,8.4,139,577,Two-round
+FRA,France,2002,UMP,Top 1,33.3,61.7,28.4,356,577,Two-round
+FRA,France,2002,PS,Top 2,24.1,24.4,0.3,141,577,Two-round
+FRA,France,2007,UMP,Top 1,39.5,54.2,14.7,313,577,Two-round
+FRA,France,2007,PS,Top 2,24.7,32.2,7.5,186,577,Two-round
+FRA,France,2012,PS,Top 1,29.4,48.5,19.1,280,577,Two-round
+FRA,France,2012,UMP,Top 2,27.1,33.6,6.5,194,577,Two-round
+FRA,France,2017,LaREM,Top 1,28.2,53.4,25.2,308,577,Two-round
+FRA,France,2017,UMP,Top 2,15.8,19.4,3.6,112,577,Two-round
+GBR,United Kingdom,1900,Con,Top 1,41.2,49.9,8.7,334,670,First-past-post
+GBR,United Kingdom,1900,Lib,Top 2,41.2,27.5,-13.7,184,670,First-past-post
+GBR,United Kingdom,1906,Lib,Top 1,44.5,59.7,15.2,400,670,First-past-post
+GBR,United Kingdom,1906,Con,Top 2,36.8,19.6,-17.2,131,670,First-past-post
+GBR,United Kingdom,1910,Lib,Top 1,40.7,40.4,-0.3,271,670,First-past-post
+GBR,United Kingdom,1910,Con,Top 2,40.6,33.4,-7.2,224,670,First-past-post
+GBR,United Kingdom,1918,Con,Top 1,38.4,54,15.6,382,707,First-past-post
+GBR,United Kingdom,1918,NLP-LG,Top 2,12.6,18,5.4,127,707,First-past-post
+GBR,United Kingdom,1922,Con,Top 1,38.2,55.9,17.7,344,615,First-past-post
+GBR,United Kingdom,1922,Lab,Top 2,29.4,23.1,-6.3,142,615,First-past-post
+GBR,United Kingdom,1923,Con,Top 1,38,42,4,258,615,First-past-post
+GBR,United Kingdom,1923,Lab,Top 2,30.7,31.1,0.4,191,615,First-past-post
+GBR,United Kingdom,1924,Con,Top 1,47.2,67,19.8,412,615,First-past-post
+GBR,United Kingdom,1924,Lab,Top 2,33,24.6,-8.4,151,615,First-past-post
+GBR,United Kingdom,1929,Lab,Top 1,37,46.7,9.7,287,615,First-past-post
+GBR,United Kingdom,1929,Con,Top 2,38.2,42.3,4.1,260,615,First-past-post
+GBR,United Kingdom,1931,Con,Top 1,55,76.4,21.4,470,615,First-past-post
+GBR,United Kingdom,1931,Lab,Top 2,30.7,8.5,-22.2,52,615,First-past-post
+GBR,United Kingdom,1935,Con,Top 1,47.7,62.9,15.2,387,615,First-past-post
+GBR,United Kingdom,1935,Lab,Top 2,37.9,25,-12.9,154,615,First-past-post
+GBR,United Kingdom,1945,Lab,Top 1,48,61.4,13.4,393,640,First-past-post
+GBR,United Kingdom,1945,Con,Top 2,36.2,30.8,-5.4,197,640,First-past-post
+GBR,United Kingdom,1950,Lab,Top 1,46.1,50.4,4.3,315,625,First-past-post
+GBR,United Kingdom,1950,Con,Top 2,43.4,47.7,4.3,298,625,First-past-post
+GBR,United Kingdom,1951,Con,Top 1,48,51.4,3.4,321,625,First-past-post
+GBR,United Kingdom,1951,Lab,Top 2,48.8,47.2,-1.6,295,625,First-past-post
+GBR,United Kingdom,1955,Con,Top 1,49.7,54.8,5.1,345,630,First-past-post
+GBR,United Kingdom,1955,Lab,Top 2,46.4,44,-2.4,277,630,First-past-post
+GBR,United Kingdom,1959,Con,Top 1,49.4,57.9,8.5,365,630,First-past-post
+GBR,United Kingdom,1959,Lab,Top 2,43.8,41,-2.8,258,630,First-past-post
+GBR,United Kingdom,1964,Lab,Top 1,44.1,50.3,6.2,317,630,First-past-post
+GBR,United Kingdom,1964,Con,Top 2,43.4,48.3,4.9,304,630,First-past-post
+GBR,United Kingdom,1966,Lab,Top 1,48,57.8,9.8,364,630,First-past-post
+GBR,United Kingdom,1966,Con,Top 2,41.9,40.2,-1.7,253,630,First-past-post
+GBR,United Kingdom,1970,Con,Top 1,46.4,52.4,6,330,630,First-past-post
+GBR,United Kingdom,1970,Lab,Top 2,43.1,45.7,2.6,288,630,First-past-post
+GBR,United Kingdom,1974,Lab,Top 1,39.2,50.2,11,319,635,First-past-post
+GBR,United Kingdom,1974,Con,Top 2,35.8,43.6,7.8,277,635,First-past-post
+GBR,United Kingdom,1979,Con,Top 1,43.9,53.4,9.5,339,635,First-past-post
+GBR,United Kingdom,1979,Lab,Top 2,36.9,42.4,5.5,269,635,First-past-post
+GBR,United Kingdom,1983,Con,Top 1,42.4,61.1,18.7,397,650,First-past-post
+GBR,United Kingdom,1983,Lab,Top 2,27.6,32.2,4.6,209,650,First-past-post
+GBR,United Kingdom,1987,Con,Top 1,42.3,57.8,15.5,376,650,First-past-post
+GBR,United Kingdom,1987,Lab,Top 2,30.8,35.2,4.4,229,650,First-past-post
+GBR,United Kingdom,1992,Con,Top 1,41.9,51.6,9.7,336,651,First-past-post
+GBR,United Kingdom,1992,Lab,Top 2,34.9,41.6,6.7,271,651,First-past-post
+GBR,United Kingdom,1997,Lab,Top 1,43.2,63.6,20.4,419,659,First-past-post
+GBR,United Kingdom,1997,Con,Top 2,30.7,25,-5.7,165,659,First-past-post
+GBR,United Kingdom,2001,Lab,Top 1,40.7,62.5,21.8,412,659,First-past-post
+GBR,United Kingdom,2001,Con,Top 2,31.7,25.2,-6.5,166,659,First-past-post
+GBR,United Kingdom,2005,Lab,Top 1,35.2,55,19.8,355,646,First-past-post
+GBR,United Kingdom,2005,Con,Top 2,32.4,30.7,-1.7,198,646,First-past-post
+GBR,United Kingdom,2010,Con,Top 1,36.1,47.2,11.1,307,650,First-past-post
+GBR,United Kingdom,2010,Lab,Top 2,29,39.7,10.7,258,650,First-past-post
+GBR,United Kingdom,2015,Con,Top 1,36.9,50.9,14,331,650,First-past-post
+GBR,United Kingdom,2015,Lab,Top 2,30.5,35.7,5.2,232,650,First-past-post
+GBR,United Kingdom,2017,Con,Top 1,42.5,48.9,6.4,318,650,First-past-post
+GBR,United Kingdom,2017,Lab,Top 2,40,40.3,0.3,262,650,First-past-post
+GBR,United Kingdom,2019,Con,Top 1,43.6,56,12.4,364,650,First-past-post
+GBR,United Kingdom,2019,Lab,Top 2,32.2,31.2,-1,203,650,First-past-post
+GHA,Ghana,2004,NPP,Top 1,55.6,55.7,0.1,128,230,First-past-post
+GHA,Ghana,2004,NDC,Top 2,40.9,40.9,0,94,230,First-past-post
+GHA,Ghana,2016,NDC,Top 1,46.4,53.6,7.2,148,276,First-past-post
+GHA,Ghana,2016,NPP,Top 2,47.5,44.6,-2.9,123,276,First-past-post
+GMB,The Gambia,1977,PPP,Top 1,69.6,81.8,12.2,27,33,First-past-post
+GMB,The Gambia,1977,NCP,Top 2,22.7,15.2,-7.5,5,33,First-past-post
+GMB,The Gambia,1982,PPP,Top 1,61.7,77.1,15.4,27,35,First-past-post
+GMB,The Gambia,1982,NCP,Top 2,19.7,8.6,-11.1,3,35,First-past-post
+GMB,The Gambia,1987,PPP,Top 1,56.6,86.1,29.5,31,36,First-past-post
+GMB,The Gambia,1987,NCP,Top 2,27.6,13.9,-13.7,5,36,First-past-post
+GMB,The Gambia,2017,UDP,Top 1,37,53.4,16.4,31,58,First-past-post
+GMB,The Gambia,2017,NRP,Top 2,6.3,8.6,2.3,5,58,First-past-post
+GMB,The Gambia,2017,APRC,Top 3,16,8.6,-7.4,5,58,First-past-post
+GMB,The Gambia,2017,GDC,Top 4,17,8.6,-8.4,5,58,First-past-post
+IND,India,1957,INC,Top 1,47.5,68.1,20.6,371,545,First-past-post
+IND,India,1957,indep,Top 2,19.4,7.7,-11.7,42,545,First-past-post
+IND,India,1962,INC,Top 1,44.7,73.1,28.4,361,494,First-past-post
+IND,India,1962,CPI,Top 2,9.9,5.9,-4,29,494,First-past-post
+IND,India,1967,INC,Top 1,40.8,51.9,11.1,283,545,First-past-post
+IND,India,1967,SWP,Top 2,8.7,8.1,-0.6,44,545,First-past-post
+IND,India,1971,INC,Top 1,43.7,68,24.3,352,518,First-past-post
+IND,India,1971,CPI(M),Top 2,5.1,4.8,-0.3,25,518,First-past-post
+IND,India,1977,JNP,Top 1,41.3,54.4,13.1,295,542,First-past-post
+IND,India,1977,INC,Top 2,34.5,28.4,-6.1,154,542,First-past-post
+IND,India,1980,INC,Top 1,42.7,65.1,22.4,353,542,First-past-post
+IND,India,1980,JP,Top 2,9.4,7.6,-1.8,41,542,First-past-post
+IND,India,1984,INC,Top 1,48,76.6,28.6,415,542,First-past-post
+IND,India,1984,CPI(M),Top 2,5.7,4.1,-1.6,22,542,First-past-post
+IND,India,1989,INC,Top 1,40.6,36.3,-4.3,197,543,First-past-post
+IND,India,1989,JD,Top 2,17.7,26.2,8.5,142,543,First-past-post
+IND,India,1991,INC,Top 1,36.5,42.7,6.2,232,543,First-past-post
+IND,India,1991,BJP,Top 2,20.1,22.1,2,120,543,First-past-post
+IND,India,1996,BJP,Top 1,20.3,29.7,9.4,161,543,First-past-post
+IND,India,1996,INC,Top 2,28.8,25.8,-3,140,543,First-past-post
+IND,India,1998,BJP,Top 1,25.5,33.5,8,182,543,First-past-post
+IND,India,1998,INC,Top 2,25.9,26,0.1,141,543,First-past-post
+IND,India,1999,BJP,Top 1,23.8,33.5,9.7,182,543,First-past-post
+IND,India,1999,INC,Top 2,28.3,21,-7.3,114,543,First-past-post
+IND,India,2004,INC,Top 1,26.5,26.9,0.4,146,543,First-past-post
+IND,India,2004,BJP,Top 2,22.2,25.2,3,137,543,First-past-post
+IND,India,2019,BJP,Top 1,37.4,55.8,18.4,303,543,First-past-post
+IND,India,2019,INC,Top 2,19.5,9.6,-9.9,52,543,First-past-post
+JAM,Jamaica,1955,PNP,Top 1,50.5,56.3,5.8,18,32,First-past-post
+JAM,Jamaica,1955,JLP,Top 2,39,43.8,4.8,14,32,First-past-post
+JAM,Jamaica,1959,PNP,Top 1,54.8,64.4,9.6,29,45,First-past-post
+JAM,Jamaica,1959,JLP,Top 2,44.3,35.6,-8.7,16,45,First-past-post
+JAM,Jamaica,1962,JLP,Top 1,50.1,57.8,7.7,26,45,First-past-post
+JAM,Jamaica,1962,PNP,Top 2,48.6,42.2,-6.4,19,45,First-past-post
+JAM,Jamaica,1967,JLP,Top 1,50,62.3,12.3,33,53,First-past-post
+JAM,Jamaica,1967,PNP,Top 2,49.7,37.7,-12,20,53,First-past-post
+JAM,Jamaica,1972,PNP,Top 1,56.5,69.8,13.3,37,53,First-past-post
+JAM,Jamaica,1972,JLP,Top 2,43.2,28.3,-14.9,15,53,First-past-post
+JAM,Jamaica,1976,PNP,Top 1,56.8,78.3,21.5,47,60,First-past-post
+JAM,Jamaica,1976,JLP,Top 2,43.2,21.7,-21.5,13,60,First-past-post
+JAM,Jamaica,1980,JLP,Top 1,57.6,86.7,29.1,52,60,First-past-post
+JAM,Jamaica,1980,PNP,Top 2,42.3,13.3,-29,8,60,First-past-post
+JAM,Jamaica,1983,JLP,Top 1,100,100,0,60,60,First-past-post
+JAM,Jamaica,1989,PNP,Top 1,55.8,73.3,17.5,44,60,First-past-post
+JAM,Jamaica,1989,JLP,Top 2,44.1,26.7,-17.4,16,60,First-past-post
+JAM,Jamaica,1993,PNP,Top 1,60.6,86.7,26.1,52,60,First-past-post
+JAM,Jamaica,1993,JLP,Top 2,39.4,13.3,-26.1,8,60,First-past-post
+JAM,Jamaica,1997,PNP,Top 1,55,83.3,28.3,50,60,First-past-post
+JAM,Jamaica,1997,JLP,Top 2,40,16.7,-23.3,10,60,First-past-post
+JAM,Jamaica,2002,PNP,Top 1,52.4,56.7,4.3,34,60,First-past-post
+JAM,Jamaica,2002,JLP,Top 2,47,43.3,-3.7,26,60,First-past-post
+JAM,Jamaica,2007,JLP,Top 1,50.1,53.3,3.2,32,60,First-past-post
+JAM,Jamaica,2007,PNP,Top 2,49.8,46.7,-3.1,28,60,First-past-post
+JAM,Jamaica,2011,PNP,Top 1,53,66.7,13.7,42,63,First-past-post
+JAM,Jamaica,2011,JLP,Top 2,46.3,33.3,-13,21,63,First-past-post
+JAM,Jamaica,2016,JLP,Top 1,50.1,50.8,0.7,32,63,First-past-post
+JAM,Jamaica,2016,PNP,Top 2,49.7,49.2,-0.5,31,63,First-past-post
+KEN,Kenya,2007,ODM,Top 1,30.8,47.1,16.3,99,210,First-past-post
+KEN,Kenya,2007,PNU,Top 2,20.9,20.5,-0.4,43,210,First-past-post
+LBR,Liberia,2011,UP,Top 1,17.8,32.9,15.1,24,73,First-past-post
+LBR,Liberia,2011,CDC,Top 2,12.8,15.1,2.3,11,73,First-past-post
+LBR,Liberia,2017,Coalition fo...,Top 1,15.6,28.8,13.2,21,73,First-past-post
+LBR,Liberia,2017,UP,Top 2,14,26,12,19,73,First-past-post
+LKA,Sri Lanka,1952,UNP,Top 1,44.1,56.8,12.7,54,95,First-past-post
+LKA,Sri Lanka,1952,indep,Top 2,14,12.6,-1.4,12,95,First-past-post
+LKA,Sri Lanka,1956,MEP,Top 1,39.5,53.7,14.2,51,95,First-past-post
+LKA,Sri Lanka,1956,LSS,Top 2,10.4,14.7,4.3,14,95,First-past-post
+LKA,Sri Lanka,1960,SLFP,Top 1,33.6,49.7,16.1,75,151,First-past-post
+LKA,Sri Lanka,1960,UNP,Top 2,37.6,19.9,-17.7,30,151,First-past-post
+LKA,Sri Lanka,1965,UNP,Top 1,39.3,43.7,4.4,66,151,First-past-post
+LKA,Sri Lanka,1965,SLFP,Top 2,30.2,27.2,-3,41,151,First-past-post
+LKA,Sri Lanka,1970,SLFP,Top 1,36.9,60.3,23.4,91,151,First-past-post
+LKA,Sri Lanka,1970,LSS,Top 2,8.7,12.6,3.9,19,151,First-past-post
+LKA,Sri Lanka,1977,UNP,Top 1,50.9,83.3,32.4,140,168,First-past-post
+LKA,Sri Lanka,1977,TULF,Top 2,6.8,10.7,3.9,18,168,First-past-post
+LSO,Lesotho,1993,BCP,Top 1,74.8,100,25.2,65,65,First-past-post
+LSO,Lesotho,1993,BNP,Top 2,22.6,0,-22.6,0,65,First-past-post
+LTU,Lithuania,1920,LKDP,Top 1,35.2,21.4,-13.8,24,112,Two-round
+LTU,Lithuania,1920,VS,Top 2,17,17,0,19,112,Two-round
+MDA,Moldova,1994,PDAM,Top 1,43.2,53.8,10.6,56,104,Two-round
+MDA,Moldova,1994,Electoral Bl...,Top 2,22,26.9,4.9,28,104,Two-round
+MDV,Maldives,2009,DRP,Top 1,24.6,36.4,11.8,28,77,First-past-post
+MDV,Maldives,2009,MDP,Top 2,30.8,33.8,3,26,77,First-past-post
+MDV,Maldives,2014,PPM,Top 1,27.7,38.8,11.1,33,85,First-past-post
+MDV,Maldives,2014,MDP,Top 2,40.8,30.6,-10.2,26,85,First-past-post
+MDV,Maldives,2019,MDP,Top 1,45.8,74.7,28.9,65,87,First-past-post
+MDV,Maldives,2019,PPM - PNC,Top 2,16,9.2,-6.8,8,87,First-past-post
+MLI,Mali,1992,ADEMA-PASJ,Top 1,48.4,58.9,10.5,76,129,Two-round
+MLI,Mali,1992,CNID,Top 2,5.6,7,1.4,9,129,Two-round
+MLI,Mali,1997,ADEMA-PASJ,Top 1,62.8,87.1,24.3,128,147,Two-round
+MLI,Mali,1997,PARENA,Top 2,7.1,5.4,-1.7,8,147,Two-round
+MNG,Mongolia,1996,MAN,Top 2,39,32.9,-6.1,25,76,Two-round
+MNG,Mongolia,2004,MAN,Top 1,48.2,47.4,-0.8,36,76,Two-round
+MNG,Mongolia,2016,MAN,Top 1,45.9,85.5,39.6,65,76,First-past-post
+MNG,Mongolia,2016,AN,Top 2,33.7,11.8,-21.9,9,76,First-past-post
+MWI,Malawi,1999,UDF,Top 1,47.3,48.2,0.9,93,193,First-past-post
+MWI,Malawi,1999,MCP,Top 2,33.8,34.2,0.4,66,193,First-past-post
+MWI,Malawi,2004,MCP,Top 1,24.9,29.5,4.6,57,193,First-past-post
+MWI,Malawi,2004,UDF,Top 2,25.3,25.4,0.1,49,193,First-past-post
+NGA,Nigeria,2003,PDP,Top 1,54.5,61.9,7.4,223,360,First-past-post
+NGA,Nigeria,2003,ANPP,Top 2,27.4,26.7,-0.7,96,360,First-past-post
+NLD,Netherlands,1901,AB/RSKP,Top 1,15.7,25,9.3,25,100,Two-round
+NLD,Netherlands,1901,ARP,Top 2,27.4,22,-5.4,22,100,Two-round
+NLD,Netherlands,1905,AB/RSKP,Top 1,13.1,25,11.9,25,100,Two-round
+NLD,Netherlands,1905,LU,Top 2,20,25,5,25,100,Two-round
+NLD,Netherlands,1909,AB/RSKP,Top 1,12.8,25,12.2,25,100,Two-round
+NLD,Netherlands,1909,ARP,Top 2,27.9,25,-2.9,25,100,Two-round
+NLD,Netherlands,1913,AB/RSKP,Top 1,14.5,25,10.5,25,100,Two-round
+NLD,Netherlands,1913,LU,Top 2,16.7,22,5.3,22,100,Two-round
+NOR,Norway,1903,V,Top 1,42.7,41,-1.7,48,117,Two-round
+NOR,Norway,1906,V,Top 1,45.1,59.3,14.2,73,123,Two-round
+NOR,Norway,1906,H,Top 2,32.8,29.3,-3.5,36,123,Two-round
+NOR,Norway,1909,H & FV,Top 1,41.5,52,10.5,64,123,Two-round
+NOR,Norway,1909,V,Top 2,30.4,37.4,7,46,123,Two-round
+NOR,Norway,1912,H & FV,Top 2,33.2,19.5,-13.7,24,123,Two-round
+NOR,Norway,1918,V,Top 1,28.3,40.5,12.2,51,126,Two-round
+NOR,Norway,1918,H & FV,Top 2,30.4,39.7,9.3,50,126,Two-round
+NPL,Nepal,1994,CPN-UML,Top 1,30.8,42.9,12.1,88,205,First-past-post
+NPL,Nepal,1994,NC,Top 2,33.4,40.5,7.1,83,205,First-past-post
+NPL,Nepal,1999,NC,Top 1,37.2,54.7,17.5,110,201,First-past-post
+NPL,Nepal,1999,CPN-UML,Top 2,31.6,33.8,2.2,68,201,First-past-post
+NZL,New Zealand,1902,LP/UP,Top 1,51.8,58.8,7,47,80,First-past-post
+NZL,New Zealand,1902,RP,Top 2,20.6,23.8,3.2,19,80,First-past-post
+NZL,New Zealand,1905,LP/UP,Top 1,53.1,72.5,19.4,58,80,First-past-post
+NZL,New Zealand,1905,RP,Top 2,29.7,20,-9.7,16,80,First-past-post
+NZL,New Zealand,1908,LP/UP,Top 1,58.7,62.5,3.8,50,80,First-past-post
+NZL,New Zealand,1908,RP,Top 2,27.8,32.5,4.7,26,80,First-past-post
+NZL,New Zealand,1911,RP,Top 1,35.4,46.3,10.9,37,80,First-past-post
+NZL,New Zealand,1911,LP/UP,Top 2,41.1,41.3,0.2,33,80,First-past-post
+NZL,New Zealand,1914,RP,Top 1,45.5,50,4.5,40,80,First-past-post
+NZL,New Zealand,1914,LP/UP,Top 2,42.6,42.5,-0.1,34,80,First-past-post
+NZL,New Zealand,1919,RP,Top 1,35.6,56.3,20.7,45,80,First-past-post
+NZL,New Zealand,1919,LP/UP,Top 2,30.1,23.8,-6.3,19,80,First-past-post
+NZL,New Zealand,1922,RP,Top 1,39.4,46.3,6.9,37,80,First-past-post
+NZL,New Zealand,1922,LP/UP,Top 2,26.3,27.5,1.2,22,80,First-past-post
+NZL,New Zealand,1925,RP,Top 1,47.2,68.8,21.6,55,80,First-past-post
+NZL,New Zealand,1925,LP,Top 2,27.3,15,-12.3,12,80,First-past-post
+NZL,New Zealand,1928,RP,Top 1,35.9,35,-0.9,28,80,First-past-post
+NZL,New Zealand,1928,LP/UP,Top 2,30.2,33.8,3.6,27,80,First-past-post
+NZL,New Zealand,1931,RP,Top 1,26.6,35,8.4,28,80,First-past-post
+NZL,New Zealand,1931,LP,Top 2,34.3,30,-4.3,24,80,First-past-post
+NZL,New Zealand,1935,LP,Top 1,45.7,66.3,20.6,53,80,First-past-post
+NZL,New Zealand,1935,RP,Top 2,33.5,23.8,-9.7,19,80,First-past-post
+NZL,New Zealand,1938,LP,Top 1,55.8,66.3,10.5,53,80,First-past-post
+NZL,New Zealand,1938,NP,Top 2,40.3,31.3,-9,25,80,First-past-post
+NZL,New Zealand,1946,LP,Top 1,51.3,52.5,1.2,42,80,First-past-post
+NZL,New Zealand,1946,NP,Top 2,48.4,47.5,-0.9,38,80,First-past-post
+NZL,New Zealand,1949,NP,Top 1,51.9,57.5,5.6,46,80,First-past-post
+NZL,New Zealand,1949,LP,Top 2,47.2,42.5,-4.7,34,80,First-past-post
+NZL,New Zealand,1951,NP,Top 1,53.9,62.5,8.6,50,80,First-past-post
+NZL,New Zealand,1951,LP,Top 2,45.9,37.5,-8.4,30,80,First-past-post
+NZL,New Zealand,1954,NP,Top 1,44.3,56.3,12,45,80,First-past-post
+NZL,New Zealand,1954,LP,Top 2,44.1,43.8,-0.3,35,80,First-past-post
+NZL,New Zealand,1957,LP,Top 1,48.3,51.3,3,41,80,First-past-post
+NZL,New Zealand,1957,NP,Top 2,44.2,48.8,4.6,39,80,First-past-post
+NZL,New Zealand,1960,NP,Top 1,47.6,57.5,9.9,46,80,First-past-post
+NZL,New Zealand,1960,LP,Top 2,43.4,42.5,-0.9,34,80,First-past-post
+NZL,New Zealand,1963,NP,Top 1,47.1,56.3,9.2,45,80,First-past-post
+NZL,New Zealand,1963,LP,Top 2,43.7,43.8,0.1,35,80,First-past-post
+NZL,New Zealand,1966,NP,Top 1,43.6,55,11.4,44,80,First-past-post
+NZL,New Zealand,1966,LP,Top 2,41.4,43.8,2.4,35,80,First-past-post
+NZL,New Zealand,1969,NP,Top 1,45.2,53.6,8.4,45,84,First-past-post
+NZL,New Zealand,1969,LP,Top 2,44.2,46.4,2.2,39,84,First-past-post
+NZL,New Zealand,1972,LP,Top 1,48.4,63.2,14.8,55,87,First-past-post
+NZL,New Zealand,1972,NP,Top 2,41.5,36.8,-4.7,32,87,First-past-post
+NZL,New Zealand,1975,NP,Top 1,47.4,63.2,15.8,55,87,First-past-post
+NZL,New Zealand,1975,LP,Top 2,39.7,36.8,-2.9,32,87,First-past-post
+NZL,New Zealand,1978,NP,Top 1,39.8,55.4,15.6,51,92,First-past-post
+NZL,New Zealand,1978,LP,Top 2,40.4,43.5,3.1,40,92,First-past-post
+NZL,New Zealand,1981,NP,Top 1,38.8,51.1,12.3,47,92,First-past-post
+NZL,New Zealand,1981,LP,Top 2,39,46.7,7.7,43,92,First-past-post
+NZL,New Zealand,1984,LP,Top 1,43,58.9,15.9,56,95,First-past-post
+NZL,New Zealand,1984,NP,Top 2,35.9,38.9,3,37,95,First-past-post
+NZL,New Zealand,1987,LP,Top 1,48,59.8,11.8,58,97,First-past-post
+NZL,New Zealand,1987,NP,Top 2,44,40.2,-3.8,39,97,First-past-post
+NZL,New Zealand,1990,NP,Top 1,47.8,69.1,21.3,67,97,First-past-post
+NZL,New Zealand,1990,LP,Top 2,35.1,29.9,-5.2,29,97,First-past-post
+NZL,New Zealand,1993,NP,Top 1,35,50.5,15.5,50,99,First-past-post
+NZL,New Zealand,1993,LP,Top 2,34.7,45.5,10.8,45,99,First-past-post
+PAK,Pakistan,1997,PML(N),Top 1,45.9,64.7,18.8,134,207,First-past-post
+PAK,Pakistan,1997,indep,Top 2,14.1,10.1,-4,21,207,First-past-post
+PAK,Pakistan,2018,PTI,Top 1,31.8,43.6,11.8,149,342,First-past-post
+PAK,Pakistan,2018,PML(N),Top 2,24.4,24.3,-0.1,83,342,First-past-post
+PHL,Philippines,1961,PNP,Top 1,61,71.2,10.2,74,104,First-past-post
+PHL,Philippines,1961,PLP,Top 2,33.7,27.9,-5.8,29,104,First-past-post
+PHL,Philippines,1965,PLP,Top 1,51.3,59.2,7.9,61,103,First-past-post
+PHL,Philippines,1965,PNP,Top 2,41.8,36.9,-4.9,38,103,First-past-post
+PNG,Papua New Guinea,1977,PP/PNUP,Top 1,35,37,2,40,108,First-past-post
+PNG,Papua New Guinea,1977,UP,Top 2,10,22.2,12.2,24,108,First-past-post
+PNG,Papua New Guinea,1982,PP/PNUP,Top 1,34,56.5,22.5,61,108,First-past-post
+PNG,Papua New Guinea,1982,NP,Top 2,10,17.6,7.6,19,108,First-past-post
+PNG,Papua New Guinea,1987,PP/PNUP,Top 1,14.9,25.5,10.6,27,106,First-past-post
+PNG,Papua New Guinea,1987,PDM,Top 2,10.9,24.5,13.6,26,106,First-past-post
+PNG,Papua New Guinea,1992,indep,Top 1,63.1,27.5,-35.6,30,109,First-past-post
+PNG,Papua New Guinea,1992,PP/PNUP,Top 2,9.3,20.2,10.9,22,109,First-past-post
+PNG,Papua New Guinea,1997,indep,Top 1,61.4,33,-28.4,36,109,First-past-post
+PNG,Papua New Guinea,1997,PPP,Top 2,6.5,14.7,8.2,16,109,First-past-post
+RUS,Russia,1993,DVR,Top 1,15.5,17.1,1.6,76,444,Two-round
+RUS,Russia,1993,LDPR,Top 2,22.9,14.2,-8.7,63,444,Two-round
+SGP,Singapore,2011,PAP,Top 1,60.2,93.1,32.9,81,87,Two-round
+SGP,Singapore,2011,WP,Top 2,12.8,6.9,-5.9,6,87,Two-round
+SGP,Singapore,2015,PAP,Top 1,69.9,93.3,23.4,83,89,Two-round
+SGP,Singapore,2015,WP,Top 2,12.5,6.7,-5.8,6,89,Two-round
+SLB,Solomon Islands,1980,SIUP,Top 1,18,42.1,24.1,16,38,First-past-post
+SLB,Solomon Islands,1980,PAP,Top 2,15.7,26.3,10.6,10,38,First-past-post
+SLB,Solomon Islands,1980,indep,Top 3,57.6,26.3,-31.3,10,38,First-past-post
+SLB,Solomon Islands,1984,SIUP,Top 1,21.4,34.2,12.8,13,38,First-past-post
+SLB,Solomon Islands,1984,PAP,Top 2,23.2,31.6,8.4,12,38,First-past-post
+SLB,Solomon Islands,1989,PAP,Top 1,19.2,60.5,41.3,23,38,First-past-post
+SLB,Solomon Islands,1989,SIUP,Top 2,18.1,10.5,-7.6,4,38,First-past-post
+SLB,Solomon Islands,1989,indep,Top 3,55.7,10.5,-45.2,4,38,First-past-post
+SLB,Solomon Islands,1993,NURPP,Top 1,23,42.6,19.6,20,47,First-past-post
+SLB,Solomon Islands,1993,PAP,Top 2,16.4,19.1,2.7,9,47,First-past-post
+SLE,Sierra Leone,2002,SLPP,Top 1,69.9,74.1,4.2,83,112,First-past-post
+SLE,Sierra Leone,2002,APC,Top 2,19.8,24.1,4.3,27,112,First-past-post
+TTO,Trinidad and Tobago,1956,PNM,Top 1,39.8,54.2,14.4,13,24,First-past-post
+TTO,Trinidad and Tobago,1956,PDP,Top 2,20.8,20.8,0,5,24,First-past-post
+TTO,Trinidad and Tobago,1961,PNM,Top 1,57,66.7,9.7,20,30,First-past-post
+TTO,Trinidad and Tobago,1961,DLP,Top 2,41.7,33.3,-8.4,10,30,First-past-post
+TTO,Trinidad and Tobago,1966,PNM,Top 1,52.4,66.7,14.3,24,36,First-past-post
+TTO,Trinidad and Tobago,1966,DLP,Top 2,34,33.3,-0.7,12,36,First-past-post
+TTO,Trinidad and Tobago,1971,PNM,Top 1,84.1,100,15.9,36,36,First-past-post
+TTO,Trinidad and Tobago,1971,DLP,Top 2,12.6,0,-12.6,0,36,First-past-post
+TTO,Trinidad and Tobago,1976,PNM,Top 1,53.6,66.7,13.1,24,36,First-past-post
+TTO,Trinidad and Tobago,1976,ULF,Top 2,26.9,27.8,0.9,10,36,First-past-post
+TTO,Trinidad and Tobago,1981,PNM,Top 1,53.8,72.2,18.4,26,36,First-past-post
+TTO,Trinidad and Tobago,1981,NAR,Top 2,20.2,27.8,7.6,10,36,First-past-post
+TTO,Trinidad and Tobago,1986,NAR,Top 1,67.3,91.7,24.4,33,36,First-past-post
+TTO,Trinidad and Tobago,1986,PNM,Top 2,31.1,8.3,-22.8,3,36,First-past-post
+TTO,Trinidad and Tobago,1991,PNM,Top 1,45,58.3,13.3,21,36,First-past-post
+TTO,Trinidad and Tobago,1991,UNC,Top 2,29.1,36.1,7,13,36,First-past-post
+TTO,Trinidad and Tobago,1995,UNC,Top 1,45.8,47.2,1.4,17,36,First-past-post
+TTO,Trinidad and Tobago,1995,PNM,Top 2,48.8,47.2,-1.6,17,36,First-past-post
+TTO,Trinidad and Tobago,2000,UNC,Top 1,45.8,52.8,7,19,36,First-past-post
+TTO,Trinidad and Tobago,2000,PNM,Top 2,48.8,44.4,-4.4,16,36,First-past-post
+TTO,Trinidad and Tobago,2001,PNM,Top 1,50.7,55.6,4.9,20,36,First-past-post
+TTO,Trinidad and Tobago,2001,UNC,Top 2,46.6,44.4,-2.2,16,36,First-past-post
+TTO,Trinidad and Tobago,2002,PNM,Top 1,50.7,55.6,4.9,20,36,First-past-post
+TTO,Trinidad and Tobago,2002,UNC,Top 2,46.6,44.4,-2.2,16,36,First-past-post
+TTO,Trinidad and Tobago,2007,PNM,Top 1,45.9,63.4,17.5,26,41,First-past-post
+TTO,Trinidad and Tobago,2007,UNC,Top 2,29.8,36.6,6.8,15,41,First-past-post
+TTO,Trinidad and Tobago,2010,PP,Top 1,60,70.7,10.7,29,41,First-past-post
+TTO,Trinidad and Tobago,2010,PNM,Top 2,39.7,29.3,-10.4,12,41,First-past-post
+TTO,Trinidad and Tobago,2015,PNM,Top 1,51.7,56.1,4.4,23,41,First-past-post
+TTO,Trinidad and Tobago,2015,UNC,Top 2,39.6,41.5,1.9,17,41,First-past-post
+TZA,Tanzania,1995,CCM,Top 1,59.2,77.8,18.6,214,275,First-past-post
+TZA,Tanzania,1995,CCW,Top 2,5,10.2,5.2,28,275,First-past-post
+TZA,Tanzania,2000,CCM,Top 1,65.2,87.5,22.3,258,295,First-past-post
+TZA,Tanzania,2000,CCW,Top 2,12.5,7.5,-5,22,295,First-past-post
+TZA,Tanzania,2005,CCM,Top 1,70,85.1,15.1,275,323,First-past-post
+TZA,Tanzania,2005,CCW,Top 2,14.2,9.6,-4.6,31,323,First-past-post
+TZA,Tanzania,2015,CCM,Top 1,55,68.9,13.9,253,367,First-past-post
+TZA,Tanzania,2015,Chadema,Top 2,31.8,19.1,-12.7,70,367,First-past-post
+UKR,Ukraine,1994,indep,Top 1,54.9,37.3,-17.6,168,450,Two-round
+USA,United States of America,1900,Rep,Top 1,52.1,55.2,3.1,197,357,First-past-post
+USA,United States of America,1900,Dem,Top 2,43,42.3,-0.7,151,357,First-past-post
+USA,United States of America,1902,Rep,Top 1,50.5,53.9,3.4,208,386,First-past-post
+USA,United States of America,1902,Dem,Top 2,43.8,46.1,2.3,178,386,First-past-post
+USA,United States of America,1904,Rep,Top 1,55,64.8,9.8,250,386,First-past-post
+USA,United States of America,1904,Dem,Top 2,39.8,35.2,-4.6,136,386,First-past-post
+USA,United States of America,1906,Rep,Top 1,51.2,57.5,6.3,222,386,First-past-post
+USA,United States of America,1906,Dem,Top 2,42.5,42.5,0,164,386,First-past-post
+USA,United States of America,1908,Rep,Top 1,50.9,56,5.1,219,391,First-past-post
+USA,United States of America,1908,Dem,Top 2,44.5,44,-0.5,172,391,First-past-post
+USA,United States of America,1910,Dem,Top 1,45.9,58.5,12.6,228,390,First-past-post
+USA,United States of America,1910,Rep,Top 2,46.8,41.3,-5.5,161,390,First-past-post
+USA,United States of America,1912,Dem,Top 1,41.4,66.9,25.5,291,435,First-past-post
+USA,United States of America,1912,Rep,Top 2,31.6,29.2,-2.4,127,435,First-past-post
+USA,United States of America,1914,Dem,Top 1,39.7,52.9,13.2,230,435,First-past-post
+USA,United States of America,1914,Rep,Top 2,43,45.1,2.1,196,435,First-past-post
+USA,United States of America,1916,Dem,Top 1,44.5,50,5.5,216,432,First-past-post
+USA,United States of America,1916,Rep,Top 2,49.1,48.6,-0.5,210,432,First-past-post
+USA,United States of America,1918,Rep,Top 1,54.6,55.4,0.8,240,433,First-past-post
+USA,United States of America,1918,Dem,Top 2,40.5,43.9,3.4,190,433,First-past-post
+USA,United States of America,1920,Rep,Top 1,58.2,69.7,11.5,303,435,First-past-post
+USA,United States of America,1920,Dem,Top 2,35.7,30.1,-5.6,131,435,First-past-post
+USA,United States of America,1922,Rep,Top 1,51.8,51.7,-0.1,225,435,First-past-post
+USA,United States of America,1922,Dem,Top 2,44.2,47.1,2.9,205,435,First-past-post
+USA,United States of America,1924,Rep,Top 1,55.9,56.8,0.9,247,435,First-past-post
+USA,United States of America,1924,Dem,Top 2,39.9,42.3,2.4,184,435,First-past-post
+USA,United States of America,1926,Rep,Top 1,57,54.5,-2.5,237,435,First-past-post
+USA,United States of America,1926,Dem,Top 2,40.5,44.8,4.3,195,435,First-past-post
+USA,United States of America,1928,Rep,Top 1,56.6,61.6,5,268,435,First-past-post
+USA,United States of America,1928,Dem,Top 2,41.5,38.2,-3.3,166,435,First-past-post
+USA,United States of America,1930,Rep,Top 1,52.7,50.1,-2.6,218,435,First-past-post
+USA,United States of America,1930,Dem,Top 2,44.7,49.7,5,216,435,First-past-post
+USA,United States of America,1932,Dem,Top 1,54.1,72,17.9,313,435,First-past-post
+USA,United States of America,1932,Rep,Top 2,42.2,26.9,-15.3,117,435,First-past-post
+USA,United States of America,1934,Dem,Top 1,53.2,73.6,20.4,320,435,First-past-post
+USA,United States of America,1934,Rep,Top 2,42.5,24.1,-18.4,105,435,First-past-post
+USA,United States of America,1936,Dem,Top 1,56.3,76.8,20.5,334,435,First-past-post
+USA,United States of America,1936,Rep,Top 2,39.6,20.5,-19.1,89,435,First-past-post
+USA,United States of America,1938,Dem,Top 1,47.5,60.2,12.7,262,435,First-past-post
+USA,United States of America,1938,Rep,Top 2,47.8,38.9,-8.9,169,435,First-past-post
+USA,United States of America,1940,Dem,Top 1,51.8,61.6,9.8,268,435,First-past-post
+USA,United States of America,1940,Rep,Top 2,45.9,37.2,-8.7,162,435,First-past-post
+USA,United States of America,1942,Dem,Top 1,44.2,51,6.8,222,435,First-past-post
+USA,United States of America,1942,Rep,Top 2,51.7,48,-3.7,209,435,First-past-post
+USA,United States of America,1944,Dem,Top 1,52.1,55.9,3.8,243,435,First-past-post
+USA,United States of America,1944,Rep,Top 2,47,43.7,-3.3,190,435,First-past-post
+USA,United States of America,1946,Rep,Top 1,54.5,56.6,2.1,246,435,First-past-post
+USA,United States of America,1946,Dem,Top 2,42.7,43.2,0.5,188,435,First-past-post
+USA,United States of America,1948,Dem,Top 1,52.7,60.5,7.8,263,435,First-past-post
+USA,United States of America,1948,Rep,Top 2,45.4,39.3,-6.1,171,435,First-past-post
+USA,United States of America,1950,Dem,Top 1,46,53.8,7.8,234,435,First-past-post
+USA,United States of America,1950,Rep,Top 2,50.9,45.7,-5.2,199,435,First-past-post
+USA,United States of America,1952,Rep,Top 1,49.3,50.8,1.5,221,435,First-past-post
+USA,United States of America,1952,Dem,Top 2,49.7,49,-0.7,213,435,First-past-post
+USA,United States of America,1954,Dem,Top 1,49.4,53.3,3.9,232,435,First-past-post
+USA,United States of America,1954,Rep,Top 2,48.4,46.7,-1.7,203,435,First-past-post
+USA,United States of America,1956,Dem,Top 1,51.1,53.8,2.7,234,435,First-past-post
+USA,United States of America,1956,Rep,Top 2,48.7,46.2,-2.5,201,435,First-past-post
+USA,United States of America,1958,Dem,Top 1,52.9,65,12.1,284,437,First-past-post
+USA,United States of America,1958,Rep,Top 2,44.9,35,-9.9,153,437,First-past-post
+USA,United States of America,1960,Dem,Top 1,54.7,60,5.3,262,437,First-past-post
+USA,United States of America,1960,Rep,Top 2,44.6,40,-4.6,175,437,First-past-post
+USA,United States of America,1962,Dem,Top 1,51.1,59.5,8.4,259,435,First-past-post
+USA,United States of America,1962,Rep,Top 2,47.2,40.5,-6.7,176,435,First-past-post
+USA,United States of America,1964,Dem,Top 1,57.7,67.8,10.1,295,435,First-past-post
+USA,United States of America,1964,Rep,Top 2,41.9,32.2,-9.7,140,435,First-past-post
+USA,United States of America,1966,Dem,Top 1,48.8,57,8.2,248,435,First-past-post
+USA,United States of America,1966,Rep,Top 2,48.8,43,-5.8,187,435,First-past-post
+USA,United States of America,1968,Dem,Top 1,50.5,55.9,5.4,243,435,First-past-post
+USA,United States of America,1968,Rep,Top 2,48.3,44.1,-4.2,192,435,First-past-post
+USA,United States of America,1970,Dem,Top 1,50.9,58.6,7.7,255,435,First-past-post
+USA,United States of America,1970,Rep,Top 2,45.3,41.4,-3.9,180,435,First-past-post
+USA,United States of America,1972,Dem,Top 1,52.6,55.9,3.3,243,435,First-past-post
+USA,United States of America,1972,Rep,Top 2,46.2,44.1,-2.1,192,435,First-past-post
+USA,United States of America,1974,Dem,Top 1,55.6,66.9,11.3,291,435,First-past-post
+USA,United States of America,1974,Rep,Top 2,40.5,33.1,-7.4,144,435,First-past-post
+USA,United States of America,1976,Dem,Top 1,56.7,67.1,10.4,292,435,First-past-post
+USA,United States of America,1976,Rep,Top 2,41.7,32.9,-8.8,143,435,First-past-post
+USA,United States of America,1978,Dem,Top 1,53.4,63,9.6,274,435,First-past-post
+USA,United States of America,1978,Rep,Top 2,44.7,37,-7.7,161,435,First-past-post
+USA,United States of America,1980,Dem,Top 1,50.6,55.9,5.3,243,435,First-past-post
+USA,United States of America,1980,Rep,Top 2,47.9,44.1,-3.8,192,435,First-past-post
+USA,United States of America,1982,Dem,Top 1,55,61.6,6.6,268,435,First-past-post
+USA,United States of America,1982,Rep,Top 2,43.2,38.4,-4.8,167,435,First-past-post
+USA,United States of America,1984,Dem,Top 1,52.4,58.2,5.8,253,435,First-past-post
+USA,United States of America,1984,Rep,Top 2,46.8,41.8,-5,182,435,First-past-post
+USA,United States of America,1986,Dem,Top 1,54.1,59.3,5.2,258,435,First-past-post
+USA,United States of America,1986,Rep,Top 2,44.2,40.7,-3.5,177,435,First-past-post
+USA,United States of America,1988,Dem,Top 1,53.7,59.8,6.1,260,435,First-past-post
+USA,United States of America,1988,Rep,Top 2,45.2,40.2,-5,175,435,First-past-post
+USA,United States of America,1990,Dem,Top 1,52,61.4,9.4,267,435,First-past-post
+USA,United States of America,1990,Rep,Top 2,44,38.4,-5.6,167,435,First-past-post
+USA,United States of America,1992,Dem,Top 1,50,59.3,9.3,258,435,First-past-post
+USA,United States of America,1992,Rep,Top 2,44.8,40.5,-4.3,176,435,First-past-post
+USA,United States of America,1994,Rep,Top 1,51.5,52.9,1.4,230,435,First-past-post
+USA,United States of America,1994,Dem,Top 2,44.8,46.9,2.1,204,435,First-past-post
+USA,United States of America,1996,Rep,Top 1,47.8,52.2,4.4,227,435,First-past-post
+USA,United States of America,1996,Dem,Top 2,48.1,47.6,-0.5,207,435,First-past-post
+USA,United States of America,1998,Rep,Top 1,48,51.3,3.3,223,435,First-past-post
+USA,United States of America,1998,Dem,Top 2,47.1,48.5,1.4,211,435,First-past-post
+USA,United States of America,2000,Rep,Top 1,47,50.8,3.8,221,435,First-past-post
+USA,United States of America,2000,Dem,Top 2,47.3,48.7,1.4,212,435,First-past-post
+USA,United States of America,2002,Rep,Top 1,49.7,52.5,2.8,228,434,First-past-post
+USA,United States of America,2002,Dem,Top 2,45,47.2,2.2,205,434,First-past-post
+USA,United States of America,2004,Rep,Top 1,49.3,53.1,3.8,231,435,First-past-post
+USA,United States of America,2004,Dem,Top 2,46.5,46.7,0.2,203,435,First-past-post
+USA,United States of America,2006,Dem,Top 1,52.3,53.6,1.3,233,435,First-past-post
+USA,United States of America,2006,Rep,Top 2,44.3,46.4,2.1,202,435,First-past-post
+USA,United States of America,2008,Dem,Top 1,52.9,59.1,6.2,257,435,First-past-post
+USA,United States of America,2008,Rep,Top 2,42.4,40.9,-1.5,178,435,First-past-post
+USA,United States of America,2010,Rep,Top 1,51.7,55.6,3.9,242,435,First-past-post
+USA,United States of America,2010,Dem,Top 2,44.9,44.4,-0.5,193,435,First-past-post
+USA,United States of America,2012,Rep,Top 1,48.5,53.8,5.3,234,435,First-past-post
+USA,United States of America,2012,Dem,Top 2,48.7,46.2,-2.5,201,435,First-past-post
+USA,United States of America,2014,Rep,Top 1,51.2,56.8,5.6,247,435,First-past-post
+USA,United States of America,2014,Dem,Top 2,45.5,43.2,-2.3,188,435,First-past-post
+USA,United States of America,2016,Rep,Top 1,50.6,55.4,4.8,241,435,First-past-post
+USA,United States of America,2016,Dem,Top 2,49.4,44.6,-4.8,194,435,First-past-post
+USA,United States of America,2018,Rep,Top 1,45.6,50.6,5,241,476,First-past-post
+USA,United States of America,2018,Dem,Top 2,54.4,49.4,-5,235,476,First-past-post
+ZMB,Zambia,1996,MMD,Top 1,60.1,87.3,27.2,131,150,First-past-post
+ZMB,Zambia,1996,NP,Top 2,7.2,3.3,-3.9,5,150,First-past-post
+ZMB,Zambia,2001,MMD,Top 1,28,46,18,69,150,First-past-post
+ZMB,Zambia,2001,UPND,Top 2,23.9,32.7,8.8,49,150,First-past-post
+ZMB,Zambia,2006,MMD,Top 1,39.1,50,10.9,75,150,First-past-post
+ZMB,Zambia,2006,PF,Top 2,23,28.7,5.7,43,150,First-past-post
+ZMB,Zambia,2011,PF,Top 1,38.4,40,1.6,60,150,First-past-post
+ZMB,Zambia,2011,MMD,Top 2,33.4,36.7,3.3,55,150,First-past-post
+ZMB,Zambia,2016,PF,Top 1,41,51.3,10.3,80,156,First-past-post
+ZMB,Zambia,2016,UPND,Top 2,40.6,37.2,-3.4,58,156,First-past-post

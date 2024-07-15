@@ -1,0 +1,272 @@
+---
+title: "Majoritarian elections · 🗳️"
+author: "Holger Döring"
+date: today
+execute:
+  cache: true
+  messages: true
+  warning: false
+format:
+  html:
+    code-fold: true
+    df-print: kable
+    embed-resources: true
+    toc: true
+
+---
+
+## UK 2024 election
+
+In the [2024 United Kingdom general election](https://en.wikipedia.org/wiki/2024_United_Kingdom_general_election#Full_results)
+Labour won a **33.7% vote share** and gained a **63.2% seat share**. Compared to the
+[2019 UK election](https://en.wikipedia.org/wiki/2019_United_Kingdom_general_election#Full_results),
+it increased its vote share by 3.2% and its seat share by 27.3%.
+
+Majoritarian electoral systems convert votes into seats disproportionally and
+provide a seats bonus for the winning party. However, the votes-seats ratio
+of the Labour party in the 2024 election is rather high.
+
+Among more than 600 majoritarian elections in democratic regimes between 1900
+and 2020 it is **one of the highest votes-seats difference**
+([see below](#top-2-majoritarian)).
+
+Here, I provide a brief overview of the votes-seats translation for majoritarian
+electoral systems (first-past-the-post and two-round) in democratic regimes,
+following the V-Dem classifications.
+
+For some background on electoral systems around the world, see the notebooks
+about [types](https://hdigital.github.io/data-snippets/notebooks/2021_electoral-systems_types.nb.html)
+and [evolution](https://hdigital.github.io/data-snippets/notebooks/2021_electoral-systems_evolution.nb.html)
+of electoral systems since 1900.
+
+![](figures/union-jack_unsplash.jpg){width=60%}
+
+Photo by
+[Kristina Gadeikyte](https://unsplash.com/@photomasala?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+on [Unsplash](https://unsplash.com/photos/statue-of-man-holding-flag-of-us-a-near-us-a-flag-during-daytime-Mdx7XqEJ4ig?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+
+```{r corepacks}
+library(conflicted) # create errors for function name conflicts
+
+library(tidyverse)
+conflicts_prefer(dplyr::filter, .quiet = TRUE)
+library(knitr) # layout // tables in RMarkdown with kable()
+
+ggplot2::theme_set(theme_minimal())
+options(scipen = 999) # suppress scientific notation
+
+library(patchwork) # plots  // arrange
+library(reactable) # layout // interactive data tables
+```
+
+## V-Party data
+
+Election results are from [V-Party](https://v-dem.net/data/v-party-dataset/) (v2)
+and electoral systems classifications from
+[V-Dem](https://v-dem.net/data/v-party-dataset/) (v11.1).
+
+For the analysis, election results are selected for all majoritarian electoral systems
+(first-past-post and two round) in democratic regimes since 1900 (V-Dem classifications).
+
+```{r, eval=FALSE}
+callr::rscript("data-raw.R")
+```
+
+## UK elections
+
+### Con · Lab · Lib
+
+UK election results for Conservatives, Labour, and Liberals from 1900 to 2024
+with 2024 results added from [BBC News](https://www.bbc.com/news/election/2024/uk/results).
+
+```{r}
+uk_3 <- read_csv("data/uk-elections_top-3_vparty.csv")
+```
+
+Seat and vote share of three main parties in the UK.
+
+```{r}
+pl <-
+  ggplot(uk_3, aes(x = year, color = party)) +
+  geom_line(aes(y = seat_share)) +
+  geom_point(aes(y = seat_share, shape = "Seats")) +
+  geom_line(aes(y = vote_share), alpha = 0.3) +
+  geom_point(aes(y = vote_share, shape = "Votes"), alpha = 0.6) +
+  labs(x = "Year", y = "Share (%)", color = "Party", shape = "Share") +
+  scale_color_manual(values = c(
+    "Lab" = "red",
+    "Con" = "blue",
+    "Lib" =  "#DAA520"
+  )) +
+  scale_shape_manual(values = c("Seats" = 16, "Votes" = 1))
+
+ggsave("figures/elections-uk.png", plot = pl, width = 10, height = 6, dpi = 300)
+pl
+```
+
+### Votes-Seats differences
+
+Two highest seat share **gains** through positive votes-seats ratio by party.
+
+```{r}
+uk_3 |>
+  slice_max(order_by = share_diff, n = 2, by = c(party)) |>
+  select(party, year, share_gain = share_diff, seat_share, vote_share) |>
+  arrange(party, desc(share_gain))
+```
+
+Seat share **losses** through negative votes-seats ratio.
+
+```{r}
+uk_3 |>
+  slice_min(order_by = share_diff, n = 2, by = c(party)) |>
+  select(party, year, share_loss = share_diff, seat_share, vote_share) |>
+  arrange(party, share_loss)
+```
+
+### Share changes
+
+Two highest vote share **gains** compared to previous election and seat share change by party.
+
+
+```{r}
+uk_3 |>
+  slice_max(order_by = vote_change, n = 2, by = c(party)) |>
+  select(party, year, vote_change, vote_share, seats_change, seat_share)
+```
+
+Vote share **losses** and seat share change.
+
+```{r}
+uk_3 |>
+  slice_min(order_by = vote_change, n = 2, by = c(party)) |>
+  select(party, year, vote_change, vote_share, seats_change, seat_share)
+```
+
+## Majoritarian systems
+
+### Nine countries
+
+Votes-seats differences for the two largest parties in an election.
+
+Nine countries with the highest number of majoritarian elections are presented.
+
+```{r}
+top_2 <- read_csv("data/majoritarian-elections_top-2_vparty.csv")
+```
+
+
+```{r}
+ctry_count <-
+  top_2 |>
+  distinct(country, year) |>
+  count(country, sort = TRUE)
+
+
+pl <-
+  top_2 |>
+  filter(country %in% ctry_count[["country"]][1:9]) |>
+  ggplot(aes(x = year, color = rank)) +
+  geom_line(aes(y = seat_share)) +
+  geom_point(aes(y = seat_share, shape = "Seats")) +
+  geom_line(aes(y = vote_share), alpha = 0.3) +
+  geom_point(aes(y = vote_share, shape = "Votes"), alpha = 0.6) +
+  labs(x = "Year", y = "Share (%)", color = "Party", shape = "Share") +
+  facet_wrap(vars(country_name))
+
+ggsave("figures/elections-majoritarian.png",
+  plot = pl, width = 10, height = 6, dpi = 300
+)
+pl
+```
+
+### Votes-seats
+
+Votes and seats share differences in majoritarian democratic elections.
+
+```{r}
+vparty_elec <- read_csv("data/majoritarian-elections_vparty.csv")
+
+pl1 <-
+  ggplot(vparty_elec, aes(x = vote_share, y = share_diff, colour = elec_sys)) +
+  geom_point(alpha = 0.3) +
+  guides(colour = "none")
+
+pl2 <-
+  ggplot(vparty_elec, aes(x = share_diff, colour = elec_sys)) +
+  geom_histogram()
+
+pl1 + pl2 + plot_layout(widths = c(3, 2))
+```
+
+
+Highest vote/seat share difference for all democratic regimes with majoritarian elections.
+
+```{r}
+top_2 |>
+  slice_max(order_by = share_diff, n = 1, by = c(country)) |>
+  select(country, country_name, year, party, vote_share, seat_share, share_diff) |>
+  arrange(desc(share_diff)) |>
+  reactable(searchable = TRUE, striped = TRUE)
+```
+
+### Electoral systems
+
+[Types of electoral systems](https://hdigital.github.io/data-snippets/notebooks/2021_electoral-systems_types.nb.html)
+in democratic regimes classified by
+[Bormann and Golder (2013)](https://doi.org/10.1016/j.electstud.2013.01.005).
+
+![](figures/electoral-systems.png)
+
+## Explore data
+
+### UK · Con, Lab, Lib
+
+```{r}
+uk_3 |>
+  select(year:seats_total) |>
+  reactable(searchable = TRUE, striped = TRUE)
+```
+
+### Top 2 · Majoritarian
+
+```{r}
+top_2 |>
+  select(country, country_name, year, party, vote_share, seat_share, share_diff) |>
+  reactable(searchable = TRUE, striped = TRUE)
+```
+
+**Electoral systems**
+
+```{r}
+top_2 |>
+  distinct(country, country_name, elec_sys) |>
+  reactable(searchable = TRUE, striped = TRUE)
+```
+
+## References
+
+```{r, eval=FALSE}
+library(httr2)
+
+get_doi_reference <- function(doi) {
+  request(paste0("https://doi.org/", doi)) |>
+    req_headers("Accept" = "text/x-bibliography") |>
+    req_perform() |>
+    resp_body_string()
+}
+
+references_doi <- c(
+  "10.1016/j.electstud.2013.01.005",
+  "10.2139/ssrn.3831905",
+  "10.1080/13569775.2021.1993564",
+  "10.23696/vpartydsv2"
+)
+
+references <- map_chr(references_doi, get_doi_reference)
+```
+
+- Bormann, N.-C., & Golder, M. (2013). Democratic Electoral Systems around the world, 1946–2011. Electoral Studies, 32(2), 360–369. https://doi.org/10.1016/j.electstud.2013.01.005
+- Coppedge, M., Gerring, J., Knutsen, C. H., Lindberg, S. I., Teorell, J., Alizada, N., Altman, D., Bernhard, M., Cornell, A., Fish, M. S., Gastaldi, L., Gjerløw, H., Glynn, A., Hicken, A., Hindle, G., Ilchenko, N., Krusell, J., Lührmann, A., Maerz, S. F., … Ziblatt, D. (2021). V-Dem Dataset v11.1. SSRN Electronic Journal. https://doi.org/10.2139/ssrn.3831905
+- Kasuya, Y., & Mori, K. (2021). Re-examining thresholds of continuous democracy measures. Contemporary Politics, 28(4), 365–385. https://doi.org/10.1080/13569775.2021.1993564
+- Staffan. I. Lindberg, Nils Düpont, Masaaki Higashijima, Yaman Berker Kavasoglu, Kyle L. Marquardt, Michael Bernhard, Holger Döring, Allen Hicken, Melis Laebens, Juraj Medzihorsky, Anja Neundorf, Ora John Reuter, Saskia Ruth-Lovell, Keith R. Weghorst, Nina Wiesehomeier, Joseph Wright, Nazifa Alizada, Paul Bederke, Lisa Gastaldi, Sandra Grahn, Garry Hindle, Nina Ilchenko, Johannes Von Römer, Steven Wilson, Daniel Pemstein, Brigitte Seim. (2022). <i>V-Party Dataset v2</i> [Data set]. V-Dem Institute. https://doi.org/10.23696/VPARTYDSV2
