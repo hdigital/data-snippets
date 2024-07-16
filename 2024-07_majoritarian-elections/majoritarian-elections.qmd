@@ -15,7 +15,23 @@ format:
 
 ---
 
+```{r corepacks}
+library(conflicted) # create errors for function name conflicts
+
+library(tidyverse)
+conflicts_prefer(dplyr::filter, .quiet = TRUE)
+library(knitr) # layout // tables in RMarkdown with kable()
+
+ggplot2::theme_set(theme_minimal())
+options(scipen = 999) # suppress scientific notation
+
+library(patchwork) # plots  // arrange
+library(reactable) # layout // interactive data tables
+```
+
 ## UK 2024 election
+
+![Photo by Kristina Gadeikyte on Unsplash](figures/union-jack_unsplash.jpg){width=60% fig-align="left"}
 
 In the [2024 United Kingdom general election](https://en.wikipedia.org/wiki/2024_United_Kingdom_general_election#Full_results)
 Labour won a **33.7% vote share** and gained a **63.2% seat share**. Compared to the
@@ -39,25 +55,45 @@ about [types](https://hdigital.github.io/data-snippets/notebooks/2021_electoral-
 and [evolution](https://hdigital.github.io/data-snippets/notebooks/2021_electoral-systems_evolution.nb.html)
 of electoral systems since 1900.
 
-![](figures/union-jack_unsplash.jpg){width=60%}
 
-Photo by
-[Kristina Gadeikyte](https://unsplash.com/@photomasala?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
-on [Unsplash](https://unsplash.com/photos/statue-of-man-holding-flag-of-us-a-near-us-a-flag-during-daytime-Mdx7XqEJ4ig?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+```{r}
+elec_raw <- read_csv("data/uk-election-2024_bbc.csv")
 
-```{r corepacks}
-library(conflicted) # create errors for function name conflicts
+pl_dt <-
+  elec_raw |>
+  mutate(
+    seat_share = round(seats / 650 * 100, 1), # total seats UK Parliament: 650
+    party = fct_reorder(party, vote_share)
+  ) |>
+  filter(vote_share >= 2.5)
 
-library(tidyverse)
-conflicts_prefer(dplyr::filter, .quiet = TRUE)
-library(knitr) # layout // tables in RMarkdown with kable()
+party_colors <- c(
+  "Lab" = "#E91D0E",
+  "Con" = "#0575C9",
+  "R-UK" = "#12b6cf",
+  "Lib" = "#FF9A02",
+  "Green" = "#99CC33",
+  "SNP" = "#0AD1E0"
+)
 
-ggplot2::theme_set(theme_minimal())
-options(scipen = 999) # suppress scientific notation
+pl1 <-
+  ggplot(pl_dt, aes(x = vote_share, y = party, fill = party)) +
+  geom_col() +
+  xlim(0, 60) +
+  scale_fill_manual(values = party_colors) +
+  labs(y = NULL) +
+  theme(legend.position = "none")
 
-library(patchwork) # plots  // arrange
-library(reactable) # layout // interactive data tables
+pl2 <-
+  ggplot(pl_dt, aes(x = seat_share, y = party, fill = party)) +
+  geom_col() +
+  scale_fill_manual(values = party_colors) +
+  labs(y = NULL) +
+  theme(axis.text.y = element_blank(), legend.position = "none")
+
+pl1 + pl2
 ```
+
 
 ## V-Party data
 
@@ -93,11 +129,7 @@ pl <-
   geom_line(aes(y = vote_share), alpha = 0.3) +
   geom_point(aes(y = vote_share, shape = "Votes"), alpha = 0.6) +
   labs(x = "Year", y = "Share (%)", color = "Party", shape = "Share") +
-  scale_color_manual(values = c(
-    "Lab" = "red",
-    "Con" = "blue",
-    "Lib" =  "#DAA520"
-  )) +
+  scale_color_manual(values = party_colors) +
   scale_shape_manual(values = c("Seats" = 16, "Votes" = 1))
 
 ggsave("figures/elections-uk.png", plot = pl, width = 10, height = 6, dpi = 300)

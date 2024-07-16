@@ -47,16 +47,22 @@ write_csv(vparty_elec, "data/majoritarian-elections_vparty.csv")
 
 ## UK · Top 3 ----
 
+party_select <- c("Con", "Lab", "Lib")
+
 uk_2024 <-
   read_csv("data/uk-election-2024_bbc.csv") |>
   mutate(
-    seat_share = round(100 * seats / seats_total),
-    share_diff = seat_share - vote_share
-  )
+    year = 2021,
+    seats_total = 650,
+    seat_share = round(100 * seats / seats_total, 1),
+    share_diff = round(seat_share - vote_share, 1)
+  ) |>
+  filter(party %in% party_select) |>
+  select(-party_name)
 
 uk_3 <-
   vparty_elec |>
-  filter(country == "GBR", party %in% c("Con", "Lab", "Lib")) |>
+  filter(country == "GBR", party %in% party_select) |>
   bind_rows(uk_2024) |>
   mutate(
     vote_change = round(vote_share - dplyr::lag(vote_share), 1),

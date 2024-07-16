@@ -1,4 +1,15 @@
-country,year,party,vote_share,seats,seats_total
-GBR,2024,Lab,33.7,412,650
-GBR,2024,Con,23.7,121,650
-GBR,2024,Lib,12.2,72,650
+party,party_name,seats,vote_share
+Lab,Labour,412,33.7
+Con,Conservative,121,23.7
+Lib,Liberal Democrats,72,12.2
+SNP,Scottish National Party,9,2.5
+SF,Sinn Féin,7,0.7
+R-UK,Reform UK,5,14.3
+DUP,Democratic Unionist Party,5,0.6
+Green,Green Party of England and Wales,4,6.7
+PC,Plaid Cymru,4,0.7
+SDLP,Social Democratic and Labour Party,2,0.3
+AP-NI,Alliance Party of Northern Ireland,1,0.4
+UUP,Ulster Unionist Party,1,0.3
+TUV,Traditional Unionist Voice,1,0.2
+WPU,Workers Party of Britain,0,0.7
