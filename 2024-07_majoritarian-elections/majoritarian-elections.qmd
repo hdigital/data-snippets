@@ -1,9 +1,9 @@
 ---
 title: "Majoritarian elections · 🗳️"
 author: "Holger Döring"
-date: today
+date: "2024-07-13"
 execute:
-  cache: true
+  cache: false
   messages: true
   warning: false
 format:

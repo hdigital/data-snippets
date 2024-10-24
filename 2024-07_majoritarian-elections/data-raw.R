@@ -52,7 +52,7 @@ party_select <- c("Con", "Lab", "Lib")
 uk_2024 <-
   read_csv("data/uk-election-2024_bbc.csv") |>
   mutate(
-    year = 2021,
+    year = 2024,
     seats_total = 650,
     seat_share = round(100 * seats / seats_total, 1),
     share_diff = round(seat_share - vote_share, 1)

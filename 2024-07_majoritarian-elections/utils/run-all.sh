@@ -12,3 +12,5 @@ docker exec rocker-starter \
    Rscript utils/run-all.R > 'utils/run-all.log'"
 
 docker compose down
+
+cp majoritarian-elections.html ../_site/notebooks/2024_majoritarian-elections.html
