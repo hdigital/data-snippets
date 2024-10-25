@@ -14,6 +14,7 @@ format:
     toc: true
 ---
 
+
 ```{r corepacks}
 library(conflicted) # create errors for function name conflicts
 
@@ -30,11 +31,7 @@ library(sf) # plot maps and gespatial tools
 
 crs_deu <- "+proj=lcc +lat_1=48 +lat_2=53 +lat_0=51 +lon_0=10" # LCC Germany parameters
 ```
-
-
-# Source · 🗃
-
-The Federal Returning Officer ("Der Bundeswahlleiter"): Bundestag election 2021
+_Source_ —  The Federal Returning Officer ("Der Bundeswahlleiter"): Bundestag election 2021
 
 - [Results](https://www.bundeswahlleiter.de/en/bundestagswahlen/2021/ergebnisse.html) constituencies
   - © Der Bundeswahlleiter, Statistisches Bundesamt, Wiesbaden 2021
@@ -65,6 +62,7 @@ wk_shp <-
 wk_ctr <- read_rds("data/btw21-districts-centroid.rds")
 ```
 
+
 # Votes · 🗳
 
 ## Results
@@ -82,6 +80,7 @@ btw_dt |>
   summarise(share = sum(share) |> round(1)) |>
   pivot_wider(names_from = votes_type, values_from = share)
 ```
+
 
 ## Party votes
 
@@ -131,6 +130,7 @@ pl_out <- pl1 / pl2 + plot_annotation(caption = "Source: Bundeswahlleiter 2021")
 ggsave("z-btw21-vote-share.png", pl_out, width = 5, height = 7)
 ```
 
+
 ## Candidate votes
 
 __candidate tier__ ("Erststimmen") vote share by party
@@ -163,7 +163,7 @@ pl_dt_ctr <- wk_ctr |> left_join(mp)
 
 pl1 <-
   ggplot() +
-  geom_sf(data = pl_dt, aes(fill = party), lwd = 0.05) +
+  geom_sf(data = pl_dt, aes(fill = party), lwd = 0.05, alpha = 0.8) +
   geom_sf(data = pl_dt_ctr, aes(shape = party), alpha = 0.4) +
   coord_sf(crs = crs_deu) +
   scale_fill_manual(values = party_scale)
@@ -214,11 +214,13 @@ pl1 + pl2 + plot_annotation(tag_levels = "I") +
   plot_annotation(caption = "Source: Bundeswahlleiter 2021")
 ```
 
+
 # MPs (SMD) · 🗺
 
 ## Maps
 
 plurality winner candidate (first) tier vote by party and sex
+
 
 ### Germany
 
@@ -244,6 +246,7 @@ pl2 <-
 
 pl1 + pl2 + plot_annotation(caption = "Source: Bundeswahlleiter 2021")
 ```
+
 
 ### NRW and Berlin
 
@@ -272,6 +275,7 @@ pl1 + pl2 + plot_layout(widths = c(55, 45)) +
 ## Descriptives
 
 number (n) of districts won by party and sex (f -- female, m -- male)
+
 
 ### Party
 
@@ -306,6 +310,7 @@ count_state <-
 count_state |> arrange(share_f)
 ```
 
+
 # Models · 📈
 
 + area_km2 --- size of district as square length (root of area)
@@ -326,6 +331,7 @@ mo_dt <-
   )
 ```
 
+
 ## Female first-tier winners
 
 Logit model to predict female winners of candidate (first) tier vote
@@ -345,6 +351,8 @@ pl2 <-
 
 pl1 + pl2
 ```
+
+
 ## Left vote-share
 
 Linear model of left parties (SPD, Linke, Grüne) vote share
@@ -367,6 +375,7 @@ pl2 <-
 
 pl1 + pl2
 ```
+
 
 ## Party vote-share
 
