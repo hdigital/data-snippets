@@ -1,0 +1,300 @@
+state,region,wkr_nr,district_name,party,sex
+NW,west,93,Köln I,SPD,f
+NI,west,41,Stadt Hannover I,SPD,m
+MV,east,12,Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I,SPD,f
+HE,west,181,Main-Taunus,CDU,m
+MV,east,17,Mecklenburgische Seenplatte II – Landkreis Rostock III,SPD,m
+BY,west,241,Ansbach,CSU,m
+BY,west,233,Regensburg,CSU,m
+SN,east,161,Mittelsachsen,AfD,f
+RP,west,205,Mainz,SPD,m
+BW,west,295,Zollernalb – Sigmaringen,CDU,m
+HE,west,171,Marburg,SPD,m
+NW,west,115,Duisburg I,SPD,f
+BE,west,83,Berlin-Friedrichshain-Kreuzberg – Prenzlauer Berg Ost,GRÜNE,f
+TH,east,191,Jena – Sömmerda – Weimarer Land I,SPD,m
+NW,west,135,Lippe I,SPD,m
+NI,west,38,Osnabrück-Land,CDU,m
+SH,west,8,Segeberg – Stormarn-Mitte,SPD,m
+NW,west,105,Mettmann II,CDU,m
+BW,west,260,Böblingen,CDU,m
+BW,west,265,Ludwigsburg,CDU,m
+NI,west,37,Lüchow-Dannenberg – Lüneburg,SPD,m
+SN,east,151,Nordsachsen,AfD,m
+HE,west,174,Fulda,CDU,m
+BY,west,216,Ingolstadt,CSU,m
+TH,east,194,Gera – Greiz – Altenburger Land,AfD,m
+BW,west,274,Heidelberg,GRÜNE,f
+NI,west,32,Cloppenburg – Vechta,CDU,f
+BY,west,244,Nürnberg-Nord,CSU,m
+ST,east,68,Harz,CDU,f
+NW,west,131,Gütersloh I,CDU,m
+NW,west,99,Oberbergischer Kreis,CDU,m
+RP,west,200,Mosel/Rhein-Hunsrück,CDU,m
+BW,west,283,Emmendingen – Lahr,CDU,m
+BY,west,248,Bad Kissingen,CSU,f
+TH,east,192,Gotha – Ilm-Kreis,AfD,m
+BW,west,275,Mannheim,SPD,f
+SN,east,157,Görlitz,AfD,m
+NI,west,25,Unterems,CDU,f
+BE,west,85,Berlin-Marzahn-Hellersdorf,CDU,m
+SH,west,2,Nordfriesland – Dithmarschen Nord,CDU,f
+BE,west,82,Berlin-Neukölln,SPD,m
+ST,east,72,Halle,SPD,m
+NW,west,114,Krefeld II – Wesel II,SPD,m
+SN,east,164,Erzgebirgskreis I,AfD,m
+HE,west,167,Waldeck,SPD,f
+BY,west,226,Weilheim,CSU,m
+BW,west,289,Reutlingen,CDU,m
+HH,west,18,Hamburg-Mitte,SPD,m
+BY,west,253,Augsburg-Land,CSU,m
+HE,west,173,Gießen,SPD,m
+NW,west,139,Ennepe-Ruhr-Kreis II,SPD,m
+BY,west,246,Roth,CSU,m
+BB,east,60,Brandenburg an der Havel – Potsdam-Mittelmark I – Havelland III – Teltow-Fläming I,SPD,f
+BY,west,255,Neu-Ulm,CSU,m
+BY,west,234,Schwandorf,CSU,f
+BY,west,227,Deggendorf,CSU,m
+NW,west,132,Bielefeld – Gütersloh II,SPD,f
+NI,west,42,Stadt Hannover II,SPD,f
+ST,east,74,Mansfeld,AfD,m
+NW,west,118,Mülheim – Essen I,SPD,m
+HE,west,170,Schwalm-Eder,SPD,m
+BW,west,286,Schwarzwald-Baar,CDU,m
+BY,west,239,Hof,CSU,m
+BY,west,245,Nürnberg-Süd,CSU,m
+BW,west,263,Göppingen,CDU,m
+BB,east,58,Oberhavel – Havelland II,SPD,f
+NI,west,39,Stadt Osnabrück,SPD,m
+BY,west,238,Coburg,CSU,m
+BE,west,76,Berlin-Pankow,GRÜNE,m
+NW,west,125,Bottrop – Recklinghausen III,SPD,m
+RP,west,210,Pirmasens,SPD,f
+BW,west,266,Neckar-Zaber,CDU,m
+HE,west,168,Kassel,SPD,m
+TH,east,189,Eichsfeld – Nordhausen – Kyffhäuserkreis,CDU,m
+NI,west,30,Stade I – Rotenburg II,CDU,m
+BW,west,269,Backnang – Schwäbisch Gmünd,CDU,f
+NW,west,108,Neuss I,CDU,m
+BW,west,261,Esslingen,CDU,m
+BE,west,77,Berlin-Reinickendorf,CDU,f
+BW,west,278,Bruchsal – Schwetzingen,CDU,m
+BE,west,84,Berlin-Treptow-Köpenick,DIE LINKE,m
+NW,west,136,Höxter – Gütersloh III – Lippe II,CDU,m
+SH,west,1,Flensburg – Schleswig,GRÜNE,m
+SH,west,9,Ostholstein – Stormarn-Nord,SPD,f
+BY,west,221,München-Land,CSU,m
+HH,west,23,Hamburg-Bergedorf – Harburg,SPD,m
+NW,west,120,Essen III,CDU,m
+NW,west,119,Essen II,SPD,m
+RP,west,198,Ahrweiler,CDU,f
+NI,west,45,Gifhorn – Peine,SPD,m
+NI,west,52,Goslar – Northeim – Osterode,SPD,f
+BE,west,79,Berlin-Steglitz-Zehlendorf,CDU,m
+HH,west,19,Hamburg-Altona,GRÜNE,f
+SH,west,3,Steinburg – Dithmarschen Süd,CDU,m
+BW,west,262,Nürtingen,CDU,m
+NW,west,127,Coesfeld – Steinfurt II,CDU,m
+NW,west,110,Krefeld I – Neuss II,CDU,m
+BY,west,232,Amberg,CSU,f
+SN,east,156,Bautzen I,AfD,m
+RP,west,211,Südpfalz,SPD,m
+BY,west,249,Main-Spessart,CSU,m
+RP,west,203,Trier,SPD,f
+BY,west,214,Freising,CSU,m
+SN,east,158,Sächsische Schweiz-Osterzgebirge,AfD,m
+NW,west,106,Düsseldorf I,CDU,m
+BW,west,287,Konstanz,CDU,m
+HE,west,179,Wiesbaden,CDU,m
+MV,east,13,Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I,SPD,m
+NW,west,144,Unna I,SPD,m
+NW,west,128,Steinfurt III,CDU,f
+MV,east,15,Vorpommern-Rügen – Vorpommern-Greifswald I,SPD,f
+TH,east,195,Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis,AfD,m
+NW,west,113,Wesel I,SPD,m
+BW,west,291,Ulm,CDU,f
+ST,east,67,Börde – Jerichower Land,SPD,f
+BW,west,270,Aalen – Heidenheim,CDU,m
+BY,west,224,Starnberg – Landsberg am Lech,CSU,m
+NW,west,91,Rhein-Erft-Kreis I,CDU,m
+BE,west,78,Berlin-Spandau – Charlottenburg Nord,SPD,m
+NW,west,148,Siegen-Wittgenstein,CDU,m
+NW,west,129,Münster,GRÜNE,f
+SH,west,6,Plön – Neumünster,SPD,m
+NI,west,35,Rotenburg I – Heidekreis,SPD,m
+SH,west,11,Lübeck,SPD,m
+NI,west,33,Diepholz – Nienburg I,CDU,m
+HE,west,176,Hochtaunus,CDU,m
+BW,west,281,Freiburg,GRÜNE,f
+BB,east,59,Märkisch-Oderland – Barnim II,SPD,f
+NI,west,49,Salzgitter – Wolfenbüttel,SPD,f
+BW,west,279,Pforzheim,CDU,m
+NW,west,109,Mönchengladbach,CDU,m
+NW,west,87,Aachen I,GRÜNE,m
+ST,east,69,Magdeburg,SPD,m
+NW,west,126,Borken II,CDU,f
+BE,west,81,Berlin-Tempelhof-Schöneberg,SPD,m
+BY,west,254,Donau-Ries,CSU,m
+HE,west,186,Darmstadt,SPD,m
+BY,west,237,Bayreuth,CSU,f
+NW,west,101,Leverkusen – Köln IV,SPD,m
+SN,east,152,Leipzig I,CDU,m
+NW,west,94,Köln II,GRÜNE,m
+BB,east,62,Dahme-Spreewald – Teltow-Fläming III – Oberspreewald-Lausitz I,SPD,f
+BY,west,251,Würzburg,CSU,m
+SN,east,155,Meißen,AfD,f
+BY,west,213,Erding – Ebersberg,CSU,m
+SL,west,299,Homburg,SPD,m
+NW,west,102,Wuppertal I,SPD,m
+BY,west,247,Aschaffenburg,CSU,f
+NW,west,137,Paderborn,CDU,m
+BY,west,217,München-Nord,CSU,m
+BY,west,222,Rosenheim,CSU,f
+BE,west,86,Berlin-Lichtenberg,DIE LINKE,f
+SL,west,297,Saarlouis,SPD,m
+RP,west,204,Montabaur,SPD,f
+BW,west,280,Calw,CDU,m
+SN,east,166,Vogtlandkreis,CDU,f
+MV,east,16,Mecklenburgische Seenplatte I – Vorpommern-Greifswald II,SPD,m
+HH,west,21,Hamburg-Nord,SPD,f
+NI,west,34,Osterholz – Verden,CDU,m
+BY,west,212,Altötting,CSU,m
+BW,west,271,Karlsruhe-Stadt,GRÜNE,f
+BW,west,293,Bodensee,CDU,m
+HE,west,188,Bergstraße,CDU,m
+NW,west,147,Hochsauerlandkreis,CDU,m
+RP,west,206,Worms,CDU,m
+NI,west,47,Hannover-Land II,SPD,m
+RP,west,209,Kaiserslautern,SPD,m
+NI,west,28,Delmenhorst – Wesermarsch – Oldenburg-Land,SPD,f
+NI,west,51,Helmstedt – Wolfsburg,SPD,m
+NW,west,88,Aachen II,SPD,f
+SN,east,163,Chemnitzer Umland – Erzgebirgskreis II,AfD,m
+SN,east,165,Zwickau,AfD,m
+NI,west,26,Friesland – Wilhelmshaven – Wittmund,SPD,f
+BW,west,259,Stuttgart II,CDU,m
+BW,west,294,Ravensburg,CDU,m
+HE,west,175,Main-Kinzig – Wetterau II – Schotten,SPD,f
+SN,east,162,Chemnitz,SPD,m
+NW,west,149,Olpe – Märkischer Kreis I,CDU,m
+BE,west,80,Berlin-Charlottenburg-Wilmersdorf,SPD,m
+ST,east,70,Dessau – Wittenberg,CDU,m
+BY,west,242,Erlangen,CSU,m
+NW,west,141,Herne – Bochum II,SPD,f
+NW,west,95,Köln III,SPD,m
+SN,east,154,Leipzig-Land,AfD,m
+NW,west,122,Recklinghausen II,SPD,m
+HE,west,183,Frankfurt am Main II,GRÜNE,m
+HE,west,180,Hanau,SPD,m
+NW,west,89,Heinsberg,CDU,m
+BW,west,277,Rhein-Neckar,CDU,m
+SL,west,296,Saarbrücken,SPD,f
+RP,west,199,Koblenz,CDU,m
+NI,west,44,Celle – Uelzen,CDU,m
+BY,west,228,Landshut,CSU,m
+NI,west,50,Braunschweig,SPD,m
+BB,east,56,Prignitz – Ostprignitz-Ruppin – Havelland I,SPD,f
+BB,east,63,Frankfurt (Oder) – Oder-Spree,SPD,m
+HE,west,177,Wetterau I,SPD,f
+NW,west,142,Dortmund I,SPD,m
+SN,east,153,Leipzig II,DIE LINKE,m
+SL,west,298,St. Wendel,SPD,m
+NI,west,53,Göttingen,SPD,m
+BY,west,220,München-West/Mitte,CSU,m
+NW,west,111,Viersen,CDU,m
+NW,west,143,Dortmund II,SPD,f
+NW,west,134,Minden-Lübbecke I,SPD,m
+NW,west,90,Düren,CDU,m
+BY,west,223,Bad Tölz-Wolfratshausen – Miesbach,CSU,m
+BY,west,231,Straubing,CSU,m
+BY,west,225,Traunstein,CSU,m
+NW,west,130,Warendorf,CDU,m
+SN,east,159,Dresden I,CDU,m
+BW,west,292,Biberach,CDU,m
+NW,west,107,Düsseldorf II,SPD,m
+SH,west,4,Rendsburg-Eckernförde,SPD,m
+NI,west,27,Oldenburg – Ammerland,SPD,m
+SN,east,160,Dresden II – Bautzen II,CDU,m
+HE,west,169,Werra-Meißner – Hersfeld-Rotenburg,SPD,m
+NW,west,112,Kleve,CDU,m
+BY,west,235,Weiden,CSU,m
+HB,west,54,Bremen I,SPD,f
+NW,west,98,Rhein-Sieg-Kreis II,CDU,m
+RP,west,197,Neuwied,CDU,m
+NI,west,24,Aurich – Emden,SPD,m
+NI,west,43,Hannover-Land I,SPD,f
+SH,west,10,Herzogtum Lauenburg – Stormarn-Süd,SPD,f
+BY,west,229,Passau,CSU,m
+NW,west,138,Hagen – Ennepe-Ruhr-Kreis I,SPD,m
+HE,west,172,Lahn-Dill,SPD,f
+HB,west,55,Bremen II – Bremerhaven,SPD,m
+TH,east,193,Erfurt – Weimar – Weimarer Land II,SPD,m
+NI,west,29,Cuxhaven – Stade II,SPD,m
+RP,west,202,Bitburg,CDU,m
+BB,east,61,Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II,SPD,m
+NI,west,46,Hameln-Pyrmont – Holzminden,SPD,m
+RP,west,207,Ludwigshafen/Frankenthal,SPD,m
+BW,west,288,Waldshut,CDU,m
+NW,west,121,Recklinghausen I,SPD,m
+NW,west,133,Herford – Minden-Lübbecke II,SPD,m
+NW,west,140,Bochum I,SPD,m
+NW,west,103,Solingen – Remscheid – Wuppertal II,SPD,m
+BY,west,219,München-Süd,GRÜNE,f
+BW,west,284,Offenburg,CDU,m
+NW,west,92,Euskirchen – Rhein-Erft-Kreis II,CDU,m
+BY,west,236,Bamberg,CSU,m
+HE,west,185,Offenbach,CDU,m
+NW,west,124,Steinfurt I – Borken I,CDU,m
+NI,west,36,Harburg,SPD,f
+BY,west,215,Fürstenfeldbruck,CSU,f
+HH,west,20,Hamburg-Eimsbüttel,GRÜNE,m
+BY,west,218,München-Ost,CSU,m
+NI,west,31,Mittelems,CDU,m
+SH,west,7,Pinneberg,SPD,m
+SH,west,5,Kiel,SPD,m
+RP,west,208,Neustadt – Speyer,CDU,m
+BE,west,75,Berlin-Mitte,GRÜNE,f
+BW,west,268,Schwäbisch Hall – Hohenlohe,CDU,m
+ST,east,73,Burgenland – Saalekreis,CDU,m
+BY,west,257,Ostallgäu,CSU,m
+BY,west,230,Rottal-Inn,CSU,m
+BW,west,264,Waiblingen,CDU,f
+TH,east,190,Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis,AfD,m
+BW,west,282,Lörrach – Müllheim,CDU,f
+NW,west,100,Rheinisch-Bergischer Kreis,CDU,m
+NW,west,145,Hamm – Unna II,SPD,m
+NW,west,146,Soest,CDU,m
+BW,west,267,Heilbronn,CDU,m
+NW,west,123,Gelsenkirchen,SPD,m
+NW,west,96,Bonn,GRÜNE,f
+TH,east,196,Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg,SPD,m
+BY,west,252,Augsburg-Stadt,CSU,m
+NI,west,40,Nienburg II – Schaumburg,SPD,f
+NW,west,117,Oberhausen – Wesel III,SPD,m
+BB,east,64,Cottbus – Spree-Neiße,SPD,f
+BB,east,65,Elbe-Elster – Oberspreewald-Lausitz II,SPD,m
+BW,west,276,Odenwald – Tauber,CDU,f
+HE,west,184,Groß-Gerau,SPD,f
+RP,west,201,Kreuznach,SPD,m
+BY,west,250,Schweinfurt,CSU,f
+BW,west,285,Rottweil – Tuttlingen,CDU,f
+NI,west,48,Hildesheim,SPD,m
+BW,west,273,Rastatt,CDU,m
+BW,west,290,Tübingen,CDU,f
+NW,west,104,Mettmann I,CDU,m
+HE,west,178,Rheingau-Taunus – Limburg,CDU,m
+NW,west,97,Rhein-Sieg-Kreis I,CDU,f
+BY,west,243,Fürth,CSU,m
+BY,west,256,Oberallgäu,CSU,f
+ST,east,66,Altmark,SPD,m
+BY,west,240,Kulmbach,CSU,f
+ST,east,71,Anhalt,AfD,m
+NW,west,150,Märkischer Kreis II,CDU,m
+BB,east,57,Uckermark – Barnim I,SPD,m
+HE,west,187,Odenwald,SPD,m
+BW,west,272,Karlsruhe-Land,CDU,m
+HE,west,182,Frankfurt am Main I,SPD,m
+MV,east,14,Rostock – Landkreis Rostock II,SPD,f
+BW,west,258,Stuttgart I,GRÜNE,m
+NW,west,116,Duisburg II,SPD,m
+HH,west,22,Hamburg-Wandsbek,SPD,f

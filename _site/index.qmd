@@ -5,6 +5,7 @@ format:
     embed-resources: true
 ---
 
++ [German election 2021](notebooks/2024_deu-election-2021.html) · 🗳️ // Oct. 2024
 + [Majoritarian elections](notebooks/2024_majoritarian-elections.html) (UK election 2024) · 🗳️ // July 2024
 + [DSS data tools presentation](notebooks/2023_dss-data-presentation.html) · 🔭 // Nov. 2023
 + [ESS analysis with ChatGPT](notebooks/2023_chatgpt-ess.nb.html) · 📊 // June 2023
