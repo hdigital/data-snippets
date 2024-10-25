@@ -1,14 +1,16 @@
+# Install all R packages (locked versions) and render notebook
+# run in local container or codespace with: Rscript z-run-all.R
+
 run_all <- FALSE
 
 
 ## Install and lock packages ----
 
-if (fs::file_exists("pkg.lock")) {
-  pak::lockfile_install()
-} else {
+if (!fs::file_exists("pkg.lock")) {
   deps <- unique(renv::dependencies()[["Package"]])
   pak::lockfile_create(deps)
 }
+pak::lockfile_install()
 
 
 ## Format and check code ----
