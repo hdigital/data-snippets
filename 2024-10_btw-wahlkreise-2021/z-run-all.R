@@ -1,14 +1,14 @@
-library(callr)
-library(fs)
-library(purrr)
-
 run_all <- FALSE
 
 
-## Use locked package versions ----
+## Install and lock packages ----
 
-deps <- unique(renv::dependencies()[["Package"]])
-pak::lockfile_create(deps)
+if (fs::file_exists("pkg.lock")) {
+  pak::lockfile_install()
+} else {
+  deps <- unique(renv::dependencies()[["Package"]])
+  pak::lockfile_create(deps)
+}
 
 
 ## Format and check code ----
@@ -22,19 +22,18 @@ if (run_all) {
 }
 
 
-## Run R scripts and render notebooks ----
+## Create notebook ----
 
-# created datasets for analysis (needs gitingore files)
+# create datasets for analysis (needs gitignore files)
 if (run_all) {
-  rscript("data-btw-2021.R")
+  callr::rscript("data-btw-2021.R")
 }
 
-# render Quarto notebook
+# render notebook
 system("quarto render deu-election-2021.qmd --cache-refresh")
 
-
 # copy notebook to site folder
-file_copy(
+fs::file_copy(
   "deu-election-2021.html",
   "../_site/notebooks/2024_deu-election-2021.html",
   overwrite = TRUE
