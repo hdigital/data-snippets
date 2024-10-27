@@ -1,5 +1,10 @@
 ESS9e03*
 
+# Local scripts and data files (ignore with prefix)
+source__*
+tmp__*
+z-tmp__*
+
 # Quarto cache files
 *_cache/
 *_files/

@@ -1,0 +1,401 @@
+---
+title: "Election 2021 (DEU) · 🇩🇪"
+author: "Holger Doering"
+date: today
+execute:
+  cache: false
+  messages: true
+  warning: false
+format:
+  html:
+    code-fold: true
+    df-print: kable
+    embed-resources: true
+    toc: true
+---
+
+
+```{r corepacks}
+library(conflicted) # create errors for function name conflicts
+
+library(tidyverse)
+conflicts_prefer(dplyr::filter, .quiet = TRUE)
+library(knitr) # layout // tables in RMarkdown with kable()
+
+ggplot2::theme_set(theme_void())
+options(scipen = 999) # suppress scientific notation
+
+library(estimatr) # robust standard errors
+library(patchwork) # arrrange plots
+library(sf) # plot maps and gespatial tools
+
+crs_deu <- "+proj=lcc +lat_1=48 +lat_2=53 +lat_0=51 +lon_0=10" # LCC Germany parameters
+```
+
+_Source_ —  The Federal Returning Officer ("Der Bundeswahlleiter"): Bundestag election 2021
+
+- [Results](https://www.bundeswahlleiter.de/en/bundestagswahlen/2021/ergebnisse.html) constituencies
+  - © Der Bundeswahlleiter, Statistisches Bundesamt, Wiesbaden 2021
+- [Geometric data](https://www.bundeswahlleiter.de/en/bundestagswahlen/2021/wahlkreiseinteilung/downloads.html) of constituencies
+  - © Der Bundeswahlleiter, Statistisches Bundesamt, Wiesbaden 2020,
+    Wahlkreiskarte für die Wahl zum 20. Deutschen Bundestag,
+    Basis of the geological information © Geobasis-DE / BKG 2020
+
+
+```{r}
+btw_raw <- read_csv("data/btw21-results-party.csv")
+
+party_level <- c("AfD", "CDU", "CSU", "FDP", "SPD", "GRÜNE", "DIE LINKE")
+
+btw_dt <-
+  btw_raw |>
+  mutate(party = fct_relevel(party, party_level))
+
+btw_tier1 <- btw_dt |> filter(level == "district", votes_type == "Erststimmen")
+btw_tier2 <- btw_dt |> filter(level == "district", votes_type == "Zweitstimmen")
+
+mp_raw <- read_csv("data/btw21-gewaehlte-wahlkreis.csv")
+
+mp <-
+  mp_raw |>
+  mutate(party = fct_relevel(party, party_level))
+
+wk_shp <-
+  read_rds("data/btw21-districts-geometry.rds") |>
+  left_join(mp |> distinct(wkr_nr, region))
+wk_ctr <- read_rds("data/btw21-districts-centroid.rds")
+```
+
+
+# Votes · 🗳
+
+## Results
+
+party vote share federal level
+
++ candidate tier (first tier) — ("Erststimmen")
++ party tier (second tier) — ("Zweitstimmen")
+
+```{r, message=FALSE}
+btw_dt |>
+  filter(level == "federal") |>
+  mutate(party = if_else(party %in% c("CDU", "CSU"), "CDU/CSU", party)) |>
+  group_by(votes_type, party) |>
+  summarise(share = sum(share) |> round(1)) |>
+  pivot_wider(names_from = votes_type, values_from = share)
+```
+
+
+## Party votes
+
+```{r, message=FALSE}
+#| fig-height: 7
+
+pl_dt <-
+  wk_shp |>
+  select(wkr_nr, geometry) |>
+  right_join(btw_tier2) |>
+  mutate(party = if_else(party %in% c("CDU", "CSU"), "CDU/CSU", party)) |>
+  group_by(party) |>
+  mutate(share_diff = share - mean(share))
+```
+
+__party tier__ ("Zweitstimmen") vote share electoral districts
+
+```{r}
+#| fig-height: 7
+
+pl1 <-
+  ggplot() +
+  geom_sf(data = pl_dt, aes(fill = share), lwd = 0.05) +
+  scale_fill_viridis_c(option = "magma", direction = -1) +
+  coord_sf(crs = crs_deu) +
+  facet_wrap(vars(party))
+
+pl1 + plot_annotation(caption = "Source: Bundeswahlleiter 2021")
+```
+
+__difference (+/-)__ of vote share party __district__ from __national average__
+vote share party
+
+```{r}
+#| fig-height: 7
+
+pl2 <-
+  ggplot() +
+  geom_sf(data = pl_dt, aes(fill = share_diff), lwd = 0.05) +
+  scale_fill_gradient2(name = "+/-") +
+  coord_sf(crs = crs_deu) +
+  facet_wrap(vars(party))
+
+pl2 + plot_annotation(caption = "Source: Bundeswahlleiter 2021")
+
+pl_out <- pl1 / pl2 + plot_annotation(caption = "Source: Bundeswahlleiter 2021")
+
+ggsave("z-btw21-vote-share.png", pl_out, width = 5, height = 7)
+```
+
+
+## Candidate votes
+
+__candidate tier__ ("Erststimmen") vote share by party
+
++ A --- plurality vote __winning party__
++ B --- sum of candidate vote share __difference__ by __ideology__
+  + right --- AfD, CDU, CSU, FDP
+  + left --- DIE LINKE, GRÜNE, SPD
++ I -- vote share __plurality winner__
++ II -- vote share __difference top 2__ results
+
+
+```{r, message=FALSE}
+party_scale <- c("#A6CEE3", "#1F78B4", "#1b699e", "#E31A1C", "#33A02C", "#FB9A99")
+
+ideo_share <-
+  btw_tier1 |>
+  group_by(wkr_nr, ideology) |>
+  summarise(share = sum(share)) |>
+  pivot_wider(names_from = ideology, values_from = share) |>
+  mutate(rl_diff = right - left)
+
+pl_dt <-
+  wk_shp |>
+  select(wkr_nr, geometry) |>
+  inner_join(ideo_share) |>
+  inner_join(mp |> select(wkr_nr, party))
+
+pl_dt_ctr <- wk_ctr |> left_join(mp)
+
+pl1 <-
+  ggplot() +
+  geom_sf(data = pl_dt, aes(fill = party), lwd = 0.05, alpha = 0.8) +
+  geom_sf(data = pl_dt_ctr, aes(shape = party), alpha = 0.4) +
+  coord_sf(crs = crs_deu) +
+  scale_fill_manual(values = party_scale)
+# print(pl1)
+
+pl2 <-
+  ggplot() +
+  geom_sf(data = pl_dt, aes(fill = rl_diff), lwd = 0.05) +
+  coord_sf(crs = crs_deu) +
+  scale_fill_gradient2(name = "right +/-")
+# print(pl2)
+
+pl1 + pl2 + plot_annotation(tag_levels = "A") +
+  plot_annotation(caption = "Source: Bundeswahlleiter 2021")
+```
+
+```{r, message=FALSE}
+diff_1_2 <-
+  btw_tier1 |>
+  arrange(wkr_nr, desc(share)) |>
+  group_by(wkr_nr) |>
+  filter(row_number() %in% c(1, 2)) |>
+  summarise(
+    top_2_diff = max(share) - min(share),
+    share = max(share)
+  )
+
+pl_dt <-
+  wk_shp |>
+  select(wkr_nr, geometry) |>
+  inner_join(diff_1_2)
+
+pl1 <-
+  ggplot() +
+  geom_sf(data = pl_dt, aes(fill = share), lwd = 0.05) +
+  coord_sf(crs = crs_deu) +
+  scale_fill_viridis_c(option = "cividis", direction = -1)
+# print(pl1)
+
+pl2 <-
+  ggplot() +
+  geom_sf(data = pl_dt, aes(fill = top_2_diff), lwd = 0.05) +
+  coord_sf(crs = crs_deu) +
+  scale_fill_viridis_c(option = "magma", direction = -1)
+# print(pl2)
+
+pl1 + pl2 + plot_annotation(tag_levels = "I") +
+  plot_annotation(caption = "Source: Bundeswahlleiter 2021")
+```
+
+
+# MPs (SMD) · 🗺
+
+## Maps
+
+plurality winner candidate (first) tier vote by party and sex
+
+
+### Germany
+
+```{r, message=FALSE}
+pl_dt_shp <- wk_shp |> left_join(mp)
+pl_dt_ctr <- wk_ctr |> left_join(mp)
+
+pl1 <-
+  ggplot() +
+  geom_sf(data = pl_dt_shp, aes(fill = party), lwd = 0.1) +
+  # scale_fill_brewer(type = "qual", palette = 4) +
+  scale_fill_manual(values = party_scale) +
+  geom_sf(data = pl_dt_ctr, aes(shape = sex), colour = "grey15", alpha = 0.7) +
+  coord_sf(crs = crs_deu)
+
+pl2 <-
+  ggplot() +
+  geom_sf(data = pl_dt_shp, colour = "lightgrey", fill = "grey95", lwd = 0.1) +
+  geom_sf(data = pl_dt_ctr, aes(shape = sex, colour = party)) +
+  scale_colour_manual(values = party_scale) +
+  guides(colour = "none", fill = "none", shape = "none") +
+  coord_sf(crs = crs_deu)
+
+pl1 + pl2 + plot_annotation(caption = "Source: Bundeswahlleiter 2021")
+```
+
+
+### NRW and Berlin
+
+```{r}
+#| fig-height: 3
+
+plot_state <- function(state_select, party_scale_select) {
+  pl_dt_shp_re <- pl_dt_shp |> filter(state == state_select)
+  pl_dt_ctr_re <- pl_dt_ctr |> filter(state == state_select)
+
+  ggplot() +
+    geom_sf(data = pl_dt_shp_re, aes(fill = party), lwd = 0.2) +
+    scale_fill_manual(values = party_scale_select) +
+    geom_sf(data = pl_dt_ctr_re, aes(shape = sex), colour = "grey30", size = 2) +
+    guides(colour = "none", fill = "none", shape = "none")
+}
+
+pl1 <- plot_state("NW", party_scale[c(2, 4, 5)])
+pl2 <- plot_state("BE", party_scale[c(2, 4, 5, 6)])
+# plot_state("HH", party_scale[c(2, 5, 6)])
+pl1 + pl2 + plot_layout(widths = c(55, 45)) +
+  plot_annotation(caption = "Source: Bundeswahlleiter 2021")
+```
+
+
+## Descriptives
+
+number (n) of districts won by party and sex (f -- female, m -- male)
+
+
+### Party
+
+```{r}
+count_party <-
+  mp |>
+  count(party, sex) |>
+  pivot_wider(names_from = sex, values_from = n) |>
+  mutate(share_f = round(100 * f / (m + f)))
+
+count_party |> arrange(share_f)
+```
+
+```{r}
+mp |>
+  count(party) |>
+  mutate(share = round(100 * n / sum(n))) |>
+  arrange(desc(share))
+```
+
+
+### States
+
+```{r, message=FALSE, rows.print=20}
+count_state <-
+  mp |>
+  left_join(wk_shp |> select(wkr_nr, state_name = land_name)) |>
+  count(state_name, sex) |>
+  pivot_wider(names_from = sex, values_from = n) |>
+  mutate(share_f = round(100 * f / (m + f)))
+
+count_state |> arrange(share_f)
+```
+
+
+# Models · 📈
+
++ area_km2 --- size of district as square length (root of area)
++ coord_y --- north/south position (latitude)
++ left_share --- share of left parties (SPD, Linke, Grüne)
++ region -- western or eastern (former GDR) state
+
+```{r, message=FALSE}
+library(broom)
+library(ggeffects)
+
+mo_dt <-
+  pl_dt_shp |>
+  left_join(ideo_share) |>
+  mutate(
+    female = if_else(sex == "f", 1, 0),
+    left_share = left
+  )
+```
+
+
+## Female first-tier winners
+
+Logit model to predict female winners of candidate (first) tier vote
+
+```{r, warning=FALSE}
+mo_glm <- glm(female ~ area_km2 + coord_y + left_share, data = mo_dt, family = "binomial")
+
+tidy(mo_glm) |> mutate(across(where(is.numeric), round, 2))
+
+pl1 <-
+  ggpredict(mo_glm, terms = "area_km2 [all]") |>
+  plot(add.data = TRUE, show.title = FALSE)
+
+pl2 <-
+  ggpredict(mo_glm, terms = "coord_y [all]") |>
+  plot(add.data = TRUE, show.title = FALSE, show.y.title = FALSE)
+
+pl1 + pl2
+```
+
+
+## Left vote-share
+
+Linear model of left parties (SPD, Linke, Grüne) vote share
+
+```{r, warning=FALSE}
+mo_lm <- lm_robust(left_share ~ area_km2 * region + coord_y * region, data = mo_dt)
+
+tidy(mo_lm) |>
+  mutate(across(where(is.numeric), round, 2)) |>
+  select(-conf.low, -conf.high, -df, -outcome)
+
+pl1 <-
+  ggpredict(mo_lm, c("area_km2", "region")) |>
+  plot(add.data = TRUE, show.title = FALSE, show.legend = FALSE)
+
+pl2 <-
+  ggpredict(mo_lm, terms = c("coord_y", "region")) |>
+  plot(add.data = TRUE, show.title = FALSE, show.y.title = )
+
+pl1 + pl2
+```
+
+
+## Party vote-share
+
+Linear model of party vote share
+
+```{r message=FALSE, warning=FALSE}
+mo_dt2 <-
+  btw_tier2 |>
+  mutate(party = if_else(party %in% c("CDU", "CSU"), "CDU/CSU", party)) |>
+  # mutate(party = fct_relevel(party, "CDU")) |>
+  left_join(wk_shp)
+
+mo_lm2 <- lm_robust(share ~ party * area_km2 * region, data = mo_dt2)
+
+# tidy(mo_lm2) |> mutate(across(where(is.numeric), round, 2))
+
+ggpredict(mo_lm2, terms = c("area_km2", "region", "party")) |>
+  plot(add.data = TRUE, show.title = FALSE)
+```
