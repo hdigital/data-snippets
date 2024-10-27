@@ -13,8 +13,7 @@ party_raw <- read_csv("data/btw-party.csv")
 
 
 bw_raw <-
-  read_delim(
-    csv_source,
+  read_delim(csv_source,
     delim = ";",
     col_names = FALSE,
     skip = 2
@@ -52,9 +51,7 @@ names(bw_w)[3:5] <- c("wkr_nr", "wkr_name", "land_nr")
 
 bw_l <-
   bw_w |>
-  pivot_longer(!source:land_nr,
-    names_to = "unit", values_to = "votes"
-  )
+  pivot_longer(!source:land_nr, names_to = "unit", values_to = "votes")
 
 bw_l <-
   bw_l |>
@@ -66,7 +63,11 @@ bw_l <-
 
 votes_valid <-
   bw_l |>
-  filter(unit == "Gültige Stimmen", votes_status == "Endgültig", !is.na(votes)) |>
+  filter(
+    unit == "Gültige Stimmen",
+    votes_status == "Endgültig",
+    !is.na(votes)
+  ) |>
   select(wkr_nr, level, votes_type, votes_valid = votes)
 
 bw_out <-
@@ -101,8 +102,10 @@ write_csv(bw_party, "data/btw21-results-party.csv")
 ## MP data ----
 
 mp_raw <-
-  read_delim("data-raw/w-btw21_gewaehlte_utf8/w-btw21_gewaehlte_utf8.csv",
-    delim = ";", skip = 9
+  read_delim(
+    "data-raw/w-btw21_gewaehlte_utf8/w-btw21_gewaehlte_utf8.csv",
+    delim = ";",
+    skip = 9
   ) |>
   janitor::clean_names()
 
@@ -112,8 +115,10 @@ mp <-
   mutate(
     sex = str_replace(geschlecht, "w", "f"),
     region = if_else(
-      gebiet_land_abk %in% c("BB", "MV", "SN", "ST", "TH"), # "BE"
-      "east", "west"
+      gebiet_land_abk %in% c("BB", "MV", "SN", "ST", "TH"),
+      # "BE"
+      "east",
+      "west"
     ),
     region = factor(region) |> fct_relevel("west")
   ) |>
@@ -140,8 +145,17 @@ wk_shp <-
   wk_shp_raw |>
   mutate(
     area = st_area(geometry),
-    area_km2 = (sqrt(area) / 1000) |> as.integer() |> round(),
-    coord_y = wk_shp_raw |> st_centroid() |> st_coordinates() |> as_tibble() |> pull(Y),
+    area_km2 = (
+      sqrt(area) / 1000 |>
+        as.integer() |>
+        round()
+    ),
+    coord_y = (
+      wk_shp_raw |>
+        st_centroid() |>
+        st_coordinates() |>
+        as_tibble() |> pull(Y)
+    ),
     land_nr = as.integer(land_nr)
   )
 

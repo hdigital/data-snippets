@@ -1,5 +1,5 @@
 ---
-title: "Election 2021 (DEU) ·  🇩🇪"
+title: "Election 2021 (DEU) · 🇩🇪"
 author: "Holger Doering"
 date: today
 execute:
@@ -31,12 +31,16 @@ library(sf) # plot maps and gespatial tools
 
 crs_deu <- "+proj=lcc +lat_1=48 +lat_2=53 +lat_0=51 +lon_0=10" # LCC Germany parameters
 ```
+
 _Source_ —  The Federal Returning Officer ("Der Bundeswahlleiter"): Bundestag election 2021
 
 - [Results](https://www.bundeswahlleiter.de/en/bundestagswahlen/2021/ergebnisse.html) constituencies
   - © Der Bundeswahlleiter, Statistisches Bundesamt, Wiesbaden 2021
 - [Geometric data](https://www.bundeswahlleiter.de/en/bundestagswahlen/2021/wahlkreiseinteilung/downloads.html) of constituencies
-  - © Der Bundeswahlleiter, Statistisches Bundesamt, Wiesbaden 2020, Wahlkreiskarte für die Wahl zum 20. Deutschen Bundestag, Basis of the geological information © Geobasis-DE / BKG 2020
+  - © Der Bundeswahlleiter, Statistisches Bundesamt, Wiesbaden 2020,
+    Wahlkreiskarte für die Wahl zum 20. Deutschen Bundestag,
+    Basis of the geological information © Geobasis-DE / BKG 2020
+
 
 ```{r}
 btw_raw <- read_csv("data/btw21-results-party.csv")
@@ -111,7 +115,8 @@ pl1 <-
 pl1 + plot_annotation(caption = "Source: Bundeswahlleiter 2021")
 ```
 
-__difference (+/-)__ of vote share party __district__ from __national average__ vote share party
+__difference (+/-)__ of vote share party __district__ from __national average__
+vote share party
 
 ```{r}
 #| fig-height: 7
@@ -363,7 +368,6 @@ mo_lm <- lm_robust(left_share ~ area_km2 * region + coord_y * region, data = mo_
 tidy(mo_lm) |>
   mutate(across(where(is.numeric), round, 2)) |>
   select(-conf.low, -conf.high, -df, -outcome)
-
 
 pl1 <-
   ggpredict(mo_lm, c("area_km2", "region")) |>
