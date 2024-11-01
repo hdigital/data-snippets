@@ -55,7 +55,7 @@ cen_raw <- read_csv("data/1000A-0000_de_clean.csv")
 map_deu <- read_rds("data/r-ne_states-deu.rds")
 
 map_met <-
-  read_rds("data/r-metrogeg-gecoding_sf.rds") |>
+  read_rds("data/r-metro-region-gecoding_sf.rds") |>
   mutate(region_search = str_remove(region_search, " .*")) |>
   filter(year_2023 >= 1000000)
 
@@ -364,7 +364,7 @@ pop_states |>
 met_raw <- read_csv("data/met_pjanaggr3__custom_12151542_clean.csv")
 
 met_geo <-
-  read_rds("data/r-metrogeg-gecoding_sf.rds") |>
+  read_rds("data/r-metro-region-gecoding_sf.rds") |>
   select(metroreg, geometry)
 
 met_geo_state <-

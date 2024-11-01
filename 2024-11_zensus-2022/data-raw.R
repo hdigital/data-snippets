@@ -89,5 +89,5 @@ if (FALSE) {
     arrange(-y2023) |>
     select(metroreg, region_search)
 
-  write_rds(met_geo_coded, "data-raw/r-metrogeg-gecoding_sf.rds")
+  write_rds(met_geo_coded, "data/r-metro-region-gecoding_sf.rds")
 }
