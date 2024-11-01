@@ -1,0 +1,512 @@
+---
+title: "Bevölkerung (DEU) · 🇩🇪"
+author: "Holger Döring"
+date: today
+lang: de
+execute:
+  cache: false
+  messages: true
+  warning: false
+format:
+  html:
+    code-fold: true
+    df-print: kable
+    embed-resources: true
+    fig-height: 4
+    toc: true
+---
+
+```{r corepacks}
+library(conflicted) # create errors for function name conflicts
+
+library(tidyverse)
+conflicts_prefer(dplyr::filter, .quiet = TRUE)
+library(knitr) # layout // tables in RMarkdown with kable()
+ggplot2::theme_set(theme_minimal())
+options(scipen = 99999) # suppress scientific notation
+
+library(patchwork) # plots  // arrange
+library(reactable) # layout // interactive tables
+library(sf) # geo // spatial data
+
+round_first_two <- function(x) {
+  scale <- 10^ceiling(log10(x))
+  round(x / scale, 2) * scale
+}
+```
+
+---
+
+```{r, eval=FALSE, include=FALSE}
+# Get and create data for analysis
+callr::rscript("data-raw.R")
+```
+
+## Deutschland-Karte · 🗺️
+
+- Zensus 2022, Statistische Ämter des Bundes und der Länder, [dl-de/by-2-0](http://www.govdata.de/dl-de/by-2-0)
+  - Personen: Bevölkerungszahl · [1000A-0000](https://ergebnisse.zensus2022.de/datenbank/online/statistic/1000A/table/1000A-0000)
+- Eurostat, Europäische Kommission, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+  - DOI [10.2908/MET_PJANAGGR3](https://doi.org/10.2908/MET_PJANAGGR3)
+
+```{r}
+cen_raw <- read_csv("data/1000A-0000_de_clean.csv")
+
+map_deu <- read_rds("data/r-ne_states-deu.rds")
+
+map_met <-
+  read_rds("data/r-metrogeg-gecoding_sf.rds") |>
+  mutate(region_search = str_remove(region_search, " .*")) |>
+  filter(year_2023 >= 1000000)
+
+map_place <-
+  read_rds("data/r-census-gecoding_sf.rds") |>
+  inner_join(select(cen_raw, ags, population), by = "ags") |>
+  mutate(
+    pop_1M = population / 1000000,
+    pop_1000 = ifelse(population >= 100000, TRUE, FALSE)
+  ) |>
+  select(-state_name)
+```
+
+### Deutschland · 🇩🇪
+
+- **Metropol-Regionen** — mehr als 1 Mio. Einwohner (beschriftet)
+- **Großstädte** — mehr als 100,000 Einwohner (grün)
+- **Städte** — mehr als 25,000 Einwohner (rot)
+- **Gemeinden** — mehr als 10,000 Einwohner (grau)
+
+```{r}
+#| fig-height: 6
+pl_dt <-
+  map_place |>
+  mutate(
+    pop_25 = if_else(population >= 25000, pop_1M, NA),
+    pop_10 = if_else(population < 25000, pop_1M, NA)
+  )
+
+pl <-
+  ggplot() +
+  geom_sf(data = map_deu, colour = "grey85", lwd = 0.3) +
+  geom_sf(data = pl_dt, aes(size = pop_25, colour = pop_1000), alpha = 0.4) +
+  geom_sf(data = pl_dt, aes(colour = pop_10), colour = "grey", alpha = 0.2) +
+  coord_sf(crs = "EPSG:4839") + # LCC projection Germany
+  ggrepel::geom_label_repel(
+    data = map_met,
+    aes(label = region_search, geometry = geometry),
+    stat = "sf_coordinates",
+    alpha = 0.7,
+    min.segment.length = 0,
+    size = 3
+  ) +
+  scale_size_continuous(trans = "log") +
+  labs(caption = "Quellen: Zensus 2022 und Eurostat") +
+  guides(alpha = "none", color = "none", size = "none") +
+  theme_void()
+
+ggsave("z-staedte-2022.png", pl, width = 8, height = 6)
+pl
+```
+
+
+### NRW Metropolen · 📍
+
+Metropol-Regionen Ruhrgebiet, Düsseldorf und Köln
+
+```{r}
+create_sf_rectangle <- function(xmin, xmax, ymin, ymax, crs = "EPSG:4326") {
+  matrix(
+    c(xmin, ymin, xmax, ymin, xmax, ymax, xmin, ymax, xmin, ymin),
+    ncol = 2, byrow = TRUE
+  ) |>
+    list() |>
+    st_polygon() |>
+    st_sfc(crs = crs)
+}
+
+nrw_select <- create_sf_rectangle(6.5, 7.9, 50.9, 51.7)
+```
+
+
+```{r}
+map_nrw_ruhr <-
+  map_deu |>
+  st_intersection(nrw_select)
+
+map_place_nrw <-
+  map_place |>
+  st_intersection(map_nrw_ruhr) |>
+  mutate(
+    place_1000 = if_else(population >= 100000,
+      str_remove(place, ",.*"),
+      NA_character_
+    ),
+    place_1000 = str_remove(place_1000, " an der Ruhr")
+  )
+
+ggplot() +
+  geom_sf(data = map_nrw_ruhr, colour = "grey85", lwd = 0.3) +
+  geom_sf(data = map_place_nrw, aes(size = pop_1M, colour = pop_1000), alpha = 0.3) +
+  coord_sf(crs = "EPSG:4839") + # LCC projection Germany
+  ggrepel::geom_label_repel(
+    data = map_place_nrw,
+    aes(label = place_1000, geometry = geometry),
+    stat = "sf_coordinates",
+    alpha = 0.7,
+    min.segment.length = 0,
+    size = 2.5
+  ) +
+  scale_size_continuous(trans = "log") +
+  labs(caption = "Quelle: Zensus 2022") +
+  guides(alpha = "none", color = "none", size = "none") +
+  theme_void()
+```
+
+
+## Bevölkerungszahl · 📈
+
+**Zensus 2022** · Deutschland · 🇩🇪
+
+```{r}
+pop <-
+  cen_raw |>
+  arrange(-population) |>
+  mutate(
+    place = str_remove(place, ",.*"),
+    rank = row_number(),
+    cum_population = cumsum(population),
+  ) |>
+  relocate(state, rank, .after = place)
+```
+
+### Städte / Gemeinden · 🏘
+
+```{r}
+pop_tsd_all <-
+  pop |>
+  mutate(
+    pop_category = case_when(
+      population >= 1000000 ~ 1000000,
+      population >= 500000 ~ 500000,
+      population >= 100000 ~ 100000,
+      population >= 50000 ~ 50000,
+      population >= 25000 ~ 25000,
+      population >= 10000 ~ 10000,
+      population >= 5000 ~ 5000,
+      population >= 1000 ~ 1000,
+      population >= 0 ~ 100,
+      .default = NA
+    )
+  )
+
+pop_tsd <-
+  pop_tsd_all |>
+  summarise(
+    n = n(),
+    pop_median = median(population),
+    pop_sum = sum(population),
+    .by = pop_category
+  ) |>
+  mutate(
+    n_cum = cumsum(n),
+    pop_cum = cumsum(pop_sum),
+  ) |>
+  relocate(n_cum, .after = n) |>
+  arrange(desc(pop_category))
+```
+
+```{r}
+pl_dt <-
+  pop_tsd |>
+  mutate(pop_category = fct_rev(fct_inorder(as.character(pop_category))))
+
+pl1 <-
+  ggplot(pl_dt, aes(x = pop_sum, y = pop_category)) +
+  geom_col(fill = "grey85") +
+  scale_x_continuous(
+    breaks = c(5000000, 10000000, 15000000),
+    labels = c("5M", "10M", "15M")
+  ) +
+  labs(x = "", y = "")
+
+pl2 <-
+  ggplot(pl_dt, aes(x = pop_cum, y = pop_category)) +
+  geom_col(fill = "grey85") +
+  scale_x_continuous(
+    breaks = c(20000000, 40000000, 60000000),
+    labels = c("20M", "40M", "60M")
+  ) +
+  theme(axis.text.y = element_blank()) +
+  labs(x = "", y = "")
+
+pl1 + pl2 +
+  plot_annotation(caption = "Quelle: Zensus 2022") +
+  plot_layout(widths = c(3, 2))
+```
+
+- **Kategorie** — Bevölkerungskategorie (z.B. 25.000 – 50.000)
+- **n** — Anzahl der Städte/Gemeinden
+- **n_cum** — Kumulierte Anzahl der Städte/Gemeinden
+- **median** — Median der Bevölkerungszahlen
+- **sum_1M** — Summe der Bevölkerungszahlen (1 Mio.)
+- **cum_1M** — Kumulierte Summe der Bevölkerungszahlen (1 Mio.)
+
+```{r}
+pop_tsd |>
+  mutate(
+    median = round_first_two(pop_median),
+    sum_1M = round(pop_sum / 1000000, 1),
+    cum_1M = round(pop_cum / 1000000, 1)
+  ) |>
+  select(category = pop_category, n, n_cum, median, sum_1M, cum_1M) |>
+  reactable(
+    sortable = FALSE,
+    striped = TRUE,
+    columns = list(
+      category = colDef(format = colFormat(separators = TRUE)),
+      median = colDef(format = colFormat(separators = TRUE))
+    )
+  )
+```
+
+```{r}
+#| fig-height: 3
+
+pl_dt <-
+  pop |>
+  arrange(population) |>
+  mutate(cum_population = cumsum(population) / 1000000)
+
+pl_dt_largest <-
+  pl_dt |>
+  slice_tail(n = 6) |>
+  mutate(place = fct_reorder(place, population, .desc = TRUE))
+
+pl <-
+  ggplot(pl_dt, aes(x = population, y = cum_population)) +
+  geom_point(data = pl_dt_largest, aes(color = place)) +
+  geom_line() +
+  scale_x_log10(limits = c(1000, 4000000)) +
+  labs(x = "Bevölkerung", y = "") +
+  labs(color = "Stadt")
+
+pl + plot_annotation(caption = "Quelle: Zensus 2022")
+```
+
+
+### Bundesländer · 🏛️
+
+```{r}
+ags_state <-
+  read_csv("data/ags-land.csv") |>
+  select(-ags_state)
+
+pop_states <-
+  pop |>
+  left_join(ags_state, by = "state") |>
+  summarise(
+    population = sum(population),
+    .by = c(state, state_name)
+  ) |>
+  arrange(-population) |>
+  mutate(
+    pop_1M = round(population / 1000000, 1),
+    cum_1M = cumsum(pop_1M)
+  )
+```
+
+```{r}
+pl1 <-
+  pop_states |>
+  mutate(Bundesland = fct_reorder(state_name, population)) |>
+  ggplot(aes(x = pop_1M, y = Bundesland)) +
+  geom_col(fill = "grey90", alpha = 0.8) +
+  scale_x_continuous(
+    breaks = c(0, 5, 10, 15),
+    labels = c("", "5M", "10M", "15M")
+  ) +
+  labs(x = "", y = "")
+
+map_centroids <-
+  map_deu |>
+  st_point_on_surface() |>
+  left_join(pop_states, by = "state")
+
+pl2 <-
+  ggplot() +
+  geom_sf(data = map_deu, color = "grey85") +
+  geom_sf(
+    data = map_centroids, aes(size = pop_1M),
+    colour = "blue", alpha = 0.4, show.legend = FALSE
+  ) +
+  theme_void()
+
+pl1 + pl2 +
+  plot_annotation(caption = "Quelle: Zensus 2022") +
+  plot_layout(widths = c(1, 2))
+```
+
+- **pop_1M** — Bevölkerung in Millionen
+- **cum_1M** — Kumulierte Bevölkerung in Millionen
+
+
+```{r}
+pop_states |>
+  select(-state, -population) |>
+  reactable(searchable = TRUE, striped = TRUE, defaultPageSize = 4, fullWidth = FALSE)
+```
+
+## Metropol-Regionen · 🏙
+
+**Eurostat** · 🇪🇺
+
+```{r}
+met_raw <- read_csv("data/met_pjanaggr3__custom_12151542_clean.csv")
+
+met_geo <-
+  read_rds("data/r-metrogeg-gecoding_sf.rds") |>
+  select(metroreg, geometry)
+
+met_geo_state <-
+  map_deu |>
+  st_join(met_geo) |>
+  select(metroreg, state) |>
+  st_set_geometry(NULL) |>
+  bind_rows(tibble(metroreg = c("DE054M", "DE074M"), state = c("BW", "SN")))
+
+met <-
+  met_geo |>
+  right_join(met_raw, by = "metroreg") |>
+  left_join(met_geo_state, by = "metroreg") |>
+  select(metroreg, state, region = label, population = y2023) |>
+  mutate(pop_1M = population / 1000000) |>
+  arrange(-population)
+```
+
+```{r}
+pl_dt <-
+  met |>
+  mutate(
+    region = str_remove(region, "-.*"),
+    Metropole = fct_reorder(region, population)
+  ) |>
+  slice(1:15)
+
+pl1 <-
+  ggplot(pl_dt, aes(x = pop_1M, y = Metropole)) +
+  geom_col(fill = "grey90", alpha = 0.8) +
+  scale_x_continuous(
+    breaks = c(1, 3, 5),
+    labels = c("1M", "3M", "5M")
+  ) +
+  labs(x = "", y = "")
+
+pl2 <-
+  ggplot() +
+  geom_sf(data = map_deu, fill = "grey90", color = "grey85") +
+  geom_sf(
+    data = met, aes(size = pop_1M),
+    colour = "red", alpha = 0.33, show.legend = FALSE
+  ) +
+  coord_sf(crs = "EPSG:4839") +
+  guides(alpha = "none", color = "none") +
+  theme_void()
+
+pl1 + pl2 + plot_layout(widths = c(2, 3)) +
+  plot_annotation(caption = "Quelle: Eurostat") +
+  plot_layout(widths = c(1, 2))
+```
+
+[Metropol-Region](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Metro_regions)
+("Metro regions")
+
+> (...) at least 50 % of the population lives inside a functional urban area
+> (FUA) that is composed of at least 250 000 inhabitants.
+
+[Pendel-Zone](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Commuting_zone)
+("Commuting zone")
+
+> (...) at least 15 % of employed residents are working in a city.
+
+
+## Daten · 💯
+
+### Städte / Gemeinden · 🏘
+
+**Zensus 2022** · Deutschland · 🇩🇪
+
+```{r}
+pop |>
+  filter(population >= 5000) |>
+  mutate(
+    population = round_first_two(population),
+    cum_1M = round(cum_population / 1000000, 1)
+  ) |>
+  select(-ags, -cum_population) |>
+  reactable(
+    defaultPageSize = 5,
+    searchable = TRUE,
+    striped = TRUE,
+    columns = list(
+      population = colDef(format = colFormat(separators = TRUE))
+    )
+  )
+```
+
+```{r}
+#| fig-height: 5.5
+
+# # Use tmap v4 (development version)
+# install.packages("tmap", repos = c("https://r-tmap.r-universe.dev"))
+
+library(tmap)
+
+tmap_mode("view")
+
+pl_dt <-
+  map_place |>
+  mutate(
+    population = round_first_two(population),
+    pop_size = log10(pop_1M),
+    pop_type = case_when(
+      population >= 100000 ~ "100,000",
+      population >= 25000 ~ " 25,000",
+      population >= 10000 ~ " 10,000"
+    )
+  ) |>
+  filter(population >= 1000)
+
+pl_scale <- scales::pal_brewer(type = "qual", palette = 6)(3)[c(2, 1, 3)]
+
+tm_shape(pl_dt) +
+  tm_dots(
+    size = "pop_size",
+    size.legend = tm_legend_hide(),
+    fill = "pop_type",
+    fill_alpha = 0.5,
+    fill.scale = tm_scale(values = pl_scale),
+    fill.legend = tm_legend(title = ""),
+    popup.vars = c("place", "population")
+  ) +
+  tm_basemap(
+    server = c(
+      "OpenStreetMap.DE", "OpenTopoMap",
+      "Esri.WorldStreetMap", "Esri.WorldTopoMap", "Esri.WorldImagery"
+    ),
+    zoom = 6
+  )
+```
+
+### Metropol-Regionen · 🏙
+
+**Eurostat** · 🇪🇺
+
+```{r}
+met_raw |>
+  arrange(-y2023) |>
+  mutate(across(where(is.numeric), ~ round(.x / 1000000, 2))) |>
+  left_join(met_geo_state, by = "metroreg") |>
+  select(state, region = label, y2000, y2010, y2020) |>
+  rename_with(~ str_remove(.x, "y"), .cols = everything()) |>
+  reactable(searchable = TRUE, striped = TRUE)
+```
