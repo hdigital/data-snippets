@@ -50,7 +50,7 @@ callr::rscript("data-raw.R")
   - DOI [10.2908/MET_PJANAGGR3](https://doi.org/10.2908/MET_PJANAGGR3)
 
 ```{r}
-cen_raw <- read_csv("data/1000A-0000_de_clean.csv")
+cen_raw <- read_csv("data/1000A-0000_de_clean.csv", show_col_types = FALSE)
 
 map_deu <- read_rds("data/r-ne_states-deu.rds")
 
@@ -298,7 +298,7 @@ pl + plot_annotation(caption = "Quelle: Zensus 2022")
 
 ```{r}
 ags_state <-
-  read_csv("data/ags-land.csv") |>
+  read_csv("data/ags-land.csv", show_col_types = FALSE) |>
   select(-ags_state)
 
 pop_states <-
@@ -361,7 +361,7 @@ pop_states |>
 **Eurostat** · 🇪🇺
 
 ```{r}
-met_raw <- read_csv("data/met_pjanaggr3__custom_12151542_clean.csv")
+met_raw <- read_csv("data/met_pjanaggr3__custom_12151542_clean.csv", show_col_types = FALSE)
 
 met_geo <-
   read_rds("data/r-metro-region-gecoding_sf.rds") |>
@@ -457,7 +457,7 @@ pop |>
 #| fig-height: 5.5
 
 # # Use tmap v4 (development version)
-# install.packages("tmap", repos = c("https://r-tmap.r-universe.dev"))
+# remotes::install_github("r-tmap/tmap")
 
 library(tmap)
 

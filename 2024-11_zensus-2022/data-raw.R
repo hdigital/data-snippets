@@ -1,4 +1,6 @@
+library(conflicted) # create errors for function name conflicts
 library(tidyverse)
+conflicts_prefer(dplyr::filter, .quiet = TRUE)
 library(tidygeocoder)
 
 
@@ -6,15 +8,17 @@ library(tidygeocoder)
 
 met_raw <- read_csv2(
   "data-raw/met_pjanaggr3__custom_12151542_spreadsheet.csv",
-  na = ":"
+  na = ":",
+  show_col_types = FALSE
 )
 
 write_csv(met_raw, "data/met_pjanaggr3__custom_12151542_clean.csv")
 
+
 ## Census data ----
 
-cen_raw <- read_csv2("data-raw/1000A-0000_de_flat.csv")
-ags_state <- read_csv("data/ags-land.csv")
+cen_raw <- read_csv2("data-raw/1000A-0000_de_flat.csv", show_col_types = FALSE)
+ags_state <- read_csv("data/ags-land.csv", show_col_types = FALSE)
 
 cen_clean <-
   cen_raw |>
@@ -46,8 +50,8 @@ write_rds(ne_deu, "data/r-ne_states-deu.rds")
 
 ## Gecoding Census ----
 
-cen_clean <- read_csv("data/1000A-0000_de_clean.csv")
-ags_raw <- read_csv("data/ags-land.csv")
+cen_clean <- read_csv("data/1000A-0000_de_clean.csv", show_col_types = FALSE)
+ags_raw <- read_csv("data/ags-land.csv", show_col_types = FALSE)
 
 cen_geo <-
   cen_clean |>
@@ -73,7 +77,10 @@ if (FALSE) {
 
 ## Gecoding Metro ----
 
-met_raw <- read_csv("data/met_pjanaggr3__custom_12151542_clean.csv")
+met_raw <- read_csv(
+  "data/met_pjanaggr3__custom_12151542_clean.csv",
+  show_col_types = FALSE
+)
 
 met_geo <-
   met_raw |>
