@@ -11,7 +11,7 @@ format:
 + [DSS data tools presentation](notebooks/2023_dss-data-presentation.html) · 🔭 // Nov. 2023
 + [ESS analysis with ChatGPT](notebooks/2023_chatgpt-ess.nb.html) · 📊 // June 2023
 + [Polls TV coverage Bremen election](notebooks/2023_Bremen-Wahlbefragung.html) · 📺 // May 2023
-+ [Happy Python ](notebooks/happy-python.html) · [pdf](notebooks/happy-python.pdf) · 🐍 // 2023
++ [Happy Python ](notebooks/2023_happy-python.html) · [pyscript](snippets/happy-python.html) · 🐍 // 2023
 + [Teaching snippets](https://github.com/hdigital/teaching/) (selection) · 👨🏼‍🏫 // until 2021
   + Electoral systems —
     [types](notebooks/2021_electoral-systems_types.nb.html)

@@ -1,0 +1,22 @@
+---
+title: "Happy Python"
+jupyter: python3
+embed-resources: true
+---
+
+```{python}
+import random
+
+emojis = "🙂😊🙂😀😇😅😃😄😁😂😆😉😋😎🤗"
+
+n = 40
+lines = ["".join(random.choices(emojis, k=n)) for index in range(n)]
+```
+
+{{< pagebreak >}}
+
+```{python}
+#| echo: false
+
+print("\n".join(lines))
+```
