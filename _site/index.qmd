@@ -5,6 +5,7 @@ format:
     embed-resources: true
 ---
 
++ [Farbtafeln](snippets/farbtafeln.html) (Color Charts) · 🟧 // Jan. 2025
 + [German population](notebooks/2024_zensus-2022.html) (Census 2022, German) · 🗺️ // Nov. 2024
 + [German election 2021](notebooks/2024_deu-election-2021.html) · 🗳️ // Oct. 2024
 + [Majoritarian elections](notebooks/2024_majoritarian-elections.html) (UK election 2024) · 🗳️ // July 2024

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farbtafel · 🟧</title>
+    <!-- Link to the p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.2/p5.js"></script>
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif; /* Use a sans-serif font */
+        padding: 20px; /* Add padding to the body */
+        text-align: center; /* Center content */
+      }
+
+      h1 {
+        font-size: 24px; /* Smaller heading */
+      }
+
+      a {
+        color: #6a8fbf; /* Lighter link color */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Bold text */
+      }
+
+      a:hover {
+        text-decoration: underline; /* Underline on hover */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Farbtafeln – Gerhard Richter · 🖼️</h1>
+    <a
+      href="https://www.gerhard-richter.com/en/art/paintings/abstracts/colour-charts-12/colour-chart-5793?categoryid=19&p=1&sp=32&pg=13"
+      title="Farbtafel (Color Chart) 1966"
+    >
+      Farbtafel · 1966
+    </a>
+    — Color Chart, Catalogue Raisonné 139-3
+    <br /><br />
+    <script>
+      const CANVAS_SIZE = 600;
+      const PADDING = 25; // Space between squares
+      const GRID_SIZE = 3; // Grid dimensions (3x3)
+      // Grid colors definition (array of arrays)
+      const COLORS = [
+        ["#e1ac6c", "#202c5f", "#ac4151"],
+        ["#b63c35", "#29202c", "#534e60"],
+        ["#131a28", "#f9f8c4", "#ffd463"],
+      ];
+
+      function setup() {
+        createCanvas(CANVAS_SIZE, CANVAS_SIZE); // Create the canvas
+        shuffle(COLORS, true); // Randomize the colors array
+
+        let squareSize = calculateSquareSize(); // Calculate the size of each square
+        drawColorGrid(squareSize); // Draw the grid of squares
+      }
+
+      // Function to calculate the size of each square
+      function calculateSquareSize() {
+        return (CANVAS_SIZE - PADDING * (GRID_SIZE + 1)) / GRID_SIZE;
+      }
+
+      // Function to draw the grid of squares
+      function drawColorGrid(squareSize) {
+        for (let i = 0; i < GRID_SIZE; i++) {
+          for (let j = 0; j < GRID_SIZE; j++) {
+            fill(COLORS[i][j]); // Set fill color
+            noStroke(); // Disable border (stroke)
+
+            // Calculate the position of each square
+            let x = j * (squareSize + PADDING) + PADDING;
+            let y = i * (squareSize + PADDING) + PADDING;
+
+            rect(x, y, squareSize, squareSize); // Draw the rectangle
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
