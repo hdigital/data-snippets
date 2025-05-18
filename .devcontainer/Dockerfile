@@ -3,5 +3,7 @@
 ARG VARIANT="4"
 FROM ghcr.io/rocker-org/devcontainer/tidyverse:${VARIANT}
 
-# Install Ubuntu package to suppress R plot warning
-RUN apt-get -y update && apt-get install -y --no-install-recommends libxt6
+# Install Ubuntu package
+# - libxt6 // suppress R plot warning
+# - cmake // required for installing 's2' package ('sf' and 'tmap' dependency)
+RUN apt-get -y update && apt-get install -y --no-install-recommends cmake libxt6
