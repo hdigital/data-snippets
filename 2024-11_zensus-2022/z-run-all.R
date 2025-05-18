@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+#
 # Install all R packages (locked versions) and render notebook
 # run in local container or codespace with: Rscript z-run-all.R
 
@@ -13,9 +15,6 @@ if (!file_exists("pkg.lock")) {
   pak::lockfile_create(deps)
 }
 pak::lockfile_install()
-
-# install tmap v4 from GitHub (see https://github.com/r-tmap/tmap/issues/733)
-pak::pak("r-tmap/tmap")
 
 
 ## Format and check code ----
